@@ -27,13 +27,13 @@ const Index: React.FC = () => {
       <About />
       <Objectives />
       
-      <section className="py-16 bg-desert-storm">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-druk text-3xl md:text-4xl text-lunar-green text-center mb-12 border-b-4 border-cream-can pb-2 inline-block mx-auto">
+          <h2 className="font-druk text-3xl md:text-4xl text-[#001324] text-center mb-8 border-b-4 border-[#4285f4] pb-2 inline-block mx-auto">
             Conference Information
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <InfoSection 
               id="important-dates" 
               title="Important Dates" 

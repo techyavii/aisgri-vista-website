@@ -15,8 +15,8 @@ interface InfoSectionProps {
 
 const MarqueeText: React.FC<{ text: string }> = ({ text }) => {
   return (
-    <div className="marquee-container h-8 bg-cream-can bg-opacity-10 rounded overflow-hidden my-1">
-      <div className="marquee-content">
+    <div className="marquee-container h-10 bg-[#f5f7fa] rounded overflow-hidden my-1 flex items-center">
+      <div className="marquee-content px-4 py-2">
         {text}
       </div>
     </div>
@@ -25,17 +25,18 @@ const MarqueeText: React.FC<{ text: string }> = ({ text }) => {
 
 const InfoSection: React.FC<InfoSectionProps> = ({ id, title, items, notices }) => {
   return (
-    <section id={id} className="py-10">
-      <div className="max-w-lg mx-auto px-4">
-        <div className="bg-lunar-green text-desert-storm rounded-lg overflow-hidden shadow-lg">
-          <h3 className="font-druk text-xl text-center py-3 bg-cream-can text-lunar-green">
+    <section id={id} className="py-6 px-2">
+      <div className="max-w-lg mx-auto">
+        <div className="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200">
+          <h3 className="font-druk text-xl text-center py-3 bg-[#4285f4] text-white">
             {title}
           </h3>
           
           <div className="p-6">
             {items && items.map((item, index) => (
               <div key={index} className="mb-4">
-                <MarqueeText text={`${item.title} - ${item.date}`} />
+                <p className="font-graphik font-bold text-[#001324] mb-1">{item.title}</p>
+                <MarqueeText text={item.date} />
               </div>
             ))}
             
