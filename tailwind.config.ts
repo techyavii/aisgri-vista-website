@@ -58,11 +58,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom colors for the website
-				'desert-storm': '#ededeb',
-				'lunar-green': '#384135',
-				'cream-can': '#f3c56a',
-				'spicy-mix': '#8f5a46',
+				// Custom colors from Goldsmiths website
+				'goldsmiths-blue': '#8da9d6',      // Light blue from the hero section
+				'goldsmiths-beige': '#f9f5e9',     // Beige/cream background color
+				'goldsmiths-yellow': '#ffd487',    // Yellow/gold from button
+				'goldsmiths-text': '#222222',      // Dark text color
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -78,15 +78,15 @@ export default {
 					from: { height: 'var(--radix-accordion-content-height)' },
 					to: { height: '0' }
 				},
-				'marquee': {
-					'0%': { transform: 'translateX(100%)' },
-					'100%': { transform: 'translateX(-100%)' }
+				'marquee-vertical': {
+					'0%': { transform: 'translateY(100%)' },
+					'100%': { transform: 'translateY(-100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'marquee': 'marquee 15s linear infinite'
+				'marquee-vertical': 'marquee-vertical 15s linear infinite'
 			}
 		}
 	},

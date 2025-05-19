@@ -15,7 +15,7 @@ interface InfoSectionProps {
 
 const MarqueeText: React.FC<{ text: string }> = ({ text }) => {
   return (
-    <div className="marquee-container h-10 bg-[#f5f7fa] rounded overflow-hidden my-1 flex items-center">
+    <div className="marquee-container h-24 bg-goldsmiths-beige rounded overflow-hidden my-1 flex items-center">
       <div className="marquee-content px-4 py-2">
         {text}
       </div>
@@ -28,14 +28,14 @@ const InfoSection: React.FC<InfoSectionProps> = ({ id, title, items, notices }) 
     <section id={id} className="py-6 px-2">
       <div className="max-w-lg mx-auto">
         <div className="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200">
-          <h3 className="font-druk text-xl text-center py-3 bg-[#4285f4] text-white">
+          <h3 className="font-druk text-xl text-center py-3 bg-goldsmiths-blue text-white">
             {title}
           </h3>
           
           <div className="p-6">
             {items && items.map((item, index) => (
               <div key={index} className="mb-4">
-                <p className="font-graphik font-bold text-[#001324] mb-1">{item.title}</p>
+                <p className="font-graphik font-bold text-goldsmiths-text mb-1">{item.title}</p>
                 <MarqueeText text={item.date} />
               </div>
             ))}

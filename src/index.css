@@ -7,65 +7,65 @@
 
 @layer base {
   :root {
-    --background: 210 33% 99%;  /* Light background */
-    --foreground: 210 50% 10%; /* Dark text */
+    --background: 42 33% 95%;  /* goldsmiths-beige */
+    --foreground: 0 0% 13%; /* goldsmiths-text */
 
     --card: 0 0% 100%;  /* White */
-    --card-foreground: 210 50% 10%; /* Dark text */
+    --card-foreground: 0 0% 13%; /* goldsmiths-text */
 
     --popover: 0 0% 100%; /* White */
-    --popover-foreground: 210 50% 10%; /* Dark text */
+    --popover-foreground: 0 0% 13%; /* goldsmiths-text */
 
-    --primary: 217 89% 61%; /* Blue color #4285f4 */
+    --primary: 219 54% 70%; /* goldsmiths-blue */
     --primary-foreground: 0 0% 100%; /* White text */
 
-    --secondary: 210 17% 98%; /* Light gray */
-    --secondary-foreground: 210 50% 10%; /* Dark text */
+    --secondary: 39 100% 76%; /* goldsmiths-yellow */
+    --secondary-foreground: 0 0% 13%; /* goldsmiths-text */
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 39 84% 68%; /* cream can */
-    --accent-foreground: 210 50% 10%; /* Dark text */
+    --accent: 39 100% 76%; /* goldsmiths-yellow */
+    --accent-foreground: 0 0% 13%; /* goldsmiths-text */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 217 89% 61%; /* Blue color */
+    --ring: 219 54% 70%; /* goldsmiths-blue */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 210 50% 10%; /* Dark background */
+    --background: 0 0% 13%; /* goldsmiths-text */
     --foreground: 0 0% 100%; /* White text */
 
-    --card: 210 50% 10%; /* Dark background */
+    --card: 0 0% 13%; /* goldsmiths-text */
     --card-foreground: 0 0% 100%; /* White text */
 
-    --popover: 210 50% 10%; /* Dark background */
+    --popover: 0 0% 13%; /* goldsmiths-text */
     --popover-foreground: 0 0% 100%; /* White text */
 
-    --primary: 217 89% 61%; /* Blue color */
+    --primary: 219 54% 70%; /* goldsmiths-blue */
     --primary-foreground: 0 0% 100%; /* White text */
 
-    --secondary: 217 19% 27%; /* Darker blue */
-    --secondary-foreground: 0 0% 100%; /* White text */
+    --secondary: 39 100% 76%; /* goldsmiths-yellow */
+    --secondary-foreground: 0 0% 13%; /* goldsmiths-text */
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 20 53% 28%; /* spicy mix */
-    --accent-foreground: 0 0% 100%; /* White text */
+    --accent: 39 100% 76%; /* goldsmiths-yellow */
+    --accent-foreground: 0 0% 13%; /* goldsmiths-text */
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217 89% 61%; /* Blue color */
+    --border: 219 54% 70%; /* goldsmiths-blue */
     --input: 217.2 32.6% 17.5%;
-    --ring: 217 89% 61%; /* Blue color */
+    --ring: 219 54% 70%; /* goldsmiths-blue */
   }
 }
 
@@ -79,15 +79,14 @@
   }
 
   .marquee-container {
-    @apply overflow-hidden whitespace-nowrap relative;
+    @apply overflow-hidden whitespace-nowrap relative h-40;
   }
 
   .marquee-content {
-    @apply inline-block animate-marquee;
+    @apply inline-block animate-marquee-vertical;
   }
 
   .marquee-container:hover .marquee-content {
     animation-play-state: paused;
   }
 }
-
