@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,8 +23,9 @@ const Navbar: React.FC = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about', hasDropdown: true },
+    { name: 'Home', href: '/' },
+    { name: 'About Conference', href: '#about', hasDropdown: true },
+    { name: 'About Us', href: '/about-us' },
     { name: 'Papers', href: '#papers', hasDropdown: true },
     { name: 'Committee', href: '#committee', hasDropdown: true },
     { name: 'Registration', href: '#registration' },
@@ -42,18 +44,29 @@ const Navbar: React.FC = () => {
         className="fixed top-0 w-full z-50 transition-all duration-300 bg-[#001324] text-white border-b border-[#4285f4]/30"
       >
         <div className="container mx-auto px-4 flex justify-between items-center h-16">
-          <a href="#home" className="text-xl font-bold font-druk text-white">AISGRI 2026</a>
+          <Link to="/" className="text-xl font-bold font-druk text-white">AISGRI 2026</Link>
           
           <div className="hidden lg:flex space-x-2">
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
-                href={link.href} 
-                className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
-              >
-                {link.name}
-                {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
-              </a>
+              link.href.startsWith('/') ? (
+                <Link 
+                  key={link.name} 
+                  to={link.href} 
+                  className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
+                >
+                  {link.name}
+                  {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
+                </Link>
+              ) : (
+                <a 
+                  key={link.name} 
+                  href={link.href} 
+                  className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
+                >
+                  {link.name}
+                  {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
+                </a>
+              )
             ))}
           </div>
           
@@ -71,15 +84,27 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden bg-[#001324] text-white border-t border-[#4285f4]/30">
             <div className="container mx-auto px-4 py-4 flex flex-col space-y-2">
               {navLinks.map((link) => (
-                <a 
-                  key={link.name} 
-                  href={link.href} 
-                  className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.name}
-                  {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
-                </a>
+                link.href.startsWith('/') ? (
+                  <Link 
+                    key={link.name} 
+                    to={link.href} 
+                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                    {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
+                  </Link>
+                ) : (
+                  <a 
+                    key={link.name} 
+                    href={link.href} 
+                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                    {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
+                  </a>
+                )
               ))}
             </div>
           </div>
