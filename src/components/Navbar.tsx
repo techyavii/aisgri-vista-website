@@ -1,11 +1,13 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,13 +22,46 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  const toggleDropdown = (name: string) => {
+    setActiveDropdown(activeDropdown === name ? null : name);
+  };
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About Conference', href: '#about', hasDropdown: true },
+    { 
+      name: 'About Conference', 
+      href: '#about', 
+      hasDropdown: true,
+      dropdownItems: [
+        { name: 'About Us', href: '/about-us' }
+      ] 
+    },
     { name: 'About Us', href: '/about-us' },
-    { name: 'Papers', href: '#papers', hasDropdown: true },
+    { 
+      name: 'Papers', 
+      href: '#papers', 
+      hasDropdown: true,
+      dropdownItems: [
+        { name: 'Call for Papers', href: '/call-for-papers' },
+        { name: 'Paper Submission', href: '/paper-submission' },
+        { name: 'Quality Policies', href: '/quality-policies' }
+      ]
+    },
     { name: 'Committee', href: '#committee', hasDropdown: true },
     { name: 'Registration', href: '#registration' },
     { name: 'Publications', href: '#publications' },
@@ -48,25 +83,48 @@ const Navbar: React.FC = () => {
           
           <div className="hidden lg:flex space-x-2">
             {navLinks.map((link) => (
-              link.href.startsWith('/') ? (
-                <Link 
-                  key={link.name} 
-                  to={link.href} 
-                  className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
-                >
-                  {link.name}
-                  {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
-                </Link>
-              ) : (
-                <a 
-                  key={link.name} 
-                  href={link.href} 
-                  className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
-                >
-                  {link.name}
-                  {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
-                </a>
-              )
+              <div
+                key={link.name}
+                className="relative"
+                onMouseEnter={() => link.hasDropdown && setActiveDropdown(link.name)}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                {link.href.startsWith('/') ? (
+                  <Link 
+                    to={link.href} 
+                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
+                  >
+                    {link.name}
+                    {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
+                  </Link>
+                ) : (
+                  <a 
+                    href={link.href} 
+                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
+                  >
+                    {link.name}
+                    {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
+                  </a>
+                )}
+                
+                {link.hasDropdown && activeDropdown === link.name && link.dropdownItems && (
+                  <div 
+                    ref={dropdownRef}
+                    className="absolute top-full left-0 bg-[#001324] border border-[#4285f4]/30 rounded-md shadow-lg mt-1 w-52 py-2 z-50"
+                  >
+                    {link.dropdownItems.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-2 text-sm hover:bg-[#4285f4]/10 text-white hover:text-[#4285f4]"
+                        onClick={() => setActiveDropdown(null)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
           
@@ -84,27 +142,69 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden bg-[#001324] text-white border-t border-[#4285f4]/30">
             <div className="container mx-auto px-4 py-4 flex flex-col space-y-2">
               {navLinks.map((link) => (
-                link.href.startsWith('/') ? (
-                  <Link 
-                    key={link.name} 
-                    to={link.href} 
-                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {link.name}
-                    {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
-                  </Link>
-                ) : (
-                  <a 
-                    key={link.name} 
-                    href={link.href} 
-                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {link.name}
-                    {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
-                  </a>
-                )
+                <div key={link.name}>
+                  {link.href.startsWith('/') ? (
+                    <Link 
+                      to={link.href} 
+                      className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center py-2"
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        if (!link.hasDropdown) setActiveDropdown(null);
+                      }}
+                    >
+                      {link.name}
+                      {link.hasDropdown && (
+                        <ChevronDown 
+                          className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === link.name ? 'transform rotate-180' : ''}`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            toggleDropdown(link.name);
+                          }}
+                        />
+                      )}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={link.href} 
+                      className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center py-2"
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        if (!link.hasDropdown) setActiveDropdown(null);
+                      }}
+                    >
+                      {link.name}
+                      {link.hasDropdown && (
+                        <ChevronDown 
+                          className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === link.name ? 'transform rotate-180' : ''}`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            toggleDropdown(link.name);
+                          }}
+                        />
+                      )}
+                    </a>
+                  )}
+                  
+                  {link.hasDropdown && activeDropdown === link.name && link.dropdownItems && (
+                    <div className="pl-4 mt-1 border-l-2 border-[#4285f4]/30 space-y-2">
+                      {link.dropdownItems.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          className="block py-1 text-sm hover:text-[#4285f4]"
+                          onClick={() => {
+                            setMobileMenuOpen(false);
+                            setActiveDropdown(null);
+                          }}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
