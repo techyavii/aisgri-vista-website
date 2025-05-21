@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
       ]
     },
     { name: 'Committee', href: '#committee', hasDropdown: true },
-    { name: 'Registration', href: '#registration' },
+    { name: 'Registration', href: '/registration' },
     { name: 'Publications', href: '#publications' },
     { name: 'Special Sessions', href: '#special-sessions' },
     { name: 'Conference Venue', href: '#conference-venue' },
@@ -76,10 +76,10 @@ const Navbar: React.FC = () => {
     <>
       <div className="h-16"></div> {/* Spacer for fixed navbar */}
       <nav 
-        className="fixed top-0 w-full z-50 transition-all duration-300 bg-[#001324] text-white border-b border-[#4285f4]/30"
+        className="fixed top-0 w-full z-50 transition-all duration-300 bg-white text-black border-b border-gray-200"
       >
         <div className="container mx-auto px-4 flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-bold font-druk text-white">AISGRI 2026</Link>
+          <Link to="/" className="text-xl font-bold font-druk text-black">AISGRI 2026</Link>
           
           <div className="hidden lg:flex space-x-2">
             {navLinks.map((link) => (
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
                 {link.href.startsWith('/') ? (
                   <Link 
                     to={link.href} 
-                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
+                    className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors text-black flex items-center px-3 py-2 text-sm rounded"
                   >
                     {link.name}
                     {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
                 ) : (
                   <a 
                     href={link.href} 
-                    className="font-graphik font-medium hover:text-[#4285f4] transition-colors text-white flex items-center px-3 py-2 text-sm"
+                    className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors text-black flex items-center px-3 py-2 text-sm rounded"
                   >
                     {link.name}
                     {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -110,13 +110,13 @@ const Navbar: React.FC = () => {
                 {link.hasDropdown && activeDropdown === link.name && link.dropdownItems && (
                   <div 
                     ref={dropdownRef}
-                    className="absolute top-full left-0 bg-[#001324] border border-[#4285f4]/30 rounded-md shadow-lg mt-1 w-52 py-2 z-50"
+                    className="absolute top-full left-0 bg-white border border-gray-200 rounded-md shadow-lg mt-1 w-52 py-2 z-50"
                   >
                     {link.dropdownItems.map((item) => (
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="block px-4 py-2 text-sm hover:bg-[#4285f4]/10 text-white hover:text-[#4285f4]"
+                        className="block px-4 py-2 text-sm hover:bg-[#333333] text-black hover:text-white"
                         onClick={() => setActiveDropdown(null)}
                       >
                         {item.name}
@@ -133,20 +133,20 @@ const Navbar: React.FC = () => {
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
-            <Menu className="text-white" />
+            <Menu className="text-black" />
           </button>
         </div>
         
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-[#001324] text-white border-t border-[#4285f4]/30">
+          <div className="lg:hidden bg-white text-black border-t border-gray-200">
             <div className="container mx-auto px-4 py-4 flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <div key={link.name}>
                   {link.href.startsWith('/') ? (
                     <Link 
                       to={link.href} 
-                      className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center py-2"
+                      className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors flex items-center py-2 px-2 rounded"
                       onClick={() => {
                         setMobileMenuOpen(false);
                         if (!link.hasDropdown) setActiveDropdown(null);
@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
                   ) : (
                     <a 
                       href={link.href} 
-                      className="font-graphik font-medium hover:text-[#4285f4] transition-colors flex items-center py-2"
+                      className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors flex items-center py-2 px-2 rounded"
                       onClick={() => {
                         setMobileMenuOpen(false);
                         if (!link.hasDropdown) setActiveDropdown(null);
@@ -188,12 +188,12 @@ const Navbar: React.FC = () => {
                   )}
                   
                   {link.hasDropdown && activeDropdown === link.name && link.dropdownItems && (
-                    <div className="pl-4 mt-1 border-l-2 border-[#4285f4]/30 space-y-2">
+                    <div className="pl-4 mt-1 border-l-2 border-gray-200 space-y-2">
                       {link.dropdownItems.map((item) => (
                         <Link
                           key={item.name}
                           to={item.href}
-                          className="block py-1 text-sm hover:text-[#4285f4]"
+                          className="block py-1 px-2 text-sm hover:bg-[#333333] hover:text-white rounded"
                           onClick={() => {
                             setMobileMenuOpen(false);
                             setActiveDropdown(null);
