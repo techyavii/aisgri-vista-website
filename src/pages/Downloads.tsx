@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { FileText, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,7 +25,6 @@ const Downloads = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <div className="container mx-auto px-4 py-8 flex-grow">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 font-publico">Downloads</h1>

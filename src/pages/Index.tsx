@@ -1,7 +1,5 @@
 
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Objectives from '@/components/Objectives';
 import InfoSection from '@/components/InfoSection';
@@ -22,8 +20,6 @@ const Index: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <Hero />
       <About />
       <Objectives />
       

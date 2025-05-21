@@ -14,6 +14,8 @@ import Registration from "./pages/Registration";
 import Publications from "./pages/Publications";
 import ConferenceVenue from "./pages/ConferenceVenue";
 import Downloads from "./pages/Downloads";
+import ConferenceBanner from "./components/ConferenceBanner";
+import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
@@ -23,19 +25,25 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/call-for-papers" element={<CallForPapers />} />
-          <Route path="/paper-submission" element={<PaperSubmission />} />
-          <Route path="/quality-policies" element={<QualityPolicies />} />
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/publications" element={<Publications />} />
-          <Route path="/conference-venue" element={<ConferenceVenue />} />
-          <Route path="/downloads" element={<Downloads />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="flex flex-col min-h-screen">
+          <ConferenceBanner />
+          <Navbar />
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/call-for-papers" element={<CallForPapers />} />
+              <Route path="/paper-submission" element={<PaperSubmission />} />
+              <Route path="/quality-policies" element={<QualityPolicies />} />
+              <Route path="/registration" element={<Registration />} />
+              <Route path="/publications" element={<Publications />} />
+              <Route path="/conference-venue" element={<ConferenceVenue />} />
+              <Route path="/downloads" element={<Downloads />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

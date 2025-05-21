@@ -1,13 +1,11 @@
 
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Map, MapPin, Building } from 'lucide-react';
 
 const ConferenceVenue = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <div className="container mx-auto px-4 py-8 flex-grow">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 font-publico">Conference Venue</h1>
@@ -15,7 +13,7 @@ const ConferenceVenue = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb" 
+                src="/lovable-uploads/35658633-a213-467a-b271-454067639e43.png" 
                 alt="Goldsmiths University Building" 
                 className="w-full h-64 object-cover"
               />
