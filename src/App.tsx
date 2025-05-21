@@ -11,6 +11,9 @@ import CallForPapers from "./pages/CallForPapers";
 import PaperSubmission from "./pages/PaperSubmission";
 import QualityPolicies from "./pages/QualityPolicies";
 import Registration from "./pages/Registration";
+import Publications from "./pages/Publications";
+import ConferenceVenue from "./pages/ConferenceVenue";
+import Downloads from "./pages/Downloads";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +30,9 @@ const App = () => (
           <Route path="/paper-submission" element={<PaperSubmission />} />
           <Route path="/quality-policies" element={<QualityPolicies />} />
           <Route path="/registration" element={<Registration />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/conference-venue" element={<ConferenceVenue />} />
+          <Route path="/downloads" element={<Downloads />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

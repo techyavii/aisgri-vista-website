@@ -62,14 +62,10 @@ const Navbar: React.FC = () => {
         { name: 'Quality Policies', href: '/quality-policies' }
       ]
     },
-    { name: 'Committee', href: '#committee', hasDropdown: true },
     { name: 'Registration', href: '/registration' },
-    { name: 'Publications', href: '#publications' },
-    { name: 'Special Sessions', href: '#special-sessions' },
-    { name: 'Conference Venue', href: '#conference-venue' },
-    { name: 'Downloads', href: '#downloads' },
-    { name: 'Accommodation & Attractions', href: '#accommodation' },
-    { name: 'Previous Conferences', href: '#previous-conferences', hasDropdown: true }
+    { name: 'Publications', href: '/publications' },
+    { name: 'Conference Venue', href: '/conference-venue' },
+    { name: 'Downloads', href: '/downloads' }
   ];
 
   return (
