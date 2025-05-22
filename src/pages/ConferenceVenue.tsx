@@ -4,6 +4,29 @@ import Footer from '@/components/Footer';
 import { Map, MapPin, Building } from 'lucide-react';
 
 const ConferenceVenue = () => {
+  const venueImages = [
+    {
+      src: "/lovable-uploads/7ed9a922-0b4c-46b4-9bbb-71a57fa4c4a0.png",
+      alt: "Aerial view of Goldsmiths University"
+    },
+    {
+      src: "/lovable-uploads/b185578a-ca33-4aba-8e13-71db84c6e1db.png",
+      alt: "Goldsmiths University campus with students"
+    },
+    {
+      src: "/lovable-uploads/7cade809-e6ee-4b6b-8f3c-aa1079fc98db.png",
+      alt: "Goldsmiths University main building with London skyline"
+    },
+    {
+      src: "/lovable-uploads/8764d794-b00e-419b-9303-2dc2f0e99e7e.png",
+      alt: "Students walking on Goldsmiths campus"
+    },
+    {
+      src: "/lovable-uploads/6ddfa1ee-0531-49f3-9af5-0bf644712502.png",
+      alt: "Computing building at Goldsmiths University"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-8 flex-grow">
@@ -13,8 +36,8 @@ const ConferenceVenue = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="/lovable-uploads/35658633-a213-467a-b271-454067639e43.png" 
-                alt="Goldsmiths University Building" 
+                src={venueImages[2].src}
+                alt={venueImages[2].alt}
                 className="w-full h-64 object-cover"
               />
             </div>
@@ -39,6 +62,18 @@ const ConferenceVenue = () => {
                 View on Google Maps
               </a>
             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+            {venueImages.filter((_, idx) => idx !== 2).map((image, index) => (
+              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md mt-8">

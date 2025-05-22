@@ -7,18 +7,23 @@ import { Button } from '@/components/ui/button';
 const Downloads = () => {
   const downloadItems = [
     {
+      name: 'Checklist',
+      link: 'https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines',
+      icon: <FileText className="mr-2" size={18} />
+    },
+    {
       name: 'Manuscript guidelines',
-      link: '#',
+      link: 'https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines',
       icon: <FileText className="mr-2" size={18} />
     },
     {
       name: 'Springer Word Template',
-      link: '#',
+      link: 'https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v1',
       icon: <FileText className="mr-2" size={18} />
     },
     {
       name: 'Springer Latex Template',
-      link: '#',
+      link: 'https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238706/data/v1',
       icon: <FileText className="mr-2" size={18} />
     },
   ];
@@ -51,7 +56,7 @@ const Downloads = () => {
                         className="flex items-center"
                         asChild
                       >
-                        <a href={item.link} download>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
                           <Download className="mr-1" size={16} />
                           Download
                         </a>

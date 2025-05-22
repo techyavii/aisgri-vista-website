@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { 
   Carousel, 
   CarouselContent, 
@@ -7,6 +7,7 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from '@/components/ui/carousel';
+import { useCarousel } from "@/components/ui/carousel";
 
 interface ImageCarouselProps {
   images: {
@@ -16,25 +17,38 @@ interface ImageCarouselProps {
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
+  const [api, setApi] = React.useState<ReturnType<typeof useCarousel>["api"]>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const autoplayInterval = setInterval(() => {
+      api.scrollNext();
+    }, 5000); // Auto scroll every 5 seconds
+
+    return () => clearInterval(autoplayInterval);
+  }, [api]);
+
   return (
     <div className="w-full py-8 bg-white">
       <div className="container mx-auto px-4">
         <Carousel 
           opts={{
-            align: 'start',
+            align: 'center',
             loop: true,
           }}
+          setApi={setApi}
           className="w-full"
         >
           <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1 h-full">
-                  <div className="overflow-hidden rounded-lg shadow-lg h-64 md:h-80">
+              <CarouselItem key={index} className="basis-full">
+                <div className="p-1">
+                  <div className="mx-auto overflow-hidden rounded-lg shadow-lg h-96">
                     <img 
                       src={image.src} 
                       alt={image.alt} 
-                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-10 transition-opacity"></div>
                   </div>
