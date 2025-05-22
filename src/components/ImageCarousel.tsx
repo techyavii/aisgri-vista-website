@@ -5,9 +5,9 @@ import {
   CarouselContent, 
   CarouselItem, 
   CarouselNext, 
-  CarouselPrevious 
+  CarouselPrevious,
+  type CarouselApi
 } from '@/components/ui/carousel';
-import { useCarousel } from "@/components/ui/carousel";
 
 interface ImageCarouselProps {
   images: {
@@ -17,7 +17,7 @@ interface ImageCarouselProps {
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
-  const [api, setApi] = React.useState<ReturnType<typeof useCarousel>["api"]>();
+  const [api, setApi] = React.useState<CarouselApi>();
 
   useEffect(() => {
     if (!api) return;
