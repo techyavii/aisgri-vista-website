@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Objectives from '@/components/Objectives';
 import InfoSection from '@/components/InfoSection';
 import Footer from '@/components/Footer';
+import ImageCarousel from '@/components/ImageCarousel';
 
 const Index: React.FC = () => {
   const importantDates = [
@@ -18,8 +19,18 @@ const Index: React.FC = () => {
     "AISGRI 2026 will be organsied by Goldsmith, University of London, United Kingdom on 10th – 11th April 2026."
   ];
 
+  const carouselImages = [
+    { src: "/lovable-uploads/fc596d5c-e4c3-45a5-9917-f9a2fb0d0d4c.png", alt: "Goldsmiths University Main Building" },
+    { src: "/lovable-uploads/20199f8a-6131-4440-bc5e-b152fbfb3a50.png", alt: "Goldsmiths University Ivy Building" },
+    { src: "/lovable-uploads/a3112ac3-55f3-4862-87b9-f97060ce68c4.png", alt: "Goldsmiths Modern Building" },
+    { src: "/lovable-uploads/fe9f3022-dca0-44b3-b211-d61102ffc425.png", alt: "Department of Computing" },
+    { src: "/lovable-uploads/c3e8d4a2-7168-4a7c-a6a1-5b1df9376150.png", alt: "Goldsmiths Church Building" },
+    { src: "/lovable-uploads/af072e89-4ab1-4970-8b22-e0fcd19519e3.png", alt: "Goldsmiths Entrance" }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
+      <ImageCarousel images={carouselImages} />
       <About />
       <Objectives />
       

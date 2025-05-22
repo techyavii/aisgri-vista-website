@@ -75,13 +75,17 @@ const Navbar: React.FC = () => {
             <div
               key={link.name}
               className="relative"
-              onMouseEnter={() => link.hasDropdown && setActiveDropdown(link.name)}
-              onMouseLeave={() => setActiveDropdown(null)}
             >
               {link.href.startsWith('/') ? (
                 <Link 
                   to={link.href} 
                   className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors text-black flex items-center px-3 py-2 text-sm rounded"
+                  onClick={(e) => {
+                    if (link.hasDropdown) {
+                      e.preventDefault();
+                      toggleDropdown(link.name);
+                    }
+                  }}
                 >
                   {link.name}
                   {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -90,6 +94,12 @@ const Navbar: React.FC = () => {
                 <a 
                   href={link.href} 
                   className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors text-black flex items-center px-3 py-2 text-sm rounded"
+                  onClick={(e) => {
+                    if (link.hasDropdown) {
+                      e.preventDefault();
+                      toggleDropdown(link.name);
+                    }
+                  }}
                 >
                   {link.name}
                   {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
@@ -136,20 +146,20 @@ const Navbar: React.FC = () => {
                   <Link 
                     to={link.href} 
                     className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors flex items-center py-2 px-2 rounded"
-                    onClick={() => {
-                      setMobileMenuOpen(false);
-                      if (!link.hasDropdown) setActiveDropdown(null);
+                    onClick={(e) => {
+                      if (link.hasDropdown) {
+                        e.preventDefault();
+                        toggleDropdown(link.name);
+                      } else {
+                        setMobileMenuOpen(false);
+                        setActiveDropdown(null);
+                      }
                     }}
                   >
                     {link.name}
                     {link.hasDropdown && (
                       <ChevronDown 
                         className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === link.name ? 'transform rotate-180' : ''}`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          toggleDropdown(link.name);
-                        }}
                       />
                     )}
                   </Link>
@@ -157,20 +167,20 @@ const Navbar: React.FC = () => {
                   <a 
                     href={link.href} 
                     className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors flex items-center py-2 px-2 rounded"
-                    onClick={() => {
-                      setMobileMenuOpen(false);
-                      if (!link.hasDropdown) setActiveDropdown(null);
+                    onClick={(e) => {
+                      if (link.hasDropdown) {
+                        e.preventDefault();
+                        toggleDropdown(link.name);
+                      } else {
+                        setMobileMenuOpen(false);
+                        setActiveDropdown(null);
+                      }
                     }}
                   >
                     {link.name}
                     {link.hasDropdown && (
                       <ChevronDown 
                         className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === link.name ? 'transform rotate-180' : ''}`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          toggleDropdown(link.name);
-                        }}
                       />
                     )}
                   </a>

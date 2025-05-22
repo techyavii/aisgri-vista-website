@@ -77,16 +77,21 @@
   body {
     @apply bg-background text-foreground font-graphik;
   }
+}
 
-  .marquee-container {
-    @apply overflow-hidden whitespace-nowrap relative h-40;
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
   }
+  100% {
+    transform: translateY(-50%);
+  }
+}
 
-  .marquee-content {
-    @apply inline-block animate-marquee-vertical;
-  }
+.animate-marquee-vertical {
+  animation: marquee-vertical 20s linear infinite;
+}
 
-  .marquee-container:hover .marquee-content {
-    animation-play-state: paused;
-  }
+.animate-marquee-vertical:hover {
+  animation-play-state: paused;
 }

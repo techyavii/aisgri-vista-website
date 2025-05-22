@@ -13,16 +13,6 @@ interface InfoSectionProps {
   notices?: string[];
 }
 
-const MarqueeText: React.FC<{ text: string }> = ({ text }) => {
-  return (
-    <div className="marquee-container h-24 bg-goldsmiths-beige rounded overflow-hidden my-1 flex items-center">
-      <div className="marquee-content px-4 py-2">
-        {text}
-      </div>
-    </div>
-  );
-};
-
 const InfoSection: React.FC<InfoSectionProps> = ({ id, title, items, notices }) => {
   return (
     <section id={id} className="py-6 px-2">
@@ -33,22 +23,47 @@ const InfoSection: React.FC<InfoSectionProps> = ({ id, title, items, notices }) 
           </h3>
           
           <div className="p-6">
-            {items && items.map((item, index) => (
-              <div key={index} className="mb-4">
-                <p className="font-graphik font-bold text-goldsmiths-text mb-1">{item.title}</p>
-                <MarqueeText text={item.date} />
+            {items && (
+              <div className="mb-4 h-64 overflow-hidden relative">
+                <div className="animate-marquee-vertical">
+                  {items.map((item, index) => (
+                    <div key={index} className="mb-4">
+                      <p className="font-graphik font-bold text-goldsmiths-text mb-1">{item.title}</p>
+                      <div className="bg-goldsmiths-beige rounded p-2">{item.date}</div>
+                    </div>
+                  ))}
+                  {/* Duplicate items for continuous scrolling */}
+                  {items.map((item, index) => (
+                    <div key={`dup-${index}`} className="mb-4">
+                      <p className="font-graphik font-bold text-goldsmiths-text mb-1">{item.title}</p>
+                      <div className="bg-goldsmiths-beige rounded p-2">{item.date}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+            )}
             
-            {notices && notices.map((notice, index) => (
-              <div key={index} className="mb-4">
-                <MarqueeText text={notice} />
+            {notices && (
+              <div className="mb-4 h-64 overflow-hidden relative">
+                <div className="animate-marquee-vertical">
+                  {notices.map((notice, index) => (
+                    <div key={index} className="mb-4 bg-goldsmiths-beige rounded p-2">
+                      {notice}
+                    </div>
+                  ))}
+                  {/* Duplicate notices for continuous scrolling */}
+                  {notices.map((notice, index) => (
+                    <div key={`dup-${index}`} className="mb-4 bg-goldsmiths-beige rounded p-2">
+                      {notice}
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+            )}
             
             {!items && !notices && (
               <div className="text-center py-4 font-publico">
-                <MarqueeText text="Download links will be available soon" />
+                <p>Download links will be available soon</p>
               </div>
             )}
           </div>
