@@ -1,14 +1,10 @@
-
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Book, Computer } from 'lucide-react';
 
 const AboutUs: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
-      
       {/* Header Image with Overlay */}
       <div 
         className="w-full h-64 bg-goldsmiths-blue relative"

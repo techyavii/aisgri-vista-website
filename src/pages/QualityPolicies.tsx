@@ -1,12 +1,9 @@
-
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const QualityPolicies: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <div className="container mx-auto px-4 py-12 flex-grow">
         <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
           <h1 className="font-druk text-3xl md:text-4xl text-[#001324] mb-8">Quality Policies</h1>
