@@ -24,12 +24,21 @@ const ImportantDatesModal: React.FC = () => {
       <DialogTrigger asChild>
         <Button 
           variant="outline" 
-          className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 bg-goldsmiths-blue text-white hover:bg-goldsmiths-blue/90 border-goldsmiths-blue flex flex-col items-center gap-1 py-6 px-3 rounded-r-lg rounded-l-none shadow-lg w-16 h-auto min-h-[120px]"
+          className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 bg-goldsmiths-blue text-white hover:bg-goldsmiths-blue/90 border-goldsmiths-blue rounded-r-lg rounded-l-none shadow-lg transition-all duration-300 hover:shadow-xl"
+          style={{
+            writingMode: 'vertical-rl',
+            textOrientation: 'mixed',
+            width: '48px',
+            height: '140px',
+            padding: '8px 4px'
+          }}
         >
-          <Calendar className="h-5 w-5 mb-1" />
-          <span className="text-xs font-medium leading-tight text-center whitespace-nowrap transform rotate-90 origin-center">
-            Important Dates
-          </span>
+          <div className="flex flex-col items-center justify-center gap-2 h-full">
+            <Calendar className="h-5 w-5 flex-shrink-0" />
+            <span className="text-xs font-medium leading-tight text-center whitespace-nowrap">
+              Important Dates
+            </span>
+          </div>
         </Button>
       </DialogTrigger>
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
