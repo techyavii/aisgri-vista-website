@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import CallForPapers from "./pages/CallForPapers";
 import PaperSubmission from "./pages/PaperSubmission";
 import QualityPolicies from "./pages/QualityPolicies";
+import Committee from "./pages/Committee";
 import Registration from "./pages/Registration";
 import Publications from "./pages/Publications";
 import ConferenceVenue from "./pages/ConferenceVenue";
@@ -38,6 +39,7 @@ const App: React.FC = () => (
               <Route path="/call-for-papers" element={<CallForPapers />} />
               <Route path="/paper-submission" element={<PaperSubmission />} />
               <Route path="/quality-policies" element={<QualityPolicies />} />
+              <Route path="/committee" element={<Committee />} />
               <Route path="/registration" element={<Registration />} />
               <Route path="/publications" element={<Publications />} />
               <Route path="/conference-venue" element={<ConferenceVenue />} />

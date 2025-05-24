@@ -3,23 +3,10 @@ import React from 'react';
 import About from '@/components/About';
 import Objectives from '@/components/Objectives';
 import ImportantDatesSection from '@/components/ImportantDatesSection';
-import InfoSection from '@/components/InfoSection';
 import Footer from '@/components/Footer';
 import ImageCarousel from '@/components/ImageCarousel';
 
 const Index: React.FC = () => {
-  const importantDates = [
-    { title: "Paper Submission Deadline", date: "30th September 2025" },
-    { title: "Acceptance Notification Due", date: "30th November 2025" },
-    { title: "Registration Due", date: "30th December 2025" },
-    { title: "Camera Ready Submission", date: "30th January 2026" },
-    { title: "Conference Dates", date: "10th – 11th April 2026" }
-  ];
-
-  const notices = [
-    "AISGRI 2026 will be organsied by Goldsmith, University of London, United Kingdom on 10th – 11th April 2026."
-  ];
-
   const carouselImages = [
     { src: "/lovable-uploads/fc596d5c-e4c3-45a5-9917-f9a2fb0d0d4c.png", alt: "Goldsmiths University Main Building" },
     { src: "/lovable-uploads/20199f8a-6131-4440-bc5e-b152fbfb3a50.png", alt: "Goldsmiths University Ivy Building" },
@@ -40,32 +27,6 @@ const Index: React.FC = () => {
       <About />
       <Objectives />
       <ImportantDatesSection />
-      
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="font-druk text-3xl md:text-4xl text-[#001324] text-center mb-8 border-b-4 border-[#4285f4] pb-2 inline-block mx-auto">
-            Conference Information
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <InfoSection 
-              id="important-dates-info" 
-              title="Important Dates" 
-              items={importantDates} 
-            />
-            <InfoSection 
-              id="downloads" 
-              title="Downloads" 
-            />
-            <InfoSection 
-              id="notices" 
-              title="Notices" 
-              notices={notices} 
-            />
-          </div>
-        </div>
-      </section>
-      
       <Footer />
     </div>
   );

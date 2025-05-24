@@ -1,6 +1,14 @@
 
 import React from 'react';
 import { Calendar } from 'lucide-react';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 const ImportantDatesSection: React.FC = () => {
   const importantDates = [
@@ -18,22 +26,27 @@ const ImportantDatesSection: React.FC = () => {
           Important Dates
         </h2>
         
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {importantDates.map((item, index) => (
-              <div key={index} className="bg-white shadow-lg rounded-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow">
-                <div className="flex items-center mb-3">
-                  <Calendar className="h-5 w-5 text-goldsmiths-blue mr-2" />
-                  <h3 className="font-graphik font-bold text-goldsmiths-text text-lg">
+        <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg border border-gray-200 overflow-hidden">
+          <Table>
+            <TableHeader>
+              <TableRow className="bg-goldsmiths-blue">
+                <TableHead className="text-white font-druk text-lg">Event</TableHead>
+                <TableHead className="text-white font-druk text-lg">Date</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {importantDates.map((item, index) => (
+                <TableRow key={index} className="hover:bg-goldsmiths-beige/50">
+                  <TableCell className="font-graphik font-bold text-goldsmiths-text text-lg">
                     {item.title}
-                  </h3>
-                </div>
-                <p className="font-publico text-goldsmiths-text bg-goldsmiths-beige px-3 py-2 rounded text-center">
-                  {item.date}
-                </p>
-              </div>
-            ))}
-          </div>
+                  </TableCell>
+                  <TableCell className="font-publico text-goldsmiths-text text-lg bg-goldsmiths-beige/30">
+                    {item.date}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
         </div>
       </div>
     </section>
