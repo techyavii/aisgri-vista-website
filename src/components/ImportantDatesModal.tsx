@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import {
@@ -24,18 +23,17 @@ const ImportantDatesModal: React.FC = () => {
       <DialogTrigger asChild>
         <Button 
           variant="outline" 
-          className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 bg-goldsmiths-blue text-white hover:bg-goldsmiths-blue/90 border-goldsmiths-blue rounded-r-lg rounded-l-none shadow-lg transition-all duration-300 hover:shadow-xl"
+          className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 bg-goldsmiths-blue text-black hover:bg-goldsmiths-blue/90 border-goldsmiths-blue rounded-r-lg rounded-l-none shadow-lg transition-all duration-300 hover:shadow-xl"
           style={{
             writingMode: 'vertical-rl',
             textOrientation: 'mixed',
-            width: '48px',
+            width: '50px',
             height: '140px',
-            padding: '8px 4px'
+            padding: '12px 6px'
           }}
         >
-          <div className="flex flex-col items-center justify-center gap-2 h-full">
-            <Calendar className="h-5 w-5 flex-shrink-0" />
-            <span className="text-xs font-medium leading-tight text-center whitespace-nowrap">
+          <div className="flex flex-col items-center justify-center h-full">
+            <span className="text-sm font-semibold leading-tight text-center whitespace-nowrap">
               Important Dates
             </span>
           </div>
