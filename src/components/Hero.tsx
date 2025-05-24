@@ -13,17 +13,20 @@ const Hero: React.FC = () => {
       }}
     >
       <div className="container mx-auto px-4 py-14 text-center text-white">
-        <h1 className="font-druk text-3xl md:text-5xl lg:text-6xl mb-4 leading-tight">
+        <h1 className="font-druk text-3xl md:text-5xl lg:text-6xl mb-4 leading-tight text-center">
           International Conference on<br />AI for Social Good and Responsible Innovation
         </h1>
-        <h2 className="font-graphik text-xl md:text-2xl lg:text-3xl mb-6 text-goldsmiths-yellow">
+        <h2 className="font-graphik text-xl md:text-2xl lg:text-3xl mb-6 text-goldsmiths-yellow text-center">
           (AISGRI 2026)
         </h2>
-        <p className="font-graphik text-lg md:text-xl mb-8">
+        <p className="font-graphik text-lg md:text-xl mb-8 text-center">
           10-11th April 2026
         </p>
-        <p className="font-publico text-base md:text-lg mb-12">
+        <p className="font-publico text-base md:text-lg mb-8 text-center">
           Organised by Goldsmiths, University of London, United Kingdom
+        </p>
+        <p className="font-publico text-sm md:text-base mb-12 text-center text-justify max-w-4xl mx-auto">
+          All the accepted papers of AISGRI-2026 will be published as a proceedings of AISGRI -2026 in Springer LNNS series (Proposed) indexed by Scopus, Ei, WoS, and other reputed databases. Some papers will be invited to be submitted in Scopus and SCIE indexed Journals.
         </p>
         <button className="bg-goldsmiths-yellow text-goldsmiths-text hover:bg-opacity-90 transition-colors font-graphik font-bold py-3 px-8 rounded-md text-lg">
           Register Now

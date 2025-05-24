@@ -28,15 +28,15 @@ const InfoSection: React.FC<InfoSectionProps> = ({ id, title, items, notices }) 
                 <div className="animate-marquee-vertical">
                   {items.map((item, index) => (
                     <div key={index} className="mb-4">
-                      <p className="font-graphik font-bold text-goldsmiths-text mb-1">{item.title}</p>
-                      <div className="bg-goldsmiths-beige rounded p-2">{item.date}</div>
+                      <p className="font-graphik font-bold text-goldsmiths-text mb-1 text-justify">{item.title}</p>
+                      <div className="bg-goldsmiths-beige rounded p-2 text-justify">{item.date}</div>
                     </div>
                   ))}
                   {/* Duplicate items for continuous scrolling */}
                   {items.map((item, index) => (
                     <div key={`dup-${index}`} className="mb-4">
-                      <p className="font-graphik font-bold text-goldsmiths-text mb-1">{item.title}</p>
-                      <div className="bg-goldsmiths-beige rounded p-2">{item.date}</div>
+                      <p className="font-graphik font-bold text-goldsmiths-text mb-1 text-justify">{item.title}</p>
+                      <div className="bg-goldsmiths-beige rounded p-2 text-justify">{item.date}</div>
                     </div>
                   ))}
                 </div>
@@ -47,13 +47,13 @@ const InfoSection: React.FC<InfoSectionProps> = ({ id, title, items, notices }) 
               <div className="mb-4 h-64 overflow-hidden relative">
                 <div className="animate-marquee-vertical">
                   {notices.map((notice, index) => (
-                    <div key={index} className="mb-4 bg-goldsmiths-beige rounded p-2">
+                    <div key={index} className="mb-4 bg-goldsmiths-beige rounded p-2 text-justify">
                       {notice}
                     </div>
                   ))}
                   {/* Duplicate notices for continuous scrolling */}
                   {notices.map((notice, index) => (
-                    <div key={`dup-${index}`} className="mb-4 bg-goldsmiths-beige rounded p-2">
+                    <div key={`dup-${index}`} className="mb-4 bg-goldsmiths-beige rounded p-2 text-justify">
                       {notice}
                     </div>
                   ))}

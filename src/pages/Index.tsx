@@ -5,6 +5,7 @@ import Objectives from '@/components/Objectives';
 import InfoSection from '@/components/InfoSection';
 import Footer from '@/components/Footer';
 import ImageCarousel from '@/components/ImageCarousel';
+import ImportantDatesModal from '@/components/ImportantDatesModal';
 
 const Index: React.FC = () => {
   const importantDates = [
@@ -35,6 +36,7 @@ const Index: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ImportantDatesModal />
       <ImageCarousel images={carouselImages} />
       <About />
       <Objectives />

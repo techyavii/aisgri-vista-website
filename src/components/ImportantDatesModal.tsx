@@ -1,0 +1,59 @@
+
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import { Calendar } from 'lucide-react';
+
+const ImportantDatesModal: React.FC = () => {
+  const importantDates = [
+    { title: "Paper Submission Deadline", date: "30th September 2025" },
+    { title: "Acceptance Notification Due", date: "30th November 2025" },
+    { title: "Registration Due", date: "30th December 2025" },
+    { title: "Camera Ready Submission", date: "30th January 2026" },
+    { title: "Conference Dates", date: "10th – 11th April 2026" }
+  ];
+
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button 
+          variant="outline" 
+          className="fixed left-4 top-1/2 transform -translate-y-1/2 z-50 bg-goldsmiths-blue text-white hover:bg-goldsmiths-blue/90 border-goldsmiths-blue flex items-center gap-2 py-8 px-4 rounded-r-lg rounded-l-none shadow-lg"
+          style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+        >
+          <Calendar className="h-5 w-5" />
+          Important Dates
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle className="font-druk text-2xl text-goldsmiths-text text-center mb-4">
+            Important Dates
+          </DialogTitle>
+        </DialogHeader>
+        <div className="space-y-4">
+          {importantDates.map((item, index) => (
+            <div key={index} className="bg-goldsmiths-beige rounded-lg p-4 border border-goldsmiths-blue/20">
+              <div className="flex justify-between items-center">
+                <h3 className="font-graphik font-bold text-goldsmiths-text text-lg">
+                  {item.title}
+                </h3>
+                <span className="font-publico text-goldsmiths-text bg-white px-3 py-1 rounded">
+                  {item.date}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+export default ImportantDatesModal;
