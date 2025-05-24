@@ -17,6 +17,7 @@ import ConferenceVenue from "./pages/ConferenceVenue";
 import Downloads from "./pages/Downloads";
 import ConferenceBanner from "./components/ConferenceBanner";
 import Navbar from "./components/Navbar";
+import ImportantDatesModal from "./components/ImportantDatesModal";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App: React.FC = () => (
         <div className="flex flex-col min-h-screen">
           <ConferenceBanner />
           <Navbar />
+          <ImportantDatesModal />
           <div className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />

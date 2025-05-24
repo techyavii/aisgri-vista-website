@@ -2,10 +2,10 @@
 import React from 'react';
 import About from '@/components/About';
 import Objectives from '@/components/Objectives';
+import ImportantDatesSection from '@/components/ImportantDatesSection';
 import InfoSection from '@/components/InfoSection';
 import Footer from '@/components/Footer';
 import ImageCarousel from '@/components/ImageCarousel';
-import ImportantDatesModal from '@/components/ImportantDatesModal';
 
 const Index: React.FC = () => {
   const importantDates = [
@@ -36,10 +36,10 @@ const Index: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <ImportantDatesModal />
       <ImageCarousel images={carouselImages} />
       <About />
       <Objectives />
+      <ImportantDatesSection />
       
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -49,7 +49,7 @@ const Index: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <InfoSection 
-              id="important-dates" 
+              id="important-dates-info" 
               title="Important Dates" 
               items={importantDates} 
             />

@@ -25,9 +25,6 @@ const Hero: React.FC = () => {
         <p className="font-publico text-base md:text-lg mb-8 text-center">
           Organised by Goldsmiths, University of London, United Kingdom
         </p>
-        <p className="font-publico text-sm md:text-base mb-12 text-center text-justify max-w-4xl mx-auto">
-          All the accepted papers of AISGRI-2026 will be published as a proceedings of AISGRI -2026 in Springer LNNS series (Proposed) indexed by Scopus, Ei, WoS, and other reputed databases. Some papers will be invited to be submitted in Scopus and SCIE indexed Journals.
-        </p>
         <button className="bg-goldsmiths-yellow text-goldsmiths-text hover:bg-opacity-90 transition-colors font-graphik font-bold py-3 px-8 rounded-md text-lg">
           Register Now
         </button>

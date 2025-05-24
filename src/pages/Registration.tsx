@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from "@/components/ui/card";
@@ -25,31 +26,31 @@ const Registration: React.FC = () => {
                 <tbody>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">Research Student Author (Physical Mode)</td>
-                    <td className="border border-gray-300 px-4 py-2">GBP £250</td>
-                    <td className="border border-gray-300 px-4 py-2">GBP £280</td>
-                  </tr>
-                  <tr className="bg-[#f9f5e9]/50">
-                    <td className="border border-gray-300 px-4 py-2">Research Student Author (Online Mode)</td>
-                    <td className="border border-gray-300 px-4 py-2">GBP £150</td>
-                    <td className="border border-gray-300 px-4 py-2">GBP £180</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">Standard Authors (Physical Mode)</td>
                     <td className="border border-gray-300 px-4 py-2">GBP £300</td>
                     <td className="border border-gray-300 px-4 py-2">GBP £330</td>
                   </tr>
                   <tr className="bg-[#f9f5e9]/50">
+                    <td className="border border-gray-300 px-4 py-2">Research Student Author (Online Mode)</td>
+                    <td className="border border-gray-300 px-4 py-2">GBP £200</td>
+                    <td className="border border-gray-300 px-4 py-2">GBP £230</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">Standard Authors (Physical Mode)</td>
+                    <td className="border border-gray-300 px-4 py-2">GBP £350</td>
+                    <td className="border border-gray-300 px-4 py-2">GBP £380</td>
+                  </tr>
+                  <tr className="bg-[#f9f5e9]/50">
                     <td className="border border-gray-300 px-4 py-2">Standard Authors (Online Mode)</td>
-                    <td className="border border-gray-300 px-4 py-2">GBP £170</td>
                     <td className="border border-gray-300 px-4 py-2">GBP £220</td>
+                    <td className="border border-gray-300 px-4 py-2">GBP £270</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div className="mt-4 text-sm text-gray-600">
-              <p>*Standard Paper size – 8 pages. Over length of paper charges £30 per extra page.</p>
-              <p>**Research Student Author - Those authors who are currently pursuing PHD, Masters degree in a research organisation/University comes under this category.</p>
-              <p>If you have any concerns regarding the registration policy or fees please feel free to write us at <a href="mailto:aisgri2026@gold.ac.uk" className="text-blue-600 hover:underline">aisgri2026@gold.ac.uk</a>.</p>
+              <p className="text-justify">*Standard Paper size – 8 pages. Over length of paper charges £30 per extra page.</p>
+              <p className="text-justify">**Research Student Author - Those authors who are currently pursuing PHD, Masters degree in a research organisation/University comes under this category.</p>
+              <p className="text-justify">If you have any concerns regarding the registration policy or fees please feel free to write us at <a href="mailto:aisgri2026@gold.ac.uk" className="text-blue-600 hover:underline">aisgri2026@gold.ac.uk</a>.</p>
             </div>
           </section>
           
@@ -67,13 +68,13 @@ const Registration: React.FC = () => {
                 <tbody>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">Research Student Participants</td>
-                    <td className="border border-gray-300 px-4 py-2">GBP £150</td>
                     <td className="border border-gray-300 px-4 py-2">GBP £200</td>
+                    <td className="border border-gray-300 px-4 py-2">GBP £250</td>
                   </tr>
                   <tr className="bg-[#f9f5e9]/50">
                     <td className="border border-gray-300 px-4 py-2">Standard Participants</td>
-                    <td className="border border-gray-300 px-4 py-2">GBP £200</td>
                     <td className="border border-gray-300 px-4 py-2">GBP £250</td>
+                    <td className="border border-gray-300 px-4 py-2">GBP £300</td>
                   </tr>
                 </tbody>
               </table>
@@ -114,17 +115,17 @@ const Registration: React.FC = () => {
           <section className="mb-10">
             <h2 className="font-druk text-2xl text-[#001324] mb-4">REGISTRATION INCLUDES</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Access to Keynote talks</li>
-              <li>Access to paper presentation sessions</li>
-              <li>Networking sessions</li>
-              <li>Conference lunch and refreshment*</li>
-              <li>Tea and Coffee Breaks*</li>
-              <li>Conference kit*</li>
-              <li>Participation Certificate</li>
+              <li className="text-justify">Access to Keynote talks</li>
+              <li className="text-justify">Access to paper presentation sessions</li>
+              <li className="text-justify">Networking sessions</li>
+              <li className="text-justify">Conference lunch and refreshment*</li>
+              <li className="text-justify">Tea and Coffee Breaks*</li>
+              <li className="text-justify">Conference kit*</li>
+              <li className="text-justify">Participation Certificate</li>
             </ul>
             <div className="mt-4 text-sm text-gray-600">
               <p className="font-bold">Note:</p>
-              <p>The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation. If you have any query, please drop a mail to <a href="mailto:aisgri2026@gold.ac.uk" className="text-blue-600 hover:underline">aisgri2026@gold.ac.uk</a>. All participants and authors abide by the organization's guidelines.</p>
+              <p className="text-justify">The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation. If you have any query, please drop a mail to <a href="mailto:aisgri2026@gold.ac.uk" className="text-blue-600 hover:underline">aisgri2026@gold.ac.uk</a>. All participants and authors abide by the organization's guidelines.</p>
             </div>
           </section>
         </div>
