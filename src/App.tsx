@@ -16,6 +16,7 @@ import Registration from "./pages/Registration";
 import Publications from "./pages/Publications";
 import ConferenceVenue from "./pages/ConferenceVenue";
 import Downloads from "./pages/Downloads";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ConferenceBanner from "./components/ConferenceBanner";
 import Navbar from "./components/Navbar";
 import ImportantDatesModal from "./components/ImportantDatesModal";
@@ -44,6 +45,7 @@ const App: React.FC = () => (
               <Route path="/publications" element={<Publications />} />
               <Route path="/conference-venue" element={<ConferenceVenue />} />
               <Route path="/downloads" element={<Downloads />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -20,33 +20,46 @@ const ConferenceVenue = () => {
     {
       src: "/lovable-uploads/8764d794-b00e-419b-9303-2dc2f0e99e7e.png",
       alt: "Students walking on Goldsmiths campus"
-    },
-    {
-      src: "/lovable-uploads/6ddfa1ee-0531-49f3-9af5-0bf644712502.png",
-      alt: "Computing building at Goldsmiths University"
     }
+  ];
+
+  const visaExemptCountries = [
+    'Austria', 'Croatia', 'Denmark', 'France', 'Iceland', 'Lithuania', 'Netherlands', 'Portugal', 'Slovenia', 'Belgium',
+    'Estonia', 'Germany', 'Latvia', 'Luxembourg', 'Norway', 'Romania', 'Spain', 'Bulgaria', 'Czech Republic', 'Finland',
+    'Hungary', 'Liechtenstein', 'Malta', 'Poland', 'Slovakia', 'Sweden'
+  ];
+
+  const londonImages = [
+    { src: "/lovable-uploads/fc596d5c-e4c3-45a5-9917-f9a2fb0d0d4c.png", alt: "Big Ben and Houses of Parliament" },
+    { src: "/lovable-uploads/20199f8a-6131-4440-bc5e-b152fbfb3a50.png", alt: "Tower Bridge London" },
+    { src: "/lovable-uploads/a3112ac3-55f3-4862-87b9-f97060ce68c4.png", alt: "Tower Bridge at night" }
   ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <div className="container mx-auto px-4 py-8 flex-grow">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6 font-publico">Conference Venue</h1>
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold mb-8 text-center text-blue-600">VENUE</h1>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src={venueImages[2].src}
-                alt={venueImages[2].alt}
-                className="w-full h-64 object-cover"
-              />
+          {/* Main venue section */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-2 gap-4">
+              {venueImages.map((image, index) => (
+                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-32 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-center">
-              <h2 className="text-2xl font-semibold mb-4">School of Computing</h2>
+              <h2 className="text-3xl font-semibold mb-4 text-blue-600">GOLDSMITHS</h2>
               <div className="flex items-start gap-3 mb-3">
                 <Building className="mt-1 flex-shrink-0" size={20} />
-                <p>Goldsmiths, University of London</p>
+                <p>Goldsmiths is a major university in southeast London with a rich academic heritage.</p>
               </div>
               <div className="flex items-start gap-3 mb-3">
                 <MapPin className="mt-1 flex-shrink-0" size={20} />
@@ -64,28 +77,71 @@ const ConferenceVenue = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
-            {venueImages.filter((_, idx) => idx !== 2).map((image, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src={image.src} 
-                  alt={image.alt} 
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
+          {/* Location section */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-3xl font-semibold mb-4 text-blue-600">LOCATION</h2>
+              <p className="text-justify">
+                Goldsmiths, University of London, New Cross, London SE14 6NW, United Kingdom
+              </p>
+            </div>
+            <div className="bg-gray-200 p-6 rounded-lg shadow-md flex items-center justify-center">
+              <p className="text-gray-600">Google Maps Placeholder</p>
+            </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md mt-8">
-            <h2 className="text-2xl font-semibold mb-4">Additional Information</h2>
-            <p className="mb-4">
-              The conference will be held in the School of Computing building at Goldsmiths, University of London. 
-              This modern facility features state-of-the-art presentation spaces, collaborative areas, and technical support.
+          {/* Visa section */}
+          <div className="bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 className="text-3xl font-semibold mb-6 text-center text-blue-600">VISA</h2>
+            
+            <p className="mb-6 text-justify">
+              If you are a citizen of one of the below 27 countries, then you do not require a visa or any other documentation apart from a passport:
             </p>
-            <p>
-              Both physical and online participation options are available. Detailed information about 
-              transportation, accommodation options, and local attractions will be provided to registered attendees.
+
+            <div className="grid grid-cols-3 gap-4 mb-6">
+              {visaExemptCountries.map((country, index) => (
+                <div key={index} className="text-blue-600">
+                  • {country}
+                </div>
+              ))}
+            </div>
+
+            <p className="text-justify mb-4 text-sm text-gray-600">
+              There are 55 additional countries that do not require a visa, please visit Visitor Supporting Documents for more information. Attendees from countries that require a UK visa for entry are reminded that the process of obtaining a visa may take approximately 3 weeks time under normal circumstances. Please email{' '}
+              <a href="mailto:icccn.congress@gmail.com" className="text-blue-600 hover:underline">
+                icccn.congress@gmail.com
+              </a>{' '}
+              to request a visa invitation letter so that you can print and use in obtaining a visa. Obtaining a Visa Support Letter from AISGRI-2026 Conference will not guarantee that your U.K. visa application will be approved. The letter is merely supplementary information that explains a visa applicant's intended purpose of travel to United Kingdom
             </p>
+
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-3">For security purposes, the conference has policy for issuing official Visa Support Letters as follows:</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Visa Support Letters will be issued only after you have successfully registered and paid for your conference.</li>
+                <li>Visa Support Letters can only be issued for the person registered to attend the conference in form of participant, author, chair and speaker. Unfortunately we cannot issue visa Support Letters for guests of participants.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* London section */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h2 className="text-3xl font-semibold mb-6 text-center text-blue-600">LONDON</h2>
+            
+            <p className="mb-6 text-justify">
+              London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic 'Big Ben' clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {londonImages.map((image, index) => (
+                <div key={index} className="bg-black p-2 rounded-lg">
+                  <img 
+                    src={image.src} 
+                    alt={image.alt} 
+                    className="w-full h-48 object-cover rounded"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
