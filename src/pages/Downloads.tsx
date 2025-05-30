@@ -8,12 +8,12 @@ const Downloads = () => {
   const downloadItems = [
     {
       name: 'Checklist',
-      link: 'https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines',
+      link: 'https://res.cloudinary.com/da0yxppx2/image/upload/v1748602693/DASGRI%20adroid%20connectz/zfbh444d95upzrdjzym3.pdf',
       icon: <FileText className="mr-2" size={18} />
     },
     {
       name: 'Manuscript guidelines',
-      link: 'https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines',
+      link: 'https://res.cloudinary.com/da0yxppx2/image/upload/v1748602694/DASGRI%20adroid%20connectz/a53rrfp19k1xgj97rrxb.pdf',
       icon: <FileText className="mr-2" size={18} />
     },
     {

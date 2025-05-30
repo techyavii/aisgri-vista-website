@@ -20,10 +20,15 @@ const ConferenceBanner = () => {
       ></div>
 
       <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between">
-        <div className="mb-4 md:mb-0">
+        <div className="mb-4 md:mb-0 flex items-center space-x-4">
           <img 
             src="/lovable-uploads/05de4a41-6b64-4c4f-8847-7ee35c378b27.png" 
             alt="Goldsmiths University of London" 
+            className="h-16 w-auto mb-2"
+          />
+          <img 
+            src="/lovable-uploads/40599a3a-6585-408c-b0d0-0597fbfce84d.png" 
+            alt="DASGRI Logo" 
             className="h-16 w-auto mb-2"
           />
         </div>
