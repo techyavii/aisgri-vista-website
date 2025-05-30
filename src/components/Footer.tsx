@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           
           <div>
             <h3 className="text-xl font-druk mb-4 text-cream-can">Contact us</h3>
-            <p className="font-graphik mb-2">Email: aisgri.conference@gold.ac.uk</p>
+            <p className="font-graphik mb-2">Email: dasgri.conference@gmail.com</p>
             <p className="font-graphik mb-2">Phone: +44 (0)20 7078 5300</p>
             <p className="font-graphik">Address: New Cross, London, SE14 6NW</p>
           </div>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-cream-can pt-8 text-center">
           <p className="font-graphik text-sm">
-            &copy; {new Date().getFullYear()} AISGRI 2026. All rights reserved.
+            &copy; {new Date().getFullYear()} DASGRI 2026. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Footer from '@/components/Footer';
 
@@ -17,7 +16,7 @@ const Committee = () => {
 
   const conferenceChairs = [
     { name: "Akshi Kumar", affiliation: "Goldsmiths, University of London, UK" },
-    { name: "Jamie Ward", affiliation: "Head of School, School of Computing, Goldsmiths, University of London, UK" },
+    { name: "Jamie Ward", affiliation: "Head, Goldsmiths, University of London, UK" },
     { name: "MPS Bhatia", affiliation: "Dean, ICT, Netaji Subhas University of Technology, India" }
   ];
 

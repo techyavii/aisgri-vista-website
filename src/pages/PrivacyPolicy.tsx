@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Footer from '@/components/Footer';
 
@@ -18,7 +17,7 @@ const PrivacyPolicy = () => {
 
             <h3 className="text-xl font-semibold mb-3">1. Personal Information that we process</h3>
             <p className="mb-4 text-justify">
-              For the purposes of this privacy statement, 'Personal Information' is any data which relates to an individual who may be identified from that data, or from a combination of a set of data, and other information which is in possession of AISGRI-2026. In general, you may browse our website without providing any Personal Information about yourself. However, we collect certain information such as:
+              For the purposes of this privacy statement, 'Personal Information' is any data which relates to an individual who may be identified from that data, or from a combination of a set of data, and other information which is in possession of DASGRI-2026. In general, you may browse our website without providing any Personal Information about yourself. However, we collect certain information such as:
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2">
               <li>Information that you provide via our website, including information you provide when you register on our website e.g. name, email address, designation, company, country and telephone number</li>
@@ -54,18 +53,13 @@ const PrivacyPolicy = () => {
               <li>to provide access to desirable content based on your preferences.</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-4 text-goldsmiths-blue">II. Consequences of not providing Personal Information</h2>
-            <p className="mb-6 text-justify">
-              If you choose not to provide your Personal Information that is mandatory to process your request, we may not be able to provide the corresponding service.
-            </p>
-
             <h2 className="text-2xl font-semibold mb-4 text-goldsmiths-blue">III. Data recipients, transfer, and disclosure of Personal Information:</h2>
             <p className="mb-4 text-justify">
-              AISGRI-2026 does not share your Personal Information with third parties for marketing purposes without seeking your prior permission.
+              DASGRI-2026 does not share your Personal Information with third parties for marketing purposes without seeking your prior permission.
             </p>
             <p className="mb-2">We share your Personal Information within</p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>AISGRI-2026 or with any of its subsidiaries;</li>
+              <li>DASGRI-2026 or with any of its subsidiaries;</li>
               <li>Business partners;</li>
               <li>Service vendors;</li>
               <li>Authorized third-party agents; or</li>
@@ -82,7 +76,7 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-2xl font-semibold mb-4 text-goldsmiths-blue">VI. Data security</h2>
             <p className="mb-6 text-justify">
-              AISGRI-2026 adopts reasonable and appropriate security practices and procedures including administrative, physical security, and technical controls in order to safeguard your Personal Information.
+              DASGRI-2026 adopts reasonable and appropriate security practices and procedures including administrative, physical security, and technical controls in order to safeguard your Personal Information.
             </p>
 
             <h2 className="text-2xl font-semibold mb-4 text-goldsmiths-blue">VII. Data retention</h2>
@@ -95,12 +89,12 @@ const PrivacyPolicy = () => {
               Our privacy practices regarding Personal Information that we collect and store about you through our portals will be as per the privacy policy of those portals.
             </p>
             <p className="mb-6 text-justify">
-              AISGRI-2026 provides links to third-party websites and services. However, AISGRI-2026 is not responsible for the privacy statements, practices, or the contents of such third-party websites.
+              DASGRI-2026 provides links to third-party websites and services. However, DASGRI-2026 is not responsible for the privacy statements, practices, or the contents of such third-party websites.
             </p>
 
             <h2 className="text-2xl font-semibold mb-4 text-goldsmiths-blue">IX. Updates to this privacy statement</h2>
             <p className="mb-6 text-justify">
-              AISGRI-2026 may change the data privacy practices and update this privacy statement as and when the need arises, and the same will be made available on the website. But our commitment to protect the privacy of website users will continue to remain.
+              DASGRI-2026 may change the data privacy practices and update this privacy statement as and when the need arises, and the same will be made available on the website. But our commitment to protect the privacy of website users will continue to remain.
             </p>
           </div>
         </div>

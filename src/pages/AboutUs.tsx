@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Footer from '@/components/Footer';
 import { Book, Computer } from 'lucide-react';
@@ -50,21 +51,21 @@ const AboutUs: React.FC = () => {
         </div>
       </section>
       
-      {/* About the School of Computing */}
+      {/* About the Computing Department */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="md:w-3/4 order-2 md:order-1">
               <h2 className="font-druk text-2xl md:text-3xl text-goldsmiths-text mb-6 border-b-4 border-goldsmiths-blue pb-2 inline-block">
-                About the School of Computing
+                About Computing at Goldsmiths
               </h2>
               
               <div className="bg-goldsmiths-beige shadow-lg border border-gray-200 rounded-lg p-6">
                 <p className="font-publico text-lg text-goldsmiths-text mb-4 leading-relaxed">
-                  The School of Computing at Goldsmiths is a dynamic and innovative hub of research and education at the intersection of technology, creativity, and social impact. The school is renowned for its cross-disciplinary ethos, offering innovative programmes that merge computing with creative and human-centred domains, particularly in data science & artificial intelligence, computational arts, music technology, user experience design, computational linguistics, and interactive games, preparing students to shape the future of digital culture and socially responsible technology.
+                  Computing at Goldsmiths is a dynamic and innovative hub of research and education at the intersection of technology, creativity, and social impact. The department is renowned for its cross-disciplinary ethos, offering innovative programmes that merge computing with creative and human-centred domains, particularly in data science & artificial intelligence, computational arts, music technology, user experience design, computational linguistics, and interactive games, preparing students to shape the future of digital culture and socially responsible technology.
                 </p>
                 <p className="font-publico text-lg text-goldsmiths-text leading-relaxed">
-                  It fosters a collaborative research environment with strong links to industry, public sector, and community partners. The school is also home to pioneering work in areas such as explainable AI, creative computing, and ethical technology design.
+                  It fosters a collaborative research environment with strong links to industry, public sector, and community partners. The department is also home to pioneering work in areas such as explainable AI, creative computing, and ethical technology design.
                 </p>
               </div>
             </div>

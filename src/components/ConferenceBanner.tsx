@@ -29,11 +29,11 @@ const ConferenceBanner = () => {
         </div>
 
         <div className="text-center md:text-right text-white">
-          <h1 className="text-2xl md:text-3xl font-bold font-druk tracking-tight mb-1">AISGRI 2026</h1>
-          <h2 className="text-lg md:text-xl font-medium mb-1">International Conference on AI for Social Good and Responsible Innovation</h2>
+          <h1 className="text-2xl md:text-3xl font-bold font-druk tracking-tight mb-1">DASGRI 2026</h1>
+          <h2 className="text-lg md:text-xl font-medium mb-1">International Conference on Data Science and AI for Social Good and Responsible Innovation</h2>
           <div className="flex items-center justify-center md:justify-end text-sm md:text-base">
             <Calendar className="mr-2" size={16} />
-            <p>10th – 11th April 2026 | School of Computing, Goldsmiths, University of London, UK</p>
+            <p>10th – 11th April 2026 | Goldsmiths, University of London, UK</p>
           </div>
         </div>
       </div>

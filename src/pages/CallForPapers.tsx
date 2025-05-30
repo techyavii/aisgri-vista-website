@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Footer from '@/components/Footer';
 
@@ -9,15 +10,15 @@ const CallForPapers: React.FC = () => {
           <h1 className="font-druk text-3xl md:text-4xl text-[#001324] mb-6">Call for Papers</h1>
           
           <div className="mb-8">
-            <h2 className="font-druk text-2xl text-[#001324] mb-3">AISGRI 2026 – International Conference on AI for Social Good and Responsible Innovation</h2>
+            <h2 className="font-druk text-2xl text-[#001324] mb-3">DASGRI 2026 – International Conference on Data Science and AI for Social Good and Responsible Innovation</h2>
             <p className="font-graphik mb-1">9–10 April 2026 (Hybrid Mode)</p>
-            <p className="font-graphik mb-1">School of Computing, Goldsmiths, University of London, UK</p>
+            <p className="font-graphik mb-1">Goldsmiths, University of London, UK</p>
             <p className="font-graphik mb-4">Publisher: Springer | Indexed in Scopus</p>
           </div>
           
           <div className="mb-8">
             <p className="font-graphik text-lg mb-4">
-              The aim of AISGRI 2026 is to provide a global platform for researchers, engineers, academicians, technologists, and professionals from academia, industry, and government to present their latest research findings, development activities, and practical experiences across a wide spectrum of Artificial Intelligence for Social Good and Responsible Innovation. The conference serves as a catalyst for cross-disciplinary collaboration, aiming to advance high-impact research and real-world applications of AI that address urgent societal challenges with ethical foresight, inclusivity, and global relevance.
+              The aim of DASGRI 2026 is to provide a global platform for researchers, engineers, academicians, technologists, and professionals from academia, industry, and government to present their latest research findings, development activities, and practical experiences across a wide spectrum of Data Science and Artificial Intelligence for Social Good and Responsible Innovation. The conference serves as a catalyst for cross-disciplinary collaboration, aiming to advance high-impact research and real-world applications of Data Science and AI that address urgent societal challenges with ethical foresight, inclusivity, and global relevance.
             </p>
             <p className="font-graphik text-lg">
               The conference comprises multiple tracks covering a broad range of topics, detailed below:

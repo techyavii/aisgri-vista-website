@@ -14,10 +14,10 @@ const Hero: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-14 text-center text-white">
         <h1 className="font-druk text-3xl md:text-5xl lg:text-6xl mb-4 leading-tight text-center">
-          International Conference on<br />AI for Social Good and Responsible Innovation
+          International Conference on<br />Data Science and AI for Social Good and Responsible Innovation
         </h1>
         <h2 className="font-graphik text-xl md:text-2xl lg:text-3xl mb-6 text-goldsmiths-yellow text-center">
-          (AISGRI 2026)
+          (DASGRI 2026)
         </h2>
         <p className="font-graphik text-lg md:text-xl mb-8 text-center">
           10-11th April 2026

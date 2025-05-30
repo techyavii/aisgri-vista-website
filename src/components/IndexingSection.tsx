@@ -8,7 +8,7 @@ const IndexingSection: React.FC = () => {
         {/* Conference Mode Banner */}
         <div className="text-center mb-8">
           <h2 className="text-red-600 font-bold text-xl md:text-2xl mb-2">
-            AISGRI 2026 will be organised in Physical Mode
+            DASGRI 2026 will be organised in Physical Mode
           </h2>
           <p className="text-red-600 font-semibold text-lg">
             [ 10th April 2026 - Physical Mode || 11th April 2026 - Physical Mode ]
