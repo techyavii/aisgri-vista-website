@@ -5,6 +5,7 @@ import Objectives from '@/components/Objectives';
 import ImportantDatesSection from '@/components/ImportantDatesSection';
 import Footer from '@/components/Footer';
 import ImageCarousel from '@/components/ImageCarousel';
+import IndexingSection from '@/components/IndexingSection';
 
 const Index: React.FC = () => {
   const carouselImages = [
@@ -24,6 +25,7 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <ImageCarousel images={carouselImages} />
+      <IndexingSection />
       <About />
       <Objectives />
       <ImportantDatesSection />
