@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -76,7 +75,7 @@ const Navbar: React.FC = () => {
       style={{ backgroundColor: '#fff' }}
     >
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
-        <Link to="/" className="text-xl font-bold font-druk text-black">AISGRI 2026</Link>
+        <Link to="/" className="text-xl font-bold font-druk text-black">DASGRI 2026</Link>
         
         <div className="hidden lg:flex space-x-2">
           {navLinks.map((link) => (
