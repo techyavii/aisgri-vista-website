@@ -5,6 +5,21 @@ const IndexingSection: React.FC = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
+        {/* Marquee Text */}
+        <div className="bg-blue-600 text-white py-2 mb-8 overflow-hidden">
+          <div className="animate-marquee whitespace-nowrap">
+            <span className="text-lg font-bold mx-8">
+              ALL ACCEPTED PAPERS WILL BE PUBLISHED IN SCOPUS PROCEEDING, SCI JOURNALS AND SCOPUS JOURNALS.
+            </span>
+            <span className="text-lg font-bold mx-8">
+              ALL ACCEPTED PAPERS WILL BE PUBLISHED IN SCOPUS PROCEEDING, SCI JOURNALS AND SCOPUS JOURNALS.
+            </span>
+            <span className="text-lg font-bold mx-8">
+              ALL ACCEPTED PAPERS WILL BE PUBLISHED IN SCOPUS PROCEEDING, SCI JOURNALS AND SCOPUS JOURNALS.
+            </span>
+          </div>
+        </div>
+
         {/* Conference Mode Banner */}
         <div className="text-center mb-8">
           <h2 className="text-blue-600 font-bold text-xl md:text-2xl mb-2">

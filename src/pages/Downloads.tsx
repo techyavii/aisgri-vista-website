@@ -56,7 +56,7 @@ const Downloads = () => {
                         className="flex items-center"
                         asChild
                       >
-                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                        <a href={item.link} download rel="noopener noreferrer">
                           <Download className="mr-1" size={16} />
                           Download
                         </a>
