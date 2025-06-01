@@ -24,13 +24,15 @@ const AboutUs: React.FC = () => {
       <section className="py-16 bg-goldsmiths-beige">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="md:w-1/4 flex justify-center md:justify-start mb-6 md:mb-0">
-              <div className="p-4 bg-white rounded-lg shadow-md border border-gray-200 inline-block">
-                <Book className="h-16 w-16 text-goldsmiths-blue" />
-              </div>
+            <div className="md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
+              <img 
+                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                alt="University Building" 
+                className="w-full h-64 object-cover rounded-lg shadow-lg border border-gray-200"
+              />
             </div>
             
-            <div className="md:w-3/4">
+            <div className="md:w-2/3">
               <h2 className="font-druk text-2xl md:text-3xl text-goldsmiths-text mb-6 border-b-4 border-goldsmiths-blue pb-2 inline-block">
                 About the University
               </h2>
@@ -55,9 +57,9 @@ const AboutUs: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-start gap-6">
-            <div className="md:w-3/4 order-2 md:order-1">
+            <div className="md:w-2/3 order-2 md:order-1">
               <h2 className="font-druk text-2xl md:text-3xl text-goldsmiths-text mb-6 border-b-4 border-goldsmiths-blue pb-2 inline-block">
-                About Computing at Goldsmiths
+                About School of Computing at Goldsmiths
               </h2>
               
               <div className="bg-goldsmiths-beige shadow-lg border border-gray-200 rounded-lg p-6">
@@ -70,10 +72,12 @@ const AboutUs: React.FC = () => {
               </div>
             </div>
             
-            <div className="md:w-1/4 flex justify-center md:justify-end mb-6 md:mb-0 order-1 md:order-2">
-              <div className="p-4 bg-white rounded-lg shadow-md border border-gray-200 inline-block">
-                <Computer className="h-16 w-16 text-goldsmiths-blue" />
-              </div>
+            <div className="md:w-1/3 flex justify-center md:justify-end mb-6 md:mb-0 order-1 md:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                alt="Computing Department" 
+                className="w-full h-64 object-cover rounded-lg shadow-lg border border-gray-200"
+              />
             </div>
           </div>
         </div>

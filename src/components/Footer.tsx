@@ -1,40 +1,49 @@
 
 import React from 'react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-lunar-green text-desert-storm pt-16 pb-8">
+    <footer className="bg-goldsmiths-text text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Conference Info */}
           <div>
-            <h3 className="text-xl font-druk mb-4 text-cream-can">Conference Information</h3>
-            <p className="font-graphik mb-2">10-11th April 2026</p>
-            <p className="font-graphik mb-2">Goldsmiths, University of London</p>
-            <p className="font-graphik">United Kingdom</p>
+            <h3 className="font-druk text-xl mb-4">DASGRI 2026</h3>
+            <p className="font-publico mb-2">International Conference on Data Science and AI for Social Good and Responsible Innovation</p>
+            <p className="font-publico text-sm">10th – 11th April 2026</p>
+            <p className="font-publico text-sm">Goldsmiths, University of London, UK</p>
           </div>
           
+          {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-druk mb-4 text-cream-can">Links</h3>
-            <ul className="space-y-2 font-graphik">
-              <li><a href="#home" className="hover:text-cream-can transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-cream-can transition-colors">About</a></li>
-              <li><a href="#important-dates" className="hover:text-cream-can transition-colors">Important Dates</a></li>
-              <li><a href="#objectives" className="hover:text-cream-can transition-colors">Objectives</a></li>
+            <h3 className="font-druk text-xl mb-4">Contact</h3>
+            <div className="space-y-2">
+              <div className="flex items-center">
+                <Mail className="mr-2" size={16} />
+                <span className="font-publico text-sm">dasgri.congress@gmail.com</span>
+              </div>
+              <div className="flex items-center">
+                <MapPin className="mr-2" size={16} />
+                <span className="font-publico text-sm">New Cross, London SE14 6NW, UK</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-druk text-xl mb-4">Quick Links</h3>
+            <ul className="space-y-2 font-publico text-sm">
+              <li><a href="/call-for-papers" className="hover:text-goldsmiths-yellow transition-colors">Call for Papers</a></li>
+              <li><a href="/committee" className="hover:text-goldsmiths-yellow transition-colors">Committee</a></li>
+              <li><a href="/registration" className="hover:text-goldsmiths-yellow transition-colors">Registration</a></li>
+              <li><a href="/conference-venue" className="hover:text-goldsmiths-yellow transition-colors">Venue</a></li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-druk mb-4 text-cream-can">Contact us</h3>
-            <p className="font-graphik mb-2">Email: dasgri.conference@gmail.com</p>
-            <p className="font-graphik mb-2">Phone: +44 (0)20 7078 5300</p>
-            <p className="font-graphik">Address: New Cross, London, SE14 6NW</p>
           </div>
         </div>
         
-        <div className="border-t border-cream-can pt-8 text-center">
-          <p className="font-graphik text-sm">
-            &copy; {new Date().getFullYear()} DASGRI 2026. All rights reserved.
-          </p>
+        <div className="border-t border-gray-600 mt-8 pt-8 text-center">
+          <p className="font-publico text-sm">&copy; 2026 DASGRI. All rights reserved.</p>
         </div>
       </div>
     </footer>

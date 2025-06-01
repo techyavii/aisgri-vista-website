@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Footer from '@/components/Footer';
 
@@ -8,13 +7,6 @@ const CallForPapers: React.FC = () => {
       <div className="container mx-auto px-4 py-12 flex-grow">
         <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
           <h1 className="font-druk text-3xl md:text-4xl text-[#001324] mb-6">Call for Papers</h1>
-          
-          <div className="mb-8">
-            <h2 className="font-druk text-2xl text-[#001324] mb-3">DASGRI 2026 – International Conference on Data Science and AI for Social Good and Responsible Innovation</h2>
-            <p className="font-graphik mb-1">9–10 April 2026 (Hybrid Mode)</p>
-            <p className="font-graphik mb-1">Goldsmiths, University of London, UK</p>
-            <p className="font-graphik mb-4">Publisher: Springer | Indexed in Scopus</p>
-          </div>
           
           <div className="mb-8">
             <p className="font-graphik text-lg mb-4">

@@ -3,15 +3,15 @@ import React from 'react';
 
 const IndexingSection: React.FC = () => {
   return (
-    <section className="py-12 bg-goldsmiths-yellow">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         {/* Conference Mode Banner */}
         <div className="text-center mb-8">
-          <h2 className="text-red-600 font-bold text-xl md:text-2xl mb-2">
-            DASGRI 2026 will be organised in Physical Mode
+          <h2 className="text-blue-600 font-bold text-xl md:text-2xl mb-2">
+            DASGRI 2026 will be organised in Hybrid Mode
           </h2>
-          <p className="text-red-600 font-semibold text-lg">
-            [ 10th April 2026 - Physical Mode || 11th April 2026 - Physical Mode ]
+          <p className="text-blue-600 font-semibold text-lg">
+            [ 10th April 2026 - Physical Mode || 11th April 2026 - Digital Mode ]
           </p>
         </div>
 
