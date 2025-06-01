@@ -32,7 +32,7 @@ const CheckoutForm : React.FC = () => {
         throw new Error('Price should be greater than 0')
       }
       const res = await axios.post(
-        "http://localhost:3001/create-checkout-session",
+        "https://aisgri-vista-website-nine.vercel.app/create-checkout-session",
         { participantType, price, country }
       );
       // console.log(res);
