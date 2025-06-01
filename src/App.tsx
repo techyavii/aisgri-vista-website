@@ -20,6 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ConferenceBanner from "./components/ConferenceBanner";
 import Navbar from "./components/Navbar";
 import ImportantDatesModal from "./components/ImportantDatesModal";
+import CheckoutForm from './pages/Checkout';
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App: React.FC = () => (
               <Route path="/quality-policies" element={<QualityPolicies />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/registration" element={<Registration />} />
+              <Route path="/checkout" element={<CheckoutForm />} />
               <Route path="/publications" element={<Publications />} />
               <Route path="/conference-venue" element={<ConferenceVenue />} />
               <Route path="/downloads" element={<Downloads />} />
