@@ -26,8 +26,8 @@ const AboutUs: React.FC = () => {
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
               <img 
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
-                alt="University Building" 
+                src="/lovable-uploads/fc596d5c-e4c3-45a5-9917-f9a2fb0d0d4c.png" 
+                alt="Goldsmiths University Main Building" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg border border-gray-200"
               />
             </div>
@@ -74,8 +74,8 @@ const AboutUs: React.FC = () => {
             
             <div className="md:w-1/3 flex justify-center md:justify-end mb-6 md:mb-0 order-1 md:order-2">
               <img 
-                src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
-                alt="Computing Department" 
+                src="/lovable-uploads/fe9f3022-dca0-44b3-b211-d61102ffc425.png" 
+                alt="Department of Computing at Goldsmiths" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg border border-gray-200"
               />
             </div>

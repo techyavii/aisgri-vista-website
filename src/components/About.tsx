@@ -5,9 +5,11 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-16 bg-goldsmiths-beige">
       <div className="container mx-auto px-4">
-        <h2 className="font-druk text-3xl md:text-4xl text-goldsmiths-text text-center mb-8 border-b-4 border-goldsmiths-blue pb-2 inline-block mx-auto">
-          About Conference
-        </h2>
+        <div className="text-center mb-8">
+          <h2 className="font-druk text-3xl md:text-4xl text-goldsmiths-text border-b-4 border-goldsmiths-blue pb-2 inline-block">
+            About Conference
+          </h2>
+        </div>
         
         <div className="max-w-4xl mx-auto bg-white shadow-lg border border-gray-200 rounded-lg p-6">
           <p className="font-publico text-lg text-goldsmiths-text mb-6 leading-relaxed text-justify">

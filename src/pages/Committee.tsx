@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Footer from '@/components/Footer';
 
@@ -168,32 +169,29 @@ const Committee = () => {
             Committee
           </h1>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <CommitteeSection title="General Chair(s)" members={generalChairs} />
-              <CommitteeSection title="Honorary Chair(s)" members={honoraryChairs} />
-              <CommitteeSection title="Conference Chair(s)" members={conferenceChairs} />
-              <CommitteeSection title="Technical Program Chair(s)" members={technicalProgramChairs} />
-            </div>
+          {/* Hierarchical Committee Structure */}
+          <div className="space-y-8">
+            <CommitteeSection title="General Chair(s)" members={generalChairs} />
+            <CommitteeSection title="Honorary Chair(s)" members={honoraryChairs} />
+            <CommitteeSection title="Conference Chair(s)" members={conferenceChairs} />
+            <CommitteeSection title="Technical Program Chair(s)" members={technicalProgramChairs} />
+            <CommitteeSection title="Convener(s)" members={conveners} />
+            <CommitteeSection title="Publicity Chair(s)" members={publicityChairs} />
+            <CommitteeSection title="Organising Chair(s)" members={organisingChairs} />
             
-            <div>
-              <CommitteeSection title="Convener(s)" members={conveners} />
-              <CommitteeSection title="Publicity Chair(s)" members={publicityChairs} />
-              <CommitteeSection title="Organising Chair(s)" members={organisingChairs} />
-            </div>
-          </div>
-          
-          <div className="mt-8">
-            <h3 className="font-druk text-xl md:text-2xl text-goldsmiths-text mb-4 border-b-2 border-goldsmiths-blue pb-2">
-              Advisory Committee and Technical Program Committee
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {advisoryCommittee.map((member, index) => (
-                <div key={index} className="bg-goldsmiths-beige p-3 rounded">
-                  <p className="font-graphik font-bold text-goldsmiths-text text-sm">{member.name}</p>
-                  <p className="font-publico text-xs text-goldsmiths-text">{member.affiliation}</p>
-                </div>
-              ))}
+            {/* Advisory Committee */}
+            <div className="mt-8">
+              <h3 className="font-druk text-xl md:text-2xl text-goldsmiths-text mb-4 border-b-2 border-goldsmiths-blue pb-2">
+                Advisory Committee and Technical Program Committee
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {advisoryCommittee.map((member, index) => (
+                  <div key={index} className="bg-goldsmiths-beige p-3 rounded">
+                    <p className="font-graphik font-bold text-goldsmiths-text text-sm">{member.name}</p>
+                    <p className="font-publico text-xs text-goldsmiths-text">{member.affiliation}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
