@@ -22,9 +22,11 @@ const ImportantDatesSection: React.FC = () => {
   return (
     <section id="important-dates" className="py-16 bg-goldsmiths-beige">
       <div className="container mx-auto px-4">
-        <h2 className="font-druk text-3xl md:text-4xl text-goldsmiths-text text-center mb-8 border-b-4 border-goldsmiths-blue pb-2 inline-block mx-auto">
-          Important Dates
-        </h2>
+        <div className="text-center mb-8">
+          <h2 className="font-druk text-3xl md:text-4xl text-goldsmiths-text border-b-4 border-goldsmiths-blue pb-2 inline-block">
+            Important Dates
+          </h2>
+        </div>
         
         <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg border border-gray-200 overflow-hidden">
           <Table>

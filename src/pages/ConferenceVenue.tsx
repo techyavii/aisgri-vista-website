@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Footer from '@/components/Footer';
 import { Map, MapPin, Building } from 'lucide-react';
@@ -85,8 +84,17 @@ const ConferenceVenue = () => {
                 Goldsmiths, University of London, New Cross, London SE14 6NW, United Kingdom
               </p>
             </div>
-            <div className="bg-gray-200 p-6 rounded-lg shadow-md flex items-center justify-center">
-              <p className="text-gray-600">Google Maps Placeholder</p>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.1216938320936!2d-0.03799192303689515!3d51.47428051312189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602f81f1bd2cf%3A0xeb2cff5d2300d7f8!2sGoldsmiths%2C%20University%20of%20London!5e0!3m2!1sen!2sin!4v1748764593177!5m2!1sen!2sin" 
+                width="100%" 
+                height="300" 
+                style={{border: 0}} 
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              />
             </div>
           </div>
 
@@ -108,10 +116,10 @@ const ConferenceVenue = () => {
 
             <p className="text-justify mb-4 text-sm text-gray-600">
               There are 55 additional countries that do not require a visa, please visit Visitor Supporting Documents for more information. Attendees from countries that require a UK visa for entry are reminded that the process of obtaining a visa may take approximately 3 weeks time under normal circumstances. Please email{' '}
-              <a href="mailto:dasgri.conference@gmail.com" className="text-blue-600 hover:underline">
-                dasgri.conference@gmail.com
+              <a href="mailto:dasgri.congress@gmail.com" className="text-blue-600 hover:underline">
+                dasgri.congress@gmail.com
               </a>{' '}
-              to request a visa invitation letter so that you can print and use in obtaining a visa. Obtaining a Visa Support Letter from DASGRI-2026 Conference will not guarantee that your U.K. visa application will be approved. The letter is merely supplementary information that explains a visa applicant's intended purpose of travel to United Kingdom
+              to request a visa invitation letter so that you can print and use in obtaining a visa. Obtaining a Visa Support Letter from AISGRI-2026 Conference will not guarantee that your U.K. visa application will be approved. The letter is merely supplementary information that explains a visa applicant's intended purpose of travel to United Kingdom
             </p>
 
             <div className="mb-6">

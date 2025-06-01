@@ -34,7 +34,7 @@ const ConferenceBanner = () => {
         </div>
 
         <div className="text-center md:text-right text-white">
-          <h1 className="text-2xl md:text-3xl font-bold font-druk tracking-tight mb-1">International Conference on AI for Social Good and Responsible Innovation</h1>
+          <h1 className="text-2xl md:text-3xl font-medium font-druk tracking-tight mb-1">International Conference on AI for Social Good and Responsible Innovation</h1>
           <h2 className="text-lg md:text-xl font-medium mb-1">(AISGRI-2026)</h2>
           <p className="text-base md:text-lg font-medium mb-1">ORGANISED BY : School of Computing, Goldsmiths, University of London, UK</p>
           <div className="flex items-center justify-center md:justify-end text-sm md:text-base">
