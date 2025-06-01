@@ -99,14 +99,14 @@ const Registration: React.FC = () => {
                   <CreditCard className="h-10 w-10 mb-4 text-[#001324]" />
                   <h3 className="font-bold text-lg mb-2">Registration via Razorpay</h3>
                   <p className="text-sm text-center text-gray-500 mb-2">(only for SAARC Nations)</p>
-                  <Button className="mt-2 bg-[#001324] hover:bg-[#333333]">Pay with Razorpay</Button>
+                  <a href='https://rzp.io/rzp/UTwHWlmV'><Button className="mt-2 bg-[#001324] hover:bg-[#333333]">Pay with Razorpay</Button></a>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="flex flex-col items-center justify-center p-6">
                   <CreditCard className="h-10 w-10 mb-4 text-[#001324]" />
                   <h3 className="font-bold text-lg mb-2">Registration via PayPal</h3>
-                  <Button className="mt-2 bg-[#001324] hover:bg-[#333333]">Pay with PayPal</Button>
+                  <a href='https://paypal.me/adroidconference?country.x=IN&locale.x=en_GB'><Button className="mt-2 bg-[#001324] hover:bg-[#333333]">Pay with PayPal</Button></a>
                 </CardContent>
               </Card>
             </div>
