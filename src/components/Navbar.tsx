@@ -175,6 +175,7 @@ const Navbar: React.FC = () => {
                     href={link.href} 
                     className="font-graphik font-medium hover:bg-[#333333] hover:text-white transition-colors flex items-center py-2 px-2 rounded"
                     onClick={(e) => {
+
                       if (link.hasDropdown) {
                         e.preventDefault();
                         toggleDropdown(link.name);
@@ -201,6 +202,7 @@ const Navbar: React.FC = () => {
                         to={item.href}
                         className="block py-1 px-2 text-sm hover:bg-[#333333] hover:text-white rounded"
                         onClick={() => {
+                          console.log("clicked dropdown")
                           setMobileMenuOpen(false);
                           setActiveDropdown(null);
                         }}
