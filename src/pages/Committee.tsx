@@ -17,8 +17,8 @@ const Committee = () => {
 
   const conferenceChairs = [
     { name: "Akshi Kumar", affiliation: "Goldsmiths, University of London, UK" },
-    { name: "Jamie Ward", affiliation: "Head, Goldsmiths, University of London, UK" },
-    { name: "MPS Bhatia", affiliation: "Dean, ICT, Netaji Subhas University of Technology, India" }
+    { name: "Jamie Ward", affiliation: "Goldsmiths, University of London, UK" },
+    { name: "MPS Bhatia", affiliation: "Netaji Subhas University of Technology, India" }
   ];
 
   const technicalProgramChairs = [
