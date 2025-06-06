@@ -26,7 +26,11 @@ const PaperSubmission: React.FC = () => {
               Only papers presenting original content with novel research results or successful innovative applications will be considered for publication in the conference proceedings.
             </li>
           </ol>
-          
+          <br/><br/>
+          <p className="font-publico">
+            <b>Note: </b>The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+            This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+          </p>
           <h2 className="font-druk text-2xl text-[#001324] mt-10 mb-4">Plagiarism Policy</h2>
           <ol className="list-decimal pl-6 space-y-4">
             <li className="font-graphik">
