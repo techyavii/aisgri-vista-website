@@ -18,14 +18,33 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="icon" type="image/svg+xml" href="/Logo.png" />
+    <style>
+      #cmt-acknowledgment {
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */
+        font-family: Georgia, serif;
+        color: #ffffff; /* light gray */
+        max-width: 1400px;
+        margin: 0 auto 0 auto;
+        padding: 0 1rem 2rem;
+        text-align: center;
+      }
+      #acknowledgement-container{
+        --tw-bg-opacity: 1;
+        background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1)) /* #222222 */;
+      }
+    </style>
   </head>
+
 
   <body>
     <div id="root"></div>
-    <div id="cmt-acknowledgment" >
-      The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+    <div id="acknowledgement-container">
+      <p id="cmt-acknowledgment" >
+        The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+      </p>
     </div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    </div>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
