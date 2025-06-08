@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 const Committee = () => {
   const generalChairs = [
     { name: "Larisa Soldatova", affiliation: "Goldsmiths, University of London, UK" },
-    { name: "Yang Xiao", affiliation: "The University of Alabama, USA" }
+    { name: "Yang Xiao", affiliation: "The University of Alabama, USA" },
+    { name: "George A. Tsihrintzis", affiliation: "University of Piraeus, Greece" },
   ];
 
   const honoraryChairs = [

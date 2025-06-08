@@ -194,22 +194,25 @@ const Navbar: React.FC = () => {
                   </a>
                 )}
                 
-                {link.hasDropdown && activeDropdown === link.name && link.dropdownItems && (
+                {link.hasDropdown && link.dropdownItems && (
                   <div className="pl-4 mt-1 border-l-2 border-gray-200 space-y-2">
-                    {link.dropdownItems.map((item) => (
+                    {link.dropdownItems.map((item) => {
+                      console.log(item)
+                      return(
                       <Link
                         key={item.name}
                         to={item.href}
                         className="block py-1 px-2 text-sm hover:bg-[#333333] hover:text-white rounded"
                         onClick={() => {
-                          console.log("clicked dropdown")
-                          setMobileMenuOpen(false);
-                          setActiveDropdown(null);
-                        }}
+                          console.log("ERror")
+                          setTimeout(() => {
+                            setMobileMenuOpen(false);
+                            setActiveDropdown(null);
+                          }, 100)}}
                       >
                         {item.name}
                       </Link>
-                    ))}
+                      )})}
                   </div>
                 )}
               </div>
