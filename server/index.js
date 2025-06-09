@@ -53,7 +53,7 @@ app.post("/create-checkout-session", async (req, res) => {
 
     if (req.body.country === "India") {
       currencyCode = "inr";
-      fees *= 105; 
+      fees *= 110; 
     }
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
