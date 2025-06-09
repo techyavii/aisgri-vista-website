@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
   return (
@@ -21,6 +23,9 @@ const About: React.FC = () => {
           <p className="font-publico text-lg text-goldsmiths-text leading-relaxed text-justify">
             <strong>All the accepted papers of DASGRI-2026 will be published as a proceedings of DASGRI -2026 in Springer LNNS series (Proposed) indexed by Scopus, Ei, WoS, and other reputed databases. Some papers will be invited to be submitted in Scopus and SCIE indexed Journals.</strong>
           </p>
+          <Link to={"https://cmt3.research.microsoft.com/DASGRI2026"}>
+          <Button className='mt-4'>Paper Submission Link</Button>
+          </Link>
         </div>
       </div>
     </section>

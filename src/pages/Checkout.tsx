@@ -28,7 +28,7 @@ const CheckoutForm : React.FC = () => {
       const ipResp=await axios.get("https://extreme-ip-lookup.com/json/?key=raZUg7OdrMqIABCEZxQV");
       country=ipResp?.data?.country;      
            
-      if(!price || price==0){
+      if(!price || price=="0"){
         throw new Error('Price should be greater than 0')
       }
       const res = await axios.post(

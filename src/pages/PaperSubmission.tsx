@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const PaperSubmission: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const PaperSubmission: React.FC = () => {
               Kindly ensure that your paper is formatted as per Springer Guidelines (not exceeding 12 pages written in A4 size). Please refer the attached springer template for preparation of your paper.
             </li>
             <li className="font-graphik">
-              All papers must be submitted online via Microsoft CMT Submission Portal.
+              All papers must be submitted online via <Link to={"https://cmt3.research.microsoft.com/DASGRI2026"} className='text-blue-700 underline'>Microsoft CMT Submission Portal</Link>.
             </li>
             <li className="font-graphik">
               All submissions will be thoroughly peer-reviewed by experts based on originality, significance, and clarity.
@@ -26,7 +27,11 @@ const PaperSubmission: React.FC = () => {
               Only papers presenting original content with novel research results or successful innovative applications will be considered for publication in the conference proceedings.
             </li>
           </ol>
-          
+          <br/><br/>
+          <p className="font-publico">
+            <b>Note: </b>The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+            This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+          </p>
           <h2 className="font-druk text-2xl text-[#001324] mt-10 mb-4">Plagiarism Policy</h2>
           <ol className="list-decimal pl-6 space-y-4">
             <li className="font-graphik">
