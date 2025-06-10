@@ -62,7 +62,7 @@ app.post("/create-checkout-session", async (req, res) => {
           price_data: {
             currency: currencyCode,
             product_data: {
-              name: userType,
+              name: userType
             },
             unit_amount: Math.round(fees + fees * 0.03),
           },
