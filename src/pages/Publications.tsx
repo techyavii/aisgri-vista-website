@@ -10,8 +10,7 @@ const Publications = () => {
           <h1 className="text-3xl font-bold mb-6 font-publico">Publications</h1>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="mb-4">
-              All the accepted papers will be published in the proceedings of DASGRI 2026 by 
-              Springer (Proposed) indexed in reputed databases like Scopus, EI, WoS and many more.
+              All the accepted papers will be published in the proceedings of DASGRI 2026.
             </p>
             <p>
               The associated journal will consider high-quality extended papers for publication.
