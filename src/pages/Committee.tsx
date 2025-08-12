@@ -40,6 +40,7 @@ const Committee = () => {
   ];
 
   const organisingChairs = [
+    { name: "Professor Jennifer George", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Marco Gillies", affiliation: "Goldsmiths, University of London, UK" }
   ];
 
