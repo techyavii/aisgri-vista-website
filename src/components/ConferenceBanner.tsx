@@ -28,6 +28,13 @@ const ConferenceBanner = () => {
             className="h-20 w-auto"
           />
         </div>
+        <div className="max-lg:hidden flex-shrink-0 ml-2">
+          <img 
+            src="/lovable-uploads/Springer.jpg" 
+            alt="Springer Logo" 
+            className="h-20 w-auto"
+          />
+        </div>
 
         {/* Center - Conference Details */}
         <div className="text-center text-white flex-grow mx-8">
