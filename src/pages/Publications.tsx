@@ -8,9 +8,16 @@ const Publications = () => {
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 font-publico">Publications</h1>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="mb-4">
+            <p className="mb-6">
               All the accepted papers will be published in the proceedings of DASGRI 2026 in Springer Lecture Notes in Networks & Systems (LNNS) - <a href="https://link.springer.com/series/15179" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://link.springer.com/series/15179</a>
             </p>
+            <div className="flex justify-center">
+              <img 
+                src="/lovable-uploads/822681ae-4ba1-4184-9459-a05d77964424.png" 
+                alt="Academic Indexing Services - Web of Science, Scopus, IET Inspec, dblp" 
+                className="max-w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
           </div>
         </div>
       </div>
