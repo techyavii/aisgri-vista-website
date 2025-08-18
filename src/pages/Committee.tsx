@@ -44,6 +44,10 @@ const Committee = () => {
     { name: "Marco Gillies", affiliation: "Goldsmiths, University of London, UK" }
   ];
 
+  const publicationChairs = [
+    { name: "Dr. Prasanalakshmi B", affiliation: "King Khalid University, Saudi Arabia" }
+  ];
+
   const advisoryCommittee = [
     { name: "Frederic Leymarie", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Sylvia Xueni Pan", affiliation: "Goldsmiths, University of London, UK" },
@@ -180,6 +184,7 @@ const Committee = () => {
             <CommitteeSection title="Convener(s)" members={conveners} />
             <CommitteeSection title="Publicity Chair(s)" members={publicityChairs} />
             <CommitteeSection title="Organising Chair(s)" members={organisingChairs} />
+            <CommitteeSection title="Publication Chair(s)" members={publicationChairs} />
             
             {/* Advisory Committee */}
             <div className="mt-8">
