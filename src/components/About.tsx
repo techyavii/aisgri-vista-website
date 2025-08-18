@@ -21,7 +21,7 @@ const About: React.FC = () => {
             Overall the conference will provide the researchers and attendees with prospects for national and international collaboration and networking among universities and institutions around the World. DASGRI 2026 will be organized by Goldsmiths, University of London, United Kingdom on 10th – 11th April 2026.
           </p>
           <p className="font-publico text-lg text-goldsmiths-text leading-relaxed text-justify">
-            <strong>All the accepted papers of DASGRI-2026 will be published as a proceedings of DASGRI -2026 in Springer Lecture Notes in Networks & Systems (LNNS), indexed by Scopus, EI, WoS and other reputed Databases.</strong>
+            <strong>All the accepted papers of DASGRI-2026 will be published as a proceedings of DASGRI -2026.</strong>
           </p>
           <Link to={"https://cmt3.research.microsoft.com/DASGRI2026"}>
           <Button className='mt-4'>Paper Submission Link</Button>
