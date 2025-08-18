@@ -28,13 +28,6 @@ const ConferenceBanner = () => {
             className="h-20 w-auto"
           />
         </div>
-        <div className="max-lg:hidden flex-shrink-0 ml-2">
-          <img 
-            src="/lovable-uploads/Springer.jpg" 
-            alt="Springer Logo" 
-            className="h-20 w-auto"
-          />
-        </div>
 
         {/* Center - Conference Details */}
         <div className="text-center text-white flex-grow mx-8">
@@ -49,9 +42,6 @@ const ConferenceBanner = () => {
             <Calendar className="mr-2" size={16} />
             <p>10th - 11th April, 2026</p>
           </div>
-          <p className="text-sm md:text-base font-medium text-yellow-300">
-            Springer LNNS Approved Conference
-          </p>
         </div>
 
         {/* Right - Goldsmiths Logo */}
