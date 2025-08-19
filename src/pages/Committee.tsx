@@ -45,7 +45,10 @@ const Committee = () => {
   ];
 
   const publicationChairs = [
-    { name: "Dr. Prasanalakshmi B", affiliation: "King Khalid University, Saudi Arabia" }
+    { name: "Professor MPS Bhatia", affiliation: "Netaji Subhas University of Technology, India" },
+    { name: "Professor George A. Tsihrintzis", affiliation: "University of Piraeus, Greece" },
+    { name: "Dr. Prasanalakshmi B", affiliation: "King Khalid University, Saudi Arabia" },
+    { name: "Professor Jennifer George", affiliation: "Goldsmiths, University of London, UK" }
   ];
 
   const advisoryCommittee = [
