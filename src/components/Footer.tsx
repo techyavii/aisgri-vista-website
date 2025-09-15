@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     <div className="space-y-2">
     <div className="flex items-center">
     <Mail className="mr-2" size={16} />
-    <span className="font-publico text-sm">dasgri.congress@gmail.com</span>
+    <span className="font-publico text-sm">Support@dasgri.co.uk</span>
     </div>
     <div className="flex items-center">
     <MapPin className="mr-2" size={16} />
