@@ -116,6 +116,9 @@ const ConferenceVenue = () => {
 
             <p className="text-justify mb-4 text-sm text-gray-600">
               There are 55 additional countries that do not require a visa, please visit Visitor Supporting Documents for more information. Attendees from countries that require a UK visa for entry are reminded that the process of obtaining a visa may take approximately 3 weeks time under normal circumstances. Please email{' '}
+              <a href="mailto:Support@dasgri.co.uk" className="text-blue-600 hover:underline">
+                Support@dasgri.co.uk
+              </a> or{' '}
               <a href="mailto:dasgri.congress@gmail.com" className="text-blue-600 hover:underline">
                 dasgri.congress@gmail.com
               </a>{' '}

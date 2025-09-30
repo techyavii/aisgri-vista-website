@@ -50,7 +50,7 @@ const Registration: React.FC = () => {
             <div className="mt-4 text-sm text-gray-600">
               <p className="text-justify">*Standard Paper size – 8 pages. Over length of paper charges £30 per extra page.</p>
               <p className="text-justify">**Research Student Author - Those authors who are currently pursuing PHD, Masters degree in a research organisation/University comes under this category.</p>
-              <p className="text-justify">If you have any concerns regarding the registration policy or fees please feel free to write us at <a href="mailto:dasgri.congress@gmail.com" className="text-blue-600 hover:underline">dasgri.congress@gmail.com</a>.</p>
+              <p className="text-justify">If you have any concerns regarding the registration policy or fees please feel free to write us at <a href="mailto:Support@dasgri.co.uk" className="text-blue-600 hover:underline">Support@dasgri.co.uk</a> or <a href="mailto:dasgri.congress@gmail.com" className="text-blue-600 hover:underline">dasgri.congress@gmail.com</a>.</p>
             </div>
           </section>
           
@@ -125,7 +125,7 @@ const Registration: React.FC = () => {
             </ul>
             <div className="mt-4 text-sm text-gray-600">
               <p className="font-bold">Note:</p>
-              <p className="text-justify">The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation. If you have any query, please drop a mail to <a href="mailto:dasgri.congress@gmail.com" className="text-blue-600 hover:underline">dasgri.congress@gmail.com</a>. All participants and authors abide by the organization's guidelines.</p>
+              <p className="text-justify">The conference is non-residential and delegates are kindly requested to make their own arrangement for accommodation. If you have any query, please drop a mail to <a href="mailto:Support@dasgri.co.uk" className="text-blue-600 hover:underline">Support@dasgri.co.uk</a> or <a href="mailto:dasgri.congress@gmail.com" className="text-blue-600 hover:underline">dasgri.congress@gmail.com</a>. All participants and authors abide by the organization's guidelines.</p>
             </div>
           </section>
         </div>

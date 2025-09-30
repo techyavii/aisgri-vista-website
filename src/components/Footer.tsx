@@ -20,10 +20,13 @@ const Footer: React.FC = () => {
     <div>
     <h3 className="font-druk text-xl mb-4">Contact</h3>
     <div className="space-y-2">
-    <div className="flex items-center">
-    <Mail className="mr-2" size={16} />
-    <span className="font-publico text-sm">dasgri.congress@gmail.com</span>
-    </div>
+        <div className="flex items-center">
+          <Mail className="mr-2" size={16} />
+          <div className="font-publico text-sm">
+            <div>Support@dasgri.co.uk</div>
+            <div>dasgri.congress@gmail.com</div>
+          </div>
+        </div>
     <div className="flex items-center">
     <MapPin className="mr-2" size={16} />
     <span className="font-publico text-sm">New Cross, London SE14 6NW, UK</span>
