@@ -23,6 +23,7 @@ const Committee = () => {
   ];
 
   const technicalProgramChairs = [
+    { name: "Yaun Yin", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Rajkumar Singh Rathore", affiliation: "Cardiff Metropolitan University, UK" },
     { name: "Saurabh Raj Sangwan", affiliation: "GL Bajaj Institute of Technology and Management, India" },
     { name: "Aditya Khamparia", affiliation: "Babasaheb Bhimrao Ambedkar University, India" }
