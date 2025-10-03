@@ -37,12 +37,14 @@ const Committee = () => {
   const publicityChairs = [
     { name: "Valentina Emilia Balas", affiliation: "Aurel Vlaicu University of Arad, Romania" },
     { name: "Zdzislaw Polokoswski", affiliation: "The Karkonosze University of Applied Sciences in Jelenia Góra, Poland" },
-    { name: "Basel Barakat", affiliation: "Goldsmiths, University of London, UK" }
+    { name: "Basel Barakat", affiliation: "Maharaja Agrasen Institute of Technology, India" }
   ];
 
   const organisingChairs = [
     { name: "Professor Jennifer George", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Marco Gillies", affiliation: "Goldsmiths, University of London, UK" }
+    { name: "Deepak Gupta", affiliation: "Goldsmiths, University of London, UK" }
+    
   ];
 
   const publicationChairs = [
