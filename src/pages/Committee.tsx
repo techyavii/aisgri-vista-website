@@ -42,9 +42,8 @@ const Committee = () => {
 
   const organisingChairs = [
     { name: "Professor Jennifer George", affiliation: "Goldsmiths, University of London, UK" },
-    { name: "Marco Gillies", affiliation: "Goldsmiths, University of London, UK" }
-    { name: "Deepak Gupta", affiliation: "Goldsmiths, University of London, UK" }
-    
+    { name: "Marco Gillies", affiliation: "Goldsmiths, University of London, UK" },
+    { name: "Deepak Gupta", affiliation: "Maharaja Agrasen Institute of Technology, India" }
   ];
 
   const publicationChairs = [
@@ -154,7 +153,8 @@ const Committee = () => {
     { name: "Md Shihab Uddin", affiliation: "San Francisco Bay University, Fremont, California, USA" },
     { name: "Daniel Lucky Michael", affiliation: "San Francisco Bay University, Fremont, California, USA" },
     { name: "Priya Podder", affiliation: "Dhaka National Medical College, Dhaka, Bangladesh" },
-    { name: "Md Sazol Ahmmed", affiliation: "Missouri University of Science and Technology, Rolla, MO, USA" }
+    { name: "Md Sazol Ahmmed", affiliation: "Missouri University of Science and Technology, Rolla, MO, USA" },
+    { name: "Rajani Kumari Vaddepalli", affiliation: "Callaway Golf, USA" }
   ];
 
   const CommitteeSection = ({ title, members }: { title: string; members: { name: string; affiliation: string }[] }) => (
