@@ -10,7 +10,7 @@ const Committee = () => {
   ];
 
   const honoraryChairs = [
-    { name: "Frances Corner", affiliation: "Vice-Chancellor, Goldsmiths, University of London, UK" },
+    { name: "Frances Corner", affiliation: "Former Vice Chancellor, Goldsmiths, University of London, UK" },
     { name: "Janusz Kacprzyk", affiliation: "Polish Academy of Sciences, Warsaw, Poland" },
     { name: "Manu Malek", affiliation: "EiC Computer and Electrical Engineering, Stevens Institute of Technology, USA" },
     { name: "Jon G. Hall", affiliation: "EiC Expert Systems (WILEY), The Open University, UK" }
@@ -23,9 +23,8 @@ const Committee = () => {
   ];
 
   const technicalProgramChairs = [
-    { name: "Yaun Yin", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Rajkumar Singh Rathore", affiliation: "Cardiff Metropolitan University, UK" },
-    { name: "Saurabh Raj Sangwan", affiliation: "GL Bajaj Institute of Technology and Management, India" },
+    { name: "Saurabh Raj Sangwan", affiliation: "Maharishi Markandeshwar (DEEMED TO BE UNIVERSITY)" },
     { name: "Aditya Khamparia", affiliation: "Babasaheb Bhimrao Ambedkar University, India" }
   ];
 
@@ -37,7 +36,7 @@ const Committee = () => {
   const publicityChairs = [
     { name: "Valentina Emilia Balas", affiliation: "Aurel Vlaicu University of Arad, Romania" },
     { name: "Zdzislaw Polokoswski", affiliation: "The Karkonosze University of Applied Sciences in Jelenia Góra, Poland" },
-    { name: "Basel Barakat", affiliation: "Maharaja Agrasen Institute of Technology, India" }
+    { name: "Basel Barakat", affiliation: "Goldsmiths, University of London, UK" }
   ];
 
   const organisingChairs = [
@@ -54,6 +53,7 @@ const Committee = () => {
   ];
 
   const advisoryCommittee = [
+    { name: "Yaun Yin", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Frederic Leymarie", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Sylvia Xueni Pan", affiliation: "Goldsmiths, University of London, UK" },
     { name: "Rabail Tahir", affiliation: "Goldsmiths, University of London, UK" },
