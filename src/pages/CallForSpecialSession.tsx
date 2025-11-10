@@ -1,6 +1,10 @@
 import React from 'react'
 
 const CallForSpecialSession: React.FC = () => {
+  // Put your file in the `public` folder (e.g. public/special-session-format.pdf)
+  // and update this path if you place it in a subfolder (e.g. /calls/special-session-format.pdf).
+  const formatHref = '/Call for Special Session-Template.docx'
+
   const openMail = () => {
     const subject = encodeURIComponent('Special Session Proposal for DASGRI-2026')
     window.location.href = `mailto:dasgri.congress@gmail.com?subject=${subject}`
@@ -32,6 +36,24 @@ const CallForSpecialSession: React.FC = () => {
             rel="noreferrer"
           >
             Conference website
+          </a>
+
+          {/* Download button for the special session format */}
+          <a
+            href={formatHref}
+            download
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Download special session proposal format"
+            className="inline-flex items-center px-4 py-2 border border-sky-200 bg-white text-sky-700 rounded-md shadow-sm hover:bg-sky-50 transition"
+          >
+            {/* simple document icon (SVG) */}
+            <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <path d="M12 3v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M8 7h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            Download Special Session Format
           </a>
         </div>
       </header>
@@ -101,7 +123,6 @@ const CallForSpecialSession: React.FC = () => {
           papers may be invited to special issues of indexed journals.
         </p>
       </section>
-
     </main>
   )
 }
