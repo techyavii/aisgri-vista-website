@@ -22,6 +22,7 @@ import Navbar from "./components/Navbar";
 import ImportantDatesModal from "./components/ImportantDatesModal";
 import CheckoutForm from './pages/Checkout';
 import CallForSpecialSession from './pages/CallForSpecialSession';
+import SpecialSessions from './pages/SpecialSessions';
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,8 @@ const App: React.FC = () => (
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/call-for-papers" element={<CallForPapers />} />
               <Route path="/call-for-special-session" element={<CallForSpecialSession />} />
+              <Route path="/special-sessions" element={<SpecialSessions />} />
+
               <Route path="/paper-submission" element={<PaperSubmission />} />
               <Route path="/quality-policies" element={<QualityPolicies />} />
               <Route path="/committee" element={<Committee />} />

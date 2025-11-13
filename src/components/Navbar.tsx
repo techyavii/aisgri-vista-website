@@ -57,7 +57,8 @@ const Navbar: React.FC = () => {
         { name: 'Call for Papers', href: '/call-for-papers' },
         { name: 'Call for Special Session', href: '/call-for-special-session' },
         { name: 'Paper Submission', href: '/paper-submission' },
-        { name: 'Quality Policies', href: '/quality-policies' }
+        { name: 'Quality Policies', href: '/quality-policies' },
+        { name: 'Special Sessions', href: '/special-sessions' },
       ]
     },
     { name: 'Committee', href: '/committee' },
