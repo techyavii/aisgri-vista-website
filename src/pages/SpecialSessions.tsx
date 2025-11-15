@@ -103,8 +103,8 @@ const SpecialSessions: React.FC = () => {
             >
               {/* Link/Title */}
               <div className="mb-6">
-                <p className="text-sm font-semibold text-amber-100 mb-2">Link</p>
-                <Link to={`/${session.id}.pdf`} target="_blank" rel="noopener noreferrer"><h3 className="text-xl font-bold leading-tight">{session.link}</h3></Link>
+                <Link to={`/${session.id}.pdf`} target="_blank" rel="noopener noreferrer"><p className="text-sm font-semibold text-amber-100 mb-2">Link</p>
+                <h3 className="text-xl font-bold leading-tight">{session.link}</h3></Link>
               </div>
 
               {/* Organizers */}
