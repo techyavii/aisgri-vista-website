@@ -78,6 +78,47 @@ const SpecialSessions: React.FC = () => {
       ],
       listingFile: 'SS_003.pdf',
     },
+    {
+    id: 'SS_004',
+    link: 'SS_004: Applications of Explainable Artificial Intelligence on Responsible Innovation',
+    title: 'Applications of Explainable Artificial Intelligence on Responsible Innovation',
+    organizers: [
+      {
+        name: 'Dr Prasanta Dey',
+        affiliation:
+          'Ashton Business School, United Kingdom. Email: p.k.dey@ahton.ac.uk (ORCID: 0000-0002-9984-5374)',
+      },
+      {
+        name: 'Dr Souvik Banerjee',
+        affiliation:
+          'Management Development Institute, India. Email: souvik.banerjee@mdim.ac.in',
+      },
+      {
+        name: 'Dr Aditi Srivastava',
+        affiliation:
+          'ABES Business School, India. Email: Draditisrivastava11@gmail.com',
+      },
+    ],
+    listingFile: 'SS_004.pdf',
+    },
+    {
+      id: 'SS_005',
+      link: 'SS_005: Trustworthy AI, Digital Safety, and Forensic Intelligence for Social Good',
+      title: 'Trustworthy AI, Digital Safety, and Forensic Intelligence for Social Good',
+      organizers: [
+        {
+          name: 'Dr. Keshav Kaushik',
+          affiliation:
+            'Center for Cyber Security and Cryptology, Sharda School of Computer Science & Engineering, Sharda University, Greater Noida, India. Email: officialkeshavkaushik@gmail.com',
+        },
+        {
+          name: 'Dr. Manvi Breja',
+          affiliation:
+            'The NorthCap University, Gurugram, Haryana, India. Email: manvibreja@ncuindia.edu',
+        },
+      ],
+      listingFile: 'SS_005.pdf',
+    }
   ]
 
   return (
