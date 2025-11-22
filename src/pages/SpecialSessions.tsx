@@ -118,7 +118,26 @@ const SpecialSessions: React.FC = () => {
         },
       ],
       listingFile: 'SS_005.pdf',
-    }
+    },
+    {
+  id: 'SS_006',
+  link: 'SS_006: Recent Advances in Cyber-Security, Artificial Intelligence, Machine Learning & Communication Technology',
+  title: 'Recent Advances in Cyber-Security, Artificial Intelligence, Machine Learning & Communication Technology',
+  organizers: [
+    {
+      name: 'Dr. Vikash Yadav',
+      affiliation:
+        'Government Polytechnic Bighapur Unnao, Uttar Pradesh, India. Email: vikas.yadav.cs@gmail.com',
+    },
+    {
+      name: 'Navjot Singh Talwandi',
+      affiliation:
+        'Chandigarh University, Chandigarh, India. Email: navjotsingh49900@gmail.com',
+    },
+  ],
+  listingFile: 'SS_006.pdf',
+}
+
   ]
 
   return (
