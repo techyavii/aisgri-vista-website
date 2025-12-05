@@ -69,6 +69,9 @@ app.post("/create-checkout-session", async (req, res) => {
           quantity: 1,
         },
       ],
+      metadata:{
+        conference:"DASGRI"
+      },
       custom_fields: [
         {
           key: "paper_id",
