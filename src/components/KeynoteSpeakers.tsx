@@ -54,7 +54,7 @@
 import KeynoteSpeakerCard from "./KeynoteSpeakerCard";
 
 const KeynoteSpeakers = () => {
-  const speakers = [
+    const speakers = [
     {
       name: "Prof. Larisa Soldatova",
       designation: "Professor in Data Science",
@@ -62,12 +62,25 @@ const KeynoteSpeakers = () => {
       profilePic: "keynotes/laria.jpeg",
     },
     {
+      name: "Prof. Ali Kashif Bashir",
+      designation: "Professor – Computer Networks and Cybersecurity",
+      company: "Manchester Metropolitan University, UK",
+      profilePic: "keynotes/ali.jpeg",
+    },
+    {
       name: "Krishna Gandhi",
       designation: "Automation Lead – Energy Sector",
       company: "Artech LLC",
       profilePic: "keynotes/krishna.jpeg",
     },
+    {
+      name: "Bhargava Varma Konduru",
+      designation: "Sr. Product Manager, Analytics",
+      company: "Amazon, USA",
+      profilePic: "keynotes/bhargava.jpeg",
+    },
   ];
+
 
   return (
     <section className="py-16 bg-[#f7faff]">
