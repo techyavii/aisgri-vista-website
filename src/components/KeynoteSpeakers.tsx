@@ -85,9 +85,11 @@ const KeynoteSpeakers = () => {
   return (
     <section className="py-16 bg-[#f7faff]">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+         <div className="text-center mb-8">
+        <h2 className="font-druk md:text-4xl text-goldsmiths-text border-b-4 border-goldsmiths-blue pb-2 inline-block text-3xl text-center mb-12">
           Keynote Speakers
         </h2>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {speakers.map((speaker, idx) => (
