@@ -18,6 +18,49 @@ const InvitedSpeakers = () => {
     country: "USA",
     city: "Seattle",
   },
+  {
+      name: "Rahul Ganta",
+      designation: "Staff Software Engineer, Digital Intelligence",
+      company: "Wabtec Corporation",
+      experience: "17+ Years",
+      email: "gantarahul@gmail.com",
+      conferenceLink: "https://www.dasgri.co.uk/",
+      titleOfTalk:
+        "Collaborative AI & Human-Centered Engineering: Lessons from Scaling Performance and Quality Across Teams",
+      abstract:
+        "Successful AI adoption depends as much on collaboration and human-centered engineering as on model accuracy. In complex enterprise environments, organizational design, shared responsibility models, tooling adoption including AI-assisted development, and cross-functional communication strongly influence outcomes. This talk explores how leaders balance velocity with quality, autonomy with alignment, and innovation with safety.",
+      profilePic: "invited-speakers/Rahul.jpeg",
+      country: "USA",
+      city: "",
+    },
+    {
+      name: "Venkata Pavan Kumar Gummadi",
+      designation: "Integration Architect (MuleSoft / AWS)",
+      company: "Broadridge Financials",
+      experience: "18 Years",
+      email: "pavangummadi@gmail.com",
+      conferenceLink: "https://www.dasgri.co.uk/",
+      titleOfTalk:
+        "Serverless and Microservices Architecture for Scalable Enterprise Integration",
+      abstract:
+        "This talk focuses on modern enterprise integration using serverless and microservices architecture. Drawing from large-scale real-world projects, it highlights API-led connectivity, cloud-native integration patterns, and best practices for building scalable, resilient, and secure integration platforms across diverse enterprise ecosystems.",
+      profilePic: "invited-speakers/Venkata.jpeg",
+      country: "UK",
+      city: "",
+    },
+    {
+      name: "Jeganraja Rajamani",
+      designation: "Senior Data Engineer",
+      company: "Amazon",
+      experience: "19+ Years",
+      email: "jeganraja.r@gmail.com",
+      conferenceLink: "https://www.dasgri.co.uk/",
+      titleOfTalk: "TBD",
+      abstract: "TBD",
+      profilePic: "invited-speakers/Jeganraja.jpeg",
+      country: "USA",
+      city: "",
+    },
 ];
 
 

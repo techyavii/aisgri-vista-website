@@ -53,7 +53,7 @@ const InvitedSpeakerCard: React.FC<InvitedSpeakerProps> = ({
           <p className="text-gray-600 text-sm">{company}</p>
 
           <div className="mt-3 text-sm text-gray-600 space-y-1">
-            <p><strong>Experience:</strong> {experience}</p>
+            {/* <p><strong>Experience:</strong> {experience}</p>
             <p><strong>Location:</strong> {city}, {country}</p>
             <p>
               <strong>Email:</strong>{" "}
@@ -74,7 +74,7 @@ const InvitedSpeakerCard: React.FC<InvitedSpeakerProps> = ({
               >
                 Visit Website
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
