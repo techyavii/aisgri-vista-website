@@ -10,7 +10,7 @@ const Committee = () => {
   ];
 
   const honoraryChairs = [
-    { name: "Frances Corner", affiliation: "Former Vice Chancellor, Goldsmiths, University of London, UK" },
+    // { name: "Frances Corner", affiliation: "Former Vice Chancellor, Goldsmiths, University of London, UK" },
     { name: "Janusz Kacprzyk", affiliation: "Polish Academy of Sciences, Warsaw, Poland" },
     { name: "Manu Malek", affiliation: "EiC Computer and Electrical Engineering, Stevens Institute of Technology, USA" },
     { name: "Jon G. Hall", affiliation: "EiC Expert Systems (WILEY), The Open University, UK" }
