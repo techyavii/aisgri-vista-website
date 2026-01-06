@@ -61,6 +61,19 @@ const InvitedSpeakers = () => {
       country: "USA",
       city: "",
     },
+    {
+      name: "Ashraf Syed",
+      designation: "Technical Lead",
+      company: "Virginia Department of Health",
+      experience: "16 Years",
+      email: "maverick.ashraf@gmail.com",
+      conferenceLink: "https://www.dasgri.co.uk/",
+      titleOfTalk: "Empowering Enterprise Operational Resilience: Agentic AI infused Incident Management Systems via Oracle APEX",
+      abstract: "Artificial intelligence is profoundly influencing organizational operations and societal resilience; yet its effectiveness in incident management hinges on proactive automation, ethical integration, and robust data handling. This keynote explores how AI agents embedded within Oracle APEX platforms enable automated detection, predictive prevention, ethical root cause analysis, reduced downtime, and resilient public health systems.",
+      profilePic: "invited-speakers/Ashraf.jpeg",
+      country: "USA",
+      city: ""
+    },
 ];
 
 
