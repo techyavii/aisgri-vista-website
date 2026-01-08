@@ -25,7 +25,9 @@ const Committee = () => {
   const technicalProgramChairs = [
     { name: "Rajkumar Singh Rathore", affiliation: "Cardiff Metropolitan University, UK" },
     { name: "Saurabh Raj Sangwan", affiliation: "Maharishi Markandeshwar (DEEMED TO BE UNIVERSITY)" },
-    { name: "Aditya Khamparia", affiliation: "Babasaheb Bhimrao Ambedkar University, India" }
+    { name: "Aditya Khamparia", affiliation: "Babasaheb Bhimrao Ambedkar University, India" },
+    { name: "Kaushik Jangiti", affiliation: "Snowflake, Georgia, USA" }
+
   ];
 
   const conveners = [
@@ -154,7 +156,10 @@ const Committee = () => {
     { name: "Daniel Lucky Michael", affiliation: "San Francisco Bay University, Fremont, California, USA" },
     { name: "Priya Podder", affiliation: "Dhaka National Medical College, Dhaka, Bangladesh" },
     { name: "Md Sazol Ahmmed", affiliation: "Missouri University of Science and Technology, Rolla, MO, USA" },
-    { name: "Rajani Kumari Vaddepalli", affiliation: "Callaway Golf, USA" }
+    { name: "Rajani Kumari Vaddepalli", affiliation: "Callaway Golf, USA" },
+    { name: "Sai Raghavendra Varanasi", affiliation: "Cigna Healthcare, USA" },
+    { name: "Sesha Sai Sravanthi Valiveti", affiliation: "Bank of America, USA" }
+  
   ];
 
   const CommitteeSection = ({ title, members }: { title: string; members: { name: string; affiliation: string }[] }) => (
