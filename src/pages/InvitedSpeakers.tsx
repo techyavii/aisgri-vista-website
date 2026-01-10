@@ -74,6 +74,34 @@ const InvitedSpeakers = () => {
       country: "USA",
       city: ""
     },
+    {
+    name: "Arun Kumar Elengovan",
+    designation: "Security Engineering Leader",
+    company: "Okta, Inc.",
+    experience: "",
+    email: "",
+    conferenceLink: "https://www.dasgri.co.uk/",
+    titleOfTalk: "TBD",
+    abstract: "TBD",
+    profilePic: "invited-speakers/Arun.jpeg",
+    country: "",
+    city: "",
+    highlights: "FBCS, HackathonRaptors Fellow, Author"
+  },
+  {
+    name: "Dharnisha Narasappa",
+    designation: "Sr Network Architect",
+    company: "Versa Networks",
+    experience: "20+ Years",
+    email: "dharanishnarasappa@gmail.com",
+    conferenceLink: "https://www.dasgri.co.uk/",
+    titleOfTalk: "Zero Trust Architecture (ZTA) for Enterprise and IoT Ecosystems",
+    abstract: "Architecting and implementing a Zero-Trust Architecture (ZTA) for Enterprise and IoT environments addresses the evolving Cybersecurity landscape and the inherent limitations of traditional network security models. Unlike conventional perimeter-based security approaches that rely on static defenses such as firewalls and VPNs, ZTA adopts a dynamic, identity-centric strategy grounded in the principle of least privilege access. Zero-Trust operates under the core assumption of 'never trust, always verify,' ensuring that no entity—whether inside or outside the network—is automatically granted access. By continuously validating identities, enforcing granular access controls, and monitoring user and device behavior, ZTA mitigates risks associated with lateral movement, unauthorized access, and insider threats. This proactive security model shifts the focus from network location to identity, device posture, and contextual access requirements, strengthening security postures and minimizing attack surfaces across enterprise and IoT ecosystems.",
+    profilePic: "invited-speakers/Dharnisha.jpg",
+    country: "USA",
+    city: ""
+  }
+
 ];
 
 
