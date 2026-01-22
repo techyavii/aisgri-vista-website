@@ -227,7 +227,9 @@ const Committee = () => {
   { name: "Meng Li", affiliation: "Hefei University of Technology, China" },
   { name: "Tu Nguyen", affiliation: "Kennesaw State University, USA" },
   { name: "Sai Raghavendra Varanasi", affiliation: "Cigna Healthcare, USA" },
-  { name: "Sesha Sai Sravanthi Valiveti", affiliation: "Bank of America, USA" }
+  { name: "Sesha Sai Sravanthi Valiveti", affiliation: "Bank of America, USA" },
+  { name: "Dharmateja Priyadarshi Uddandarao", affiliation: "Amazon, USA" }
+
 ];
 
   const CommitteeSection = ({ title, members }: { title: string; members: { name: string; affiliation: string }[] }) => (
