@@ -228,7 +228,10 @@ const Committee = () => {
   { name: "Tu Nguyen", affiliation: "Kennesaw State University, USA" },
   { name: "Sai Raghavendra Varanasi", affiliation: "Cigna Healthcare, USA" },
   { name: "Sesha Sai Sravanthi Valiveti", affiliation: "Bank of America, USA" },
-  { name: "Dharmateja Priyadarshi Uddandarao", affiliation: "Amazon, USA" }
+  { name: "Dharmateja Priyadarshi Uddandarao", affiliation: "Amazon, USA" },
+  { name: "Sandeep Raichura", affiliation: "Microsoft Corporation, USA" },
+  { name: "Sudheekar Reddy Pothireddy", affiliation: "SAEITS, Austin, TX" },
+
 
 ];
 
