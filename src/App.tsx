@@ -24,6 +24,7 @@ import CheckoutForm from './pages/Checkout';
 import CallForSpecialSession from './pages/CallForSpecialSession';
 import SpecialSessions from './pages/SpecialSessions';
 import InvitedSpeakers from './pages/InvitedSpeakers';
+import DasgriAwards from './pages/DasgriAwards';
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App: React.FC = () => (
               <Route path="/paper-submission" element={<PaperSubmission />} />
               <Route path="/quality-policies" element={<QualityPolicies />} />
               <Route path="/committee" element={<Committee />} />
+              <Route path="/dasgri-awards" element={<DasgriAwards />} />
               <Route path="/registration" element={<Registration />} />
               <Route path="/checkout" element={<CheckoutForm />} />
               <Route path="/publications" element={<Publications />} />
@@ -55,7 +57,7 @@ const App: React.FC = () => (
               <Route path="/conference-venue" element={<ConferenceVenue />} />
               <Route path="/downloads" element={<Downloads />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              
+
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
