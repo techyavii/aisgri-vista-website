@@ -80,7 +80,7 @@ const InvitedSpeakerCard: React.FC<InvitedSpeakerProps> = ({
       </div>
 
       {/* Talk Details */}
-      <div className="mt-6">
+      {/* <div className="mt-6">
         <h4 className="text-lg font-semibold text-gray-900">
           Title of the Talk
         </h4>
@@ -92,7 +92,7 @@ const InvitedSpeakerCard: React.FC<InvitedSpeakerProps> = ({
         <p className="text-gray-700 mt-2 leading-relaxed text-sm">
           {abstract}
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

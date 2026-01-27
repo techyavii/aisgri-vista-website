@@ -55,6 +55,7 @@ const App: React.FC = () => (
               <Route path="/conference-venue" element={<ConferenceVenue />} />
               <Route path="/downloads" element={<Downloads />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

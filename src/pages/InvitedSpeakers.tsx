@@ -100,7 +100,23 @@ const InvitedSpeakers = () => {
     profilePic: "invited-speakers/Dharnisha.jpg",
     country: "USA",
     city: ""
-  }
+  },
+  {
+  name: "Avinash Chandra Vootkuri",
+  designation: "Staff Data Scientist",
+  company: "Walmart",
+  experience: "10 Years",
+  email: "avinashchandrav@gmail.com",
+  conferenceLink: "https://www.dasgri.co.uk/",
+  titleOfTalk: "TBD",
+  abstract: "TBD",
+  profilePic: "invited-speakers/Avinash.jpeg",
+  country: "USA",
+  city: "TBD",
+  briefProfile:
+    "Avinash Chandra Vootkuri is a Staff Data Scientist at Walmart Global Tech and a recognized thought leader in AI-driven cybersecurity. He specializes in protecting high-volume enterprise systems from fraud, bot attacks, and abuse using advanced Machine Learning and Multi-Agent Systems. His work bridges academic research and real-world deployment, shaping next-generation autonomous security frameworks.",
+}
+
 
 ];
 
