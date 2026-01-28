@@ -110,6 +110,98 @@ export default function DasgriAwards() {
     'Platform Engineering Excellence Award',
   ];
 
+  const academiaIndustryAwards = [
+  'Strategic Partnership Excellence Award',
+  'Collaborative R&D Excellence Award',
+  'Research Commercialization Excellence Award',
+  'Joint IP & Product Innovation Award',
+  'Workforce Readiness Excellence Award',
+  'Experiential Industry Learning Excellence Award',
+  'Industry Knowledge Integration Award',
+  'Long-Term Industry Alliance Excellence Award',
+  'Corporate Academic Mentor Excellence Award',
+  'Live Industry Project Excellence Award',
+  'Strategic Academic Advisory Impact Award',
+  'Industry 5.0 Readiness Excellence Award',
+  'Global Industry Engagement Award',
+  'Corporate Skilling Leadership Award',
+];
+
+const institutionalAwards = [
+  'Excellence in Higher Education Award',
+  'Engineering Education Leadership Award',
+  'Business Education Excellence Award',
+  'Emerging University of Excellence Award',
+  'Smart Campus Transformation Award',
+  'Career Outcomes Excellence Award',
+  'Community Engagement Excellence Award',
+  'Startup & Research Friendly Campus Award',
+  'Sustainable Campus Excellence Award',
+  'Emerging Technology Leadership Center Award',
+  'Alumni Relations & Impact Excellence Award',
+  'Global Ranking Performance Excellence Award',
+  'Research-Intensive University Award',
+  'International Student Support Excellence Award',
+];
+
+const manufacturingAwards = [
+  'Smart Manufacturing Innovation Excellence Award',
+  'Industry 4.0 Transformation Leadership Award',
+  'Industrial Automation Leadership Award',
+  'Robotics & Autonomous Manufacturing Excellence Award',
+  'Digital Twin & IoT Manufacturing Excellence Award',
+  'Predictive Maintenance & Asset Intelligence Award',
+  'AI-Driven Quality Control Excellence Award',
+  'Industrial Cybersecurity Excellence Award',
+  'Smart Supply Chain & Logistics Innovation Award',
+  'Energy-Efficient Manufacturing Excellence Award',
+  'Additive Manufacturing (3D Printing) Innovation Award',
+  'Human–Machine Collaboration Excellence Award',
+];
+
+const softwareAwards = [
+  'DevOps Transformation Excellence Award',
+  'Agile & Scaled Agile Implementation Excellence Award',
+  'Software Architecture Leadership Award',
+  'Microservices & API Architecture Excellence Award',
+  'Cloud-Native Application Development Excellence Award',
+  'Secure Software Engineering Excellence Award',
+  'High-Impact SaaS Product Excellence Award',
+  'Enterprise Application Modernization Excellence Award',
+  'Low-Code / No-Code Platform Innovation Award',
+  'AI-Enabled Software Solutions Excellence Award',
+  'Emerging Technology Solutions Excellence Award',
+  'Blockchain-Based Software Innovation Award',
+  'Quantum-Ready Software Architecture Award',
+];
+
+const sapAwards = [
+  'SAP S/4HANA Cloud Innovation Excellence Award',
+  'SAP Cloud Migration Excellence Award',
+  'SAP Business Technology Platform Excellence Award',
+  'SAP ERP Implementation Leadership Award',
+  'SAP-Driven Business Process Optimization Excellence Award',
+  'SAP Intelligent Enterprise Transformation Award',
+  'SAP Analytics Cloud Excellence Award',
+  'SAP Integration Suite Excellence Award',
+  'SAP AI, ML & Joule Innovation Award',
+  'SAP Industry Cloud Solutions Excellence Award',
+  'SAP Digital Supply Chain Excellence Award',
+  'SAP Finance Transformation Excellence Award',
+  'SAP Human Capital Management (HCM) Excellence Award',
+  'SAP Sustainability & Green Ledger Excellence Award',
+];
+
+const specialRecognitionAwards = [
+  'Flagship Innovation Project Award',
+  'Global Teaching Ambassador Award',
+  'Knowledge Dissemination Excellence Award',
+  'International Partnership Leadership Award',
+  'Student Success Leadership Award',
+  'Sustainable Development Goals Impact Excellence Award',
+];
+
+
   const criteria = [
     {
       criterion: 'Original Contribution & Thought Leadership',
@@ -165,18 +257,19 @@ export default function DasgriAwards() {
   ];
 
   const categories = [
-    { title: 'Academic Excellence & Leadership Awards', count: '18 Awards', awards: academicAwards },
-    { title: 'Research, Innovation & Impact Awards', count: '18 Awards', awards: researchAwards },
-    { title: 'Innovation & Entrepreneurship Awards', count: '16 Awards', awards: innovationAwards },
-    { title: 'Academia–Industry Synergy Awards', count: '15 Awards', awards: [] },
-    { title: 'Institutional Distinction Awards', count: '18 Awards', awards: [] },
-    { title: 'Artificial Intelligence & Advanced Technologies Awards', count: '19 Awards', awards: aiAwards },
-    { title: 'Cloud, Data & Digital Platforms Awards', count: '16 Awards', awards: cloudAwards },
-    { title: 'Manufacturing & Industry 4.0 Awards', count: '12 Awards', awards: [] },
-    { title: 'Software & Enterprise Solutions Awards', count: '14 Awards', awards: [] },
-    { title: 'SAP Cloud & Enterprise Digital Transformation Awards', count: '13 Awards', awards: [] },
-    { title: 'Special Recognition Awards', count: '7 Awards', awards: [] },
-  ];
+  { title: 'Academic Excellence & Leadership Awards', count: '18 Awards', awards: academicAwards },
+  { title: 'Research, Innovation & Impact Awards', count: '18 Awards', awards: researchAwards },
+  { title: 'Innovation & Entrepreneurship Awards', count: '16 Awards', awards: innovationAwards },
+  { title: 'Academia–Industry Synergy Awards', count: '14 Awards', awards: academiaIndustryAwards },
+  { title: 'Institutional Distinction Awards', count: '14 Awards', awards: institutionalAwards },
+  { title: 'Artificial Intelligence & Advanced Technologies Awards', count: '19 Awards', awards: aiAwards },
+  { title: 'Cloud, Data & Digital Platforms Awards', count: '16 Awards', awards: cloudAwards },
+  { title: 'Manufacturing & Industry 4.0 Awards', count: '12 Awards', awards: manufacturingAwards },
+  { title: 'Software & Enterprise Solutions Awards', count: '13 Awards', awards: softwareAwards },
+  { title: 'SAP Cloud & Enterprise Digital Transformation Awards', count: '14 Awards', awards: sapAwards },
+  { title: 'Special Recognition Awards', count: '6 Awards', awards: specialRecognitionAwards },
+];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -324,7 +417,7 @@ export default function DasgriAwards() {
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 h-auto mb-8 bg-white border border-gray-200">
               {categories.map((category, index) => (
                 <TabsTrigger key={index} value={index.toString()} className="text-xs md:text-sm py-2 data-[state=active]:bg-blue-600 data-[state=active]:text-white">
-                  {category.title.split(' ')[0]}
+                  {category.title}
                 </TabsTrigger>
               ))}
             </TabsList>
