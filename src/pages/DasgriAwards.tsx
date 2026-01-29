@@ -605,13 +605,21 @@ const specialRecognitionAwards = [
             Submit your nomination by 25th February 2026. Recognize excellence in research, innovation, and technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded font-semibold hover:bg-blue-700 transition">
-              Submit Nomination
-            </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded font-semibold hover:bg-blue-50 transition">
-              Download Guidelines
-            </button>
-          </div>
+              <a
+                href="https://forms.gle/ZGpARFKknbV2fXBE6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-blue-600 text-white px-8 py-3 rounded font-semibold hover:bg-blue-700 transition">
+                  Submit Nomination
+                </button>
+              </a>
+
+              <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded font-semibold hover:bg-blue-50 transition">
+                Download Guidelines
+              </button>
+            </div>
+
         </div>
       </section>
 
