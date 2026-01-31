@@ -136,7 +136,26 @@ const SpecialSessions: React.FC = () => {
     },
   ],
   listingFile: 'SS_006.pdf',
+},
+{
+  id: 'SS_007',
+  link: 'SS_007: Data-Driven Resilience: AI for Climate Action, Environmental Justice, and Planetary Health',
+  title: 'Data-Driven Resilience: AI for Climate Action, Environmental Justice, and Planetary Health',
+  organizers: [
+    {
+      name: 'Dr. Hashmat Fida',
+      affiliation:
+        'Presidency University, Bengaluru, India. Email: hashmatfida@gmail.com, hashmat@presidencyuniversity.in',
+    },
+    {
+      name: 'Dr. Binod Kumar Mishra',
+      affiliation:
+        'Chandigarh University, Mohali, India',
+    },
+  ],
+  listingFile: 'SS_007.pdf',
 }
+
 
   ]
 
@@ -188,8 +207,7 @@ const SpecialSessions: React.FC = () => {
               <div className="border-t border-amber-600 pt-4">
                 <p className="text-sm font-semibold text-amber-100 mb-2">Listing</p>
                 <a
-                  href={`/sessions/${session.listingFile}`}
-                  download
+                  href={`/${session.listingFile}`}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center text-white font-semibold hover:text-amber-100 transition-colors"

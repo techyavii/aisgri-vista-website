@@ -416,7 +416,7 @@ const specialRecognitionAwards = [
           <Tabs defaultValue="0" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 h-auto mb-8 bg-white border border-gray-200">
               {categories.map((category, index) => (
-                <TabsTrigger key={index} value={index.toString()} className="text-xs md:text-sm py-2 data-[state=active]:bg-blue-600 data-[state=active]:text-white">
+                <TabsTrigger key={index} value={index.toString()} className=" text-xs md:text-sm py-2 px-2 text-center whitespace-normal break-words leading-snug min-h-[48px] data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                   {category.title}
                 </TabsTrigger>
               ))}
