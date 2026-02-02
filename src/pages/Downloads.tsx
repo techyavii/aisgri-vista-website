@@ -26,6 +26,11 @@ const Downloads = () => {
       link: '/Springer LaTeX Template (1)_2025-11-14_21_47.zip',
       icon: <FileText className="mr-2" size={18} />
     },
+    {
+      name: 'License Form (Springer)',
+      link: '/License Form (Springer).docx',
+      icon: <FileText className="mr-2" size={18} />
+    },
   ];
 
   return (
