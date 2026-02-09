@@ -115,7 +115,58 @@ const InvitedSpeakers = () => {
   city: "TBD",
   briefProfile:
     "Avinash Chandra Vootkuri is a Staff Data Scientist at Walmart Global Tech and a recognized thought leader in AI-driven cybersecurity. He specializes in protecting high-volume enterprise systems from fraud, bot attacks, and abuse using advanced Machine Learning and Multi-Agent Systems. His work bridges academic research and real-world deployment, shaping next-generation autonomous security frameworks.",
-}
+},
+  {
+    name: "Chaithanya Etikala",
+    designation: "Senior Technical Architect – AI & CRM Solutions",
+    company: "Tata Consultancy Services (TCS)",
+    experience: "10+ Years",
+    email: "Chaithanya161719@gmail.com",
+    conferenceLink: "https://www.dasgri.co.uk/",
+    titleOfTalk:
+      "Architecting Intelligent Enterprise Platforms: AI-Driven Systems for Scalable Digital Transformation",
+    abstract:
+      "This invited talk discusses architectural strategies for building AI-driven enterprise platforms that support intelligent automation, real-time analytics, and scalable cloud integration. It highlights real-world implementations, core design principles, and measurable business outcomes demonstrating how AI architectures enable large-scale digital transformation.",
+    profilePic: "invited-speakers/Chaithanya_Etikala.jpeg",
+    country: "India",
+    city: "TBD",
+    briefProfile:
+      "Chaithanya Etikala is a Senior Technical Architect with over a decade of experience designing AI-enabled enterprise platforms and scalable cloud solutions. She specializes in intelligent automation, CRM ecosystems, and distributed system architecture, delivering high-impact digital transformation initiatives for global organizations."
+  },
+
+  {
+    name: "Shivangi Chaughule",
+    designation: "Physical Therapist",
+    company: "FOX Rehabilitation",
+    experience: "13 Years",
+    email: "shivangisawant@ymail.com",
+    conferenceLink: "https://www.dasgri.co.uk/call-for-papers",
+    titleOfTalk: "AI for Remote Diagnostics and Telemedicine Platforms",
+    abstract:
+      "This talk explores how AI-driven telemedicine platforms enable faster, more accurate remote diagnostics through real-time data analysis, predictive modeling, and clinical decision support. It highlights applications in remote monitoring, symptom triage, and personalized care while addressing data privacy, regulatory, and ethical implementation challenges.",
+    profilePic: "invited-speakers/Shivangi_Chaughule.jpeg",
+    country: "USA",
+    city: "New York",
+    briefProfile:
+      "Shivangi Chaughule is a licensed Physical Therapist in New York and a Medical Informatics professional with over a decade of experience in home health and rehabilitation. She specializes in remote patient care, geriatric mobility, and evidence-based therapy, contributing actively to research in telehealth and holistic rehabilitation."
+  },
+
+  {
+    name: "Isha Bhonde",
+    designation: "Physical Therapist",
+    company: "FOX Rehabilitation",
+    experience: "5 Years",
+    email: "bhonde.isha@gmail.com",
+    conferenceLink: "https://www.dasgri.co.uk/call-for-papers",
+    titleOfTalk: "Mental Health Prediction and Emotion-Aware Systems",
+    abstract:
+      "Mental health prediction and emotion-aware systems use AI, wearables, and digital phenotyping to detect early emotional distress and predict risk of deterioration. This talk explores proactive intervention, ethical considerations, and clinical integration of intelligent systems that enable personalized, preventive, and compassionate mental healthcare.",
+    profilePic: "invited-speakers/Isha_Bhonde.jpeg",
+    country: "USA",
+    city: "New York",
+    briefProfile:
+      "Isha Bhonde is a licensed Physical Therapist in New York and Medical Informatics professional specializing in home health rehabilitation and data-informed care. With clinical experience across long-term and home health settings, she focuses on personalized therapy, remote monitoring, mentorship, and research in holistic rehabilitation."
+  }
 
 
 ];
