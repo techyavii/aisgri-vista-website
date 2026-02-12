@@ -166,7 +166,40 @@ const InvitedSpeakers = () => {
     city: "New York",
     briefProfile:
       "Isha Bhonde is a licensed Physical Therapist in New York and Medical Informatics professional specializing in home health rehabilitation and data-informed care. With clinical experience across long-term and home health settings, she focuses on personalized therapy, remote monitoring, mentorship, and research in holistic rehabilitation."
-  }
+  },
+  {
+  name: "Swapna Putti",
+  designation: "Solution Architect",
+  company: "Pearson Education Inc",
+  experience: "20+ Years",
+  email: "pswapna.cse@gmail.com",
+  conferenceLink: "https://www.dasgri.co.uk/",
+  titleOfTalk: "Architecting Responsible AI for Global Enterprise Contact Centers: Integrating Human-in-the-Loop with Salesforce and AWS",
+  abstract:
+    "This talk presents an original framework for responsible AI in enterprise contact centers, integrating Salesforce and AWS architectures. It details data pipelines, AI decision engines, human-in-the-loop workflows, audit mechanisms, and resilience strategies, demonstrating how innovative architecture enables scalable, ethical, and high-impact AI solutions with global enterprise adoption.",
+  profilePic: "invited-speakers/Swapna_Putti.jpeg",
+  country: "",
+  city: "",
+  briefProfile:
+    "Swapna Putti is a Solution Architect with over 20 years of experience designing and delivering enterprise-scale CRM, AI-driven contact center, and cloud platforms. A certified Salesforce and AWS architect, she has pioneered responsible AI frameworks, human-in-the-loop architectures, and scalable governance models, delivering mission-critical solutions adopted globally through innovative technical leadership."
+},
+{
+  name: "Arjun Shivarudraiah",
+  designation: "Senior Software Engineer",
+  company: "Meijer",
+  experience: "10+ Years",
+  email: "arjunmandya26@gmail.com",
+  conferenceLink: "https://www.dasgri.co.uk/",
+  titleOfTalk: "Engineering Scalable Enterprise Systems with Cloud-Native and AI-Driven Architectures",
+  abstract:
+    "This talk explores the design of scalable, cloud-native enterprise systems enhanced with AI-driven automation and intelligent workflows. It highlights architectural patterns, microservices, DevOps practices, and resilience strategies that enable high availability, performance optimization, and seamless digital transformation across large-scale retail and enterprise platforms.",
+  profilePic: "invited-speakers/Arjun_Shivarudraiah.jpeg",
+  country: "",
+  city: "",
+  briefProfile:
+    "Arjun Shivarudraiah is a Senior Software Engineer with over 10 years of experience building scalable enterprise and retail technology platforms. He specializes in cloud-native architectures, microservices, DevOps, and AI-enabled systems. Arjun has contributed to high-impact, production-grade solutions that drive performance, reliability, and digital transformation at enterprise scale."
+}
+
 
 
 ];
