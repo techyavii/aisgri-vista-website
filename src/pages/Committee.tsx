@@ -235,6 +235,7 @@ const Committee = () => {
   { name: "Dharmateja Priyadarshi Uddandarao", affiliation: "Amazon, USA" },
   { name: "Sandeep Raichura", affiliation: "Microsoft Corporation, USA" },
   { name: "Sudheekar Reddy Pothireddy", affiliation: "SAEITS, Austin, TX" },
+  { name: "Writuraj Sarma", affiliation: "Samsung SEA, Lead Product Manager, New Jersey, NJ, USA" },
 
 
 ];
