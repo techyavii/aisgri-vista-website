@@ -198,6 +198,22 @@ const InvitedSpeakers = () => {
   city: "",
   briefProfile:
     "Arjun Shivarudraiah is a Senior Software Engineer with over 10 years of experience building scalable enterprise and retail technology platforms. He specializes in cloud-native architectures, microservices, DevOps, and AI-enabled systems. Arjun has contributed to high-impact, production-grade solutions that drive performance, reliability, and digital transformation at enterprise scale."
+},
+{
+  name: "Anirban Roy",
+  designation: "Principal Engineer",
+  company: "Amazon Web Service",
+  experience: "20+ Years",
+  email: "roy.anir@gmail.com",
+  conferenceLink: "https://www.dasgri.co.uk/",
+  titleOfTalk: "Training a 100B-Parameter AI Model Is Easy — Until One GPU Fails",
+  abstract:
+    "At frontier scale, training timelines depend less on peak TFLOPs than on goodput—the fraction of paid accelerator time that yields net learning. Faults, restarts, and orchestration overhead silently tax schedules and budgets. Modern, training-aware infrastructure compresses recovery from hours to minutes, restoring predictability and materially cutting cost for large clusters.",
+  profilePic: "invited-speakers/Anirban_Roy.jpg",
+  country: "",
+  city: "",
+  briefProfile:
+    "Anirban Roy is a Principal Engineer at AWS, building large-scale AI training infrastructure for foundation models. With 20+ years across cloud, distributed systems, and ML platforms, he drives resilient, cost-efficient training at extreme scale. He helped launch SageMaker HyperPod checkpointless recovery and elastic training in 2025, sustaining high goodput across thousands of accelerators, and holds multiple patents and open-source contributions."
 }
 
 

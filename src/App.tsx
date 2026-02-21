@@ -25,6 +25,7 @@ import CallForSpecialSession from './pages/CallForSpecialSession';
 import SpecialSessions from './pages/SpecialSessions';
 import InvitedSpeakers from './pages/InvitedSpeakers';
 import DasgriAwards from './pages/DasgriAwards';
+import KeynoteSpeakers from './components/KeynoteSpeakers';
 
 const queryClient = new QueryClient();
 
@@ -57,6 +58,7 @@ const App: React.FC = () => (
               <Route path="/conference-venue" element={<ConferenceVenue />} />
               <Route path="/downloads" element={<Downloads />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

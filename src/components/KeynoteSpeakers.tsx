@@ -79,6 +79,18 @@ const KeynoteSpeakers = () => {
       company: "Amazon, USA",
       profilePic: "keynotes/bhargava.jpeg",
     },
+    {
+      name: "Satish Kumar Malaraju",
+      designation: "Technology Architect - DevSecOps",
+      company: "VHL Technologies Inc.",
+      profilePic: "keynotes/satish_kumar_malaraju.jpeg",
+    },
+    {
+      name: "Vivek Kumar",
+      designation: "Independent Peer Reviewer / Subject Matter Expert",
+      company: "Independent Professional (AI Governance & Data Privacy, Cyber GRC)",
+      profilePic: "keynotes/vivek_kumar.jpeg",
+    },
   ];
 
 
