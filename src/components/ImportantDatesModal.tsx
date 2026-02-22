@@ -11,8 +11,8 @@ import { Calendar } from 'lucide-react';
 
 const ImportantDatesModal: React.FC = () => {
   const importantDates = [
-    { title: "Paper Submission Deadline", date: "20th February 2026" },
-    { title: "Acceptance Notification Due", date: "15th March 2026" },
+    { title: "Paper Submission Deadline", date: "1 March 2026" },
+    { title: "Acceptance Notification Due", date: "25th March 2026" },
     { title: "Registration Due", date: "28th March 2026" },
     { title: "Camera Ready Submission", date: "28th February 2026" },
     { title: "Conference Dates", date: "10th – 11th April 2026" }
