@@ -36,6 +36,7 @@ const Committee = () => {
 
   const coConveners = [
     { name: "Sri Lekha Bandla", affiliation: "Dr. Reddy's Laboratories, New Jersey, USA" },
+    { name: "Shally Garg", affiliation: "Nvidia Corporation, USA , Santa Clara" }
   ];
 
   const publicityChairs = [
