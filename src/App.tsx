@@ -26,6 +26,8 @@ import SpecialSessions from './pages/SpecialSessions';
 import InvitedSpeakers from './pages/InvitedSpeakers';
 import DasgriAwards from './pages/DasgriAwards';
 import KeynoteSpeakers from './components/KeynoteSpeakers';
+import ImportantNotice from "./components/ImportantNotice";
+
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,7 @@ const App: React.FC = () => (
         <div className="flex flex-col min-h-screen">
           <ConferenceBanner />
           <Navbar />
+          <ImportantNotice />
           <ImportantDatesModal />
           <div className="flex-grow">
             <Routes>
