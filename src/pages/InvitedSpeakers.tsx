@@ -214,6 +214,22 @@ const InvitedSpeakers = () => {
   city: "",
   briefProfile:
     "Anirban Roy is a Principal Engineer at AWS, building large-scale AI training infrastructure for foundation models. With 20+ years across cloud, distributed systems, and ML platforms, he drives resilient, cost-efficient training at extreme scale. He helped launch SageMaker HyperPod checkpointless recovery and elastic training in 2025, sustaining high goodput across thousands of accelerators, and holds multiple patents and open-source contributions."
+},
+{
+  name: "Venkata Reddy Pasam",
+  designation: "Senior Data Engineer and Cloud Architect",
+  company: "Boardwalk Pipelines",
+  experience: "15 Years",
+  email: "venkatdbapp@gmail.com",
+  conferenceLink: "https://www.dasgri.co.uk/invitedspeakers",
+  titleOfTalk: "Protecting Sensitive Data While Driving Societal Innovation",
+  abstract:
+    "The release of individual-level or aggregated statistical data can introduce serious privacy risks, including the unintended disclosure of Personally Identifiable Information (PII). Although protecting sensitive information is essential, many traditional privacy-preserving techniques often restrict the ability to extract valuable insights from data. Differential Privacy provides a principled approach that helps maintain a balance between privacy protection and data utility, enabling organizations to share and analyze data securely without exposing confidential information. This talk will discuss the fundamental concepts of differential privacy, highlight practical implementation challenges, and examine its growing importance in developing future data-driven systems that support a safe and secure society. In addition, the talk will outline potential research directions for integrating differential privacy into the development of next-generation AI models.",
+  profilePic: "invited-speakers/Venkata_Reddy_Pasam.jpeg",
+  country: "",
+  city: "",
+  briefProfile:
+    "Venkata Reddy Pasam is a Senior Software Engineer with over 15 years of experience in enterprise databases, AI-driven data platforms, and large-scale cloud migrations. An independent researcher with international publications and award-winning papers, he specializes in AI, AWS, Azure, and PostgreSQL architectures. He actively contributes to global conferences and technical communities and is recognized for advancing AI-driven solutions in enterprise data systems."
 }
 
 
