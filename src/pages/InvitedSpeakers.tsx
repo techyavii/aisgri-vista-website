@@ -230,6 +230,24 @@ const InvitedSpeakers = () => {
   city: "",
   briefProfile:
     "Venkata Reddy Pasam is a Senior Software Engineer with over 15 years of experience in enterprise databases, AI-driven data platforms, and large-scale cloud migrations. An independent researcher with international publications and award-winning papers, he specializes in AI, AWS, Azure, and PostgreSQL architectures. He actively contributes to global conferences and technical communities and is recognized for advancing AI-driven solutions in enterprise data systems."
+},
+{
+  name: "Amit Kumar Padhy",
+  designation: "Senior Computer Scientist II and Lead Architect",
+  company: "Adobe",
+  experience: "",
+  email: "akpadhy2@illinois.edu",
+  conferenceLink: "",
+  titleOfTalk: "",
+  abstract: "",
+  profilePic: "invited-speakers/Amit.jpeg",
+  country: "USA",
+  city: "San Jose, California / Urbana, Illinois",
+  briefProfile:
+    "Amit Kumar Padhy is a Senior Computer Scientist II and Lead Architect at Adobe, based in the San Francisco Bay Area. He specializes in cloud-native platforms, distributed systems, and AI-enabled digital commerce. He architects and modernizes mission-critical, event-driven microservices at global scale with a focus on reliability, performance, cost optimization, and platform governance. Amit is an invited keynote speaker at international IEEE conferences and has delivered professional-level talks at major industry events such as DeveloperWeek, ProductWorld, and leading AI and Data Summits. He also serves on advisory boards for IEEE and ACM conferences.",
+  affiliation:
+    "University of Illinois Urbana-Champaign, Urbana, IL, USA",
+  orcid: "0009-0008-5584-0257"
 }
 
 
