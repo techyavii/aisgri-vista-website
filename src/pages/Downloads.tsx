@@ -7,6 +7,11 @@ import { Button } from '@/components/ui/button';
 const Downloads = () => {
   const downloadItems = [
     {
+      name: 'Presentation Schedule',
+      link: '/downloads/Presentation_Schedule_DASGRI-2026.pptx',
+      icon: <FileText className="mr-2" size={18} />
+    },
+    {
       name: 'Checklist',
       link: '/Checklist.pdf',
       icon: <FileText className="mr-2" size={18} />
@@ -29,6 +34,26 @@ const Downloads = () => {
     {
       name: 'License Form (Springer)',
       link: '/License Form (Springer).docx',
+      icon: <FileText className="mr-2" size={18} />
+    },
+    {
+      name: 'Adroid PPT Template PDF',
+      link: '/downloads/DASGRI_2026_PPT_Template_Adroid.pdf',
+      icon: <FileText className="mr-2" size={18} />
+    },
+    {
+      name: 'Adroid PPT Template',
+      link: '/downloads/DASGRI_2026_PPT_Template_Adroid.pptx',
+      icon: <FileText className="mr-2" size={18} />
+    },
+    {
+      name: 'Springer PPT Template PDF',
+      link: '/downloads/DASGRI_2026_PPT_Template_Springer.pdf',
+      icon: <FileText className="mr-2" size={18} />
+    },
+    {
+      name: 'Springer PPT Template',
+      link: '/downloads/DASGRI_2026_PPT_Template_Springer.pptx',
       icon: <FileText className="mr-2" size={18} />
     },
   ];
