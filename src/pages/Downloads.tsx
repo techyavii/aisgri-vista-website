@@ -8,7 +8,7 @@ const Downloads = () => {
   const downloadItems = [
     {
       name: 'Presentation Schedule',
-      link: '/downloads/Presentation_Schedule_DASGRI-2026.pptx',
+      link: '/downloads/Presentation_Schedule_DASGRI-2026.pdf',
       icon: <FileText className="mr-2" size={18} />
     },
     {
