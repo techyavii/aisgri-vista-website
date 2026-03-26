@@ -234,13 +234,13 @@ const InvitedSpeakers = () => {
 {
   name: "Arun Pratap Singh",
   designation: "",
-  company: "",
+  company: "Mountain View, CA 94043, USA",
   experience: "",
   email: "",
   conferenceLink: "https://www.dasgri.co.uk/invitedspeakers",
   titleOfTalk: "",
   abstract: "",
-  profilePic: "invited-speakers/Arun.jpeg",
+  profilePic: "invited-speakers/Arun_Pratap_Singh.jpeg",
   country: "USA",
   city: "Mountain View, CA",
   briefProfile: ""
