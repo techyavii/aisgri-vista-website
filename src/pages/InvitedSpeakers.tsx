@@ -258,10 +258,25 @@ const InvitedSpeakers = () => {
   country: "USA",
   city: "Urbana, IL",
   briefProfile: ""
+},
+{
+  name: "Sujatha Lakshmi Narra",
+  designation: "Sr Security Engineer",
+  company: "Robinhood",
+  experience: "15 Years",
+  email: "sujathanarra87@gmail.com",
+  conferenceLink: "https://www.dasgri.co.uk",
+  titleOfTalk: "AI-Driven Identity Threat Protection",
+  abstract:
+    "Identity has become the primary control plane of modern enterprise security, with organizations relying on cloud identity providers, SSO, and federated authentication. Attackers increasingly target identities, tokens, and authorization flows through techniques like credential theft, MFA fatigue, token hijacking, and OAuth abuse. Traditional IAM controls struggle to detect and prevent these evolving, adaptive identity-based threats effectively.",
+  profilePic: "invited-speakers/Sujatha.jpg",
+  country: "",
+  city: "",
+  briefProfile:
+    "Sujatha Lakshmi Narra is a Senior Security Engineer with over 15 years of experience in enterprise security, identity and access management, and threat protection. She specializes in securing modern cloud-based identity systems and mitigating advanced identity-driven attacks. She actively contributes to strengthening organizational security postures against evolving cyber threats."
 }
 
 ];
-
 
   return (
     <div>
