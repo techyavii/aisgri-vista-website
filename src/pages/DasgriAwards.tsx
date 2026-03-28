@@ -278,7 +278,7 @@ const specialRecognitionAwards = [
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-druk mb-2">
-              DASGRI Awards
+              Call for Awards
             </h1>
             <div className="w-24 h-1 bg-blue-600 mb-8"></div>
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
