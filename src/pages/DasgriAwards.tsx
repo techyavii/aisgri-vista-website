@@ -602,7 +602,6 @@ const specialRecognitionAwards = [
             <div className="w-24 h-1 bg-blue-600"></div>
           </div>
           <p className="text-lg text-gray-700 mb-8">
-            Submit your nomination by 25th February 2026. Recognize excellence in research, innovation, and technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
