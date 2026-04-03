@@ -234,7 +234,7 @@ const InvitedSpeakers = () => {
 {
   name: "Arun Pratap Singh",
   designation: "",
-  company: "Mountain View, CA 94043, USA",
+  company: "Lead Analytics Engineer - Agentic AI & BI Platform",
   experience: "",
   email: "",
   conferenceLink: "https://www.dasgri.co.uk/invitedspeakers",
