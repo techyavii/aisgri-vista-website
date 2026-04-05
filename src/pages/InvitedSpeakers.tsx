@@ -274,6 +274,20 @@ const InvitedSpeakers = () => {
   city: "",
   briefProfile:
     "Sujatha Lakshmi Narra is a Senior Security Engineer with over 15 years of experience in enterprise security, identity and access management, and threat protection. She specializes in securing modern cloud-based identity systems and mitigating advanced identity-driven attacks. She actively contributes to strengthening organizational security postures against evolving cyber threats."
+},
+{
+  "name": "Novman Mohammed",
+  "designation": "Sr. DevOps / MLOps Engineer",
+  "company": "Amdocs",
+  "experience": "12 Years",
+  "email": "novman@ieee.org",
+  "conferenceLink": "",
+  "titleOfTalk": "Securing LLM Workloads on Azure Kubernetes Service (AKS): GPU-Accelerated MLOps with End-to-End DevSecMLOps Framework",
+  "abstract": "This session demonstrates how Large Language Models (LLMs) and machine learning workloads can be securely deployed on GPU-enabled Microsoft Azure Kubernetes Service (AKS) using DevSecMLOps practices. It focuses on end-to-end security across training, deployment, and inference, highlighting controls for model integrity, data protection, and runtime security in scalable AI systems.",
+  "profilePic": "invited-speakers/Novman_Mohammed.jpeg",
+  "country": "",
+  "city": "",
+  "briefProfile": "Novman Mohammed is a Senior DevOps and Cloud Engineer with 12 years of experience and co-author of Cloud Native Applications on Microsoft Azure. He specializes in MLOps and DevSecOps for AI-driven enterprise applications, focusing on building secure, resilient, and fault-tolerant cloud-native systems with high availability and operational excellence."
 }
 
 ];
