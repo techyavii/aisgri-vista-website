@@ -233,8 +233,8 @@ const InvitedSpeakers = () => {
 },
 {
   name: "Arun Pratap Singh",
-  designation: "",
-  company: "Lead Analytics Engineer - Agentic AI & BI Platform",
+  designation: "Lead Analytics Engineer - Agentic AI & BI Platform ",
+  company: "Freshworks, USA",
   experience: "",
   email: "",
   conferenceLink: "https://www.dasgri.co.uk/invitedspeakers",
