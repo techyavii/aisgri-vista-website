@@ -91,6 +91,18 @@ const KeynoteSpeakers = () => {
       company: "Independent Professional (AI Governance & Data Privacy, Cyber GRC)",
       profilePic: "keynotes/vivek_kumar.jpeg",
     },
+    {
+      name: "Suchith Goud Arella",
+      designation: "Senior Software Engineer",
+      company: "Anjus LLC, USA",
+      profilePic: "keynotes/suchith.jpeg",
+    },
+    {
+      name: "Sandeep Shivam",
+      designation: "Associate Director - Product Management",
+      company: "Tavant, USA",
+      profilePic: "keynotes/sandeep.jpeg",
+    },
   ];
 
 
