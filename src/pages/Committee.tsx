@@ -214,7 +214,13 @@ const Committee = () => {
   { name: "Gautam Srivastava", affiliation: "Brandon University, Canada" },
   { name: "Christos Douligeris", affiliation: "University of Piraeus, Greece" },
   { name: "Lakshmanan Sethu Sankaranarayanan", affiliation: "Google, USA" },
-  { name: "Kaushik Jangiti", affiliation: "Snowflake, USA" }
+  { name: "Kaushik Jangiti", affiliation: "Snowflake, USA" },
+  {name: "Md Mehedi Hassan Melon",affiliation: "University of the Cumberlands, USA"},
+  {name: "Rashad Bakhshizada",affiliation: "Missouri University of Science and Technology, Rolla, MO, USA"},
+  {name: "Dipankar Nandy",affiliation: "Lamar University, Texas, USA"},
+  {name: "MD Badsha Nuruzzaman Shahin",affiliation: "San Francisco Bay University, Fremont, California, USA"},
+  {name: "S A Sabbirul Mohosin Naim",affiliation: "San Francisco Bay University, Fremont, California, USA"},
+  {name: "Mr. Jahangir Shekh",affiliation: "Murray State University, USA"}
 ];
 
   const advisoryCommittee = [
