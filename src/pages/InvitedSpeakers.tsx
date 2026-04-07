@@ -288,15 +288,42 @@ const InvitedSpeakers = () => {
   "country": "",
   "city": "",
   "briefProfile": "Novman Mohammed is a Senior DevOps and Cloud Engineer with 12 years of experience and co-author of Cloud Native Applications on Microsoft Azure. He specializes in MLOps and DevSecOps for AI-driven enterprise applications, focusing on building secure, resilient, and fault-tolerant cloud-native systems with high availability and operational excellence."
-}
-
+},
+  {
+    "name": "Nithin Reddy Gadicharla",
+    "designation": "Database Administrator",
+    "company": "Elan Technologies",
+    "experience": "10+ Years",
+    "email": "Nithin.gadicharla@ieee.org",
+    "conferenceLink": "https://www.dasgri.co.uk",
+    "titleOfTalk": "Engineering Resilient Multi-Cloud Architectures for High-Performance AI and Data Workload",
+    "abstract": "As AI and data-intensive systems redefine enterprise innovation, resilient multi-cloud architectures have become the foundation of scalable intelligence. This session explores advanced design paradigms for building fault-tolerant, high-performance platforms across diverse cloud environments, integrating distributed systems principles and cloud-native strategies to enable secure, adaptive, and globally scalable data ecosystems.",
+    "profilePic": "invited-speakers/Nithin_Reddy_Gadicharla.jpeg",
+    "country": "",
+    "city": "",
+    "briefProfile": "Nithin Gadicharla is a technology leader specializing in cloud-native architecture, data engineering, and AI-driven platforms. He has designed scalable, high-performance systems across multi-cloud environments, enabling real-time analytics and intelligent decision-making. His work focuses on distributed systems, performance optimization, and building resilient, next-generation data platforms for enterprise innovation."
+  },
+  {
+    "name": "Narendra Kandregula",
+    "designation": "Assistant Vice President",
+    "company": "Deutsche Bank",
+    "experience": "13 Years",
+    "email": "narendravsk@gmail.com",
+    "conferenceLink": "",
+    "titleOfTalk": "AI-Powered Compliance: Scaling Audit Capabilities in Financial Systems",
+    "abstract": "Financial compliance processes are often manual, time-intensive, and difficult to scale with increasing regulatory demands. This session explores how Generative AI can act as an intelligent auditor by automating transaction reviews, interpreting policies, and generating audit-ready narratives. It highlights real-world fintech use cases, RAG architectures, and human-in-the-loop validation while addressing explainability, privacy, and governance challenges.",
+    "profilePic": "invited-speakers/Narendra_Kandregula.jpeg",
+    "country": "USA",
+    "city": "New York",
+    "briefProfile": "Narendra Kandregula is an AVP at Deutsche Bank with over 13 years of experience in building scalable fintech platforms, cloud-native microservices, and real-time trading systems. He has worked with organizations like Apple and JP Morgan. An active researcher with multiple publications, his work spans generative AI in fintech, healthcare AI, IoT analytics, and cybersecurity. He holds certifications in AWS, Java, and Blockchain and is a graduate of the National University of Singapore."
+  }
 ];
 
   return (
     <div>
       <section className="py-16 bg-[#f7faff]">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6 font-publico text-center text-gray-900 mb-12">
+        <h2 className="text-3xl font-bold font-publico text-center text-gray-900 mb-12">
           Invited Speakers
         </h2>
 
