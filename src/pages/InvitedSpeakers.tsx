@@ -316,6 +316,19 @@ const InvitedSpeakers = () => {
     "country": "USA",
     "city": "New York",
     "briefProfile": "Narendra Kandregula is an AVP at Deutsche Bank with over 13 years of experience in building scalable fintech platforms, cloud-native microservices, and real-time trading systems. He has worked with organizations like Apple and JP Morgan. An active researcher with multiple publications, his work spans generative AI in fintech, healthcare AI, IoT analytics, and cybersecurity. He holds certifications in AWS, Java, and Blockchain and is a graduate of the National University of Singapore."
+  },
+  {
+    "name": "Kapil Kumar Sharma",
+    "company": "Fuquay Varina, NC",
+    "experience": "13 Years",
+    "email": "narendravsk@gmail.com",
+    "conferenceLink": "",
+    "titleOfTalk": "AI-Powered Compliance: Scaling Audit Capabilities in Financial Systems",
+    "abstract": "Financial compliance processes are often manual, time-intensive, and difficult to scale with increasing regulatory demands. This session explores how Generative AI can act as an intelligent auditor by automating transaction reviews, interpreting policies, and generating audit-ready narratives. It highlights real-world fintech use cases, RAG architectures, and human-in-the-loop validation while addressing explainability, privacy, and governance challenges.",
+    "profilePic": "invited-speakers/Kapil_Kumar_Sharma.jpeg",
+    "country": "USA",
+    "city": "New York",
+    "briefProfile": "Narendra Kandregula is an AVP at Deutsche Bank with over 13 years of experience in building scalable fintech platforms, cloud-native microservices, and real-time trading systems. He has worked with organizations like Apple and JP Morgan. An active researcher with multiple publications, his work spans generative AI in fintech, healthcare AI, IoT analytics, and cybersecurity. He holds certifications in AWS, Java, and Blockchain and is a graduate of the National University of Singapore."
   }
 ];
 
