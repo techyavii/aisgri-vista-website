@@ -1,6 +1,6 @@
 interface InvitedSpeakerProps {
   name: string;
-  designation: string;
+  designation?: string;
   company: string;
   experience: string;
   email: string;
