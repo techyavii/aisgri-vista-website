@@ -329,7 +329,20 @@ const InvitedSpeakers = () => {
     "country": "USA",
     "city": "New York",
     "briefProfile": "Narendra Kandregula is an AVP at Deutsche Bank with over 13 years of experience in building scalable fintech platforms, cloud-native microservices, and real-time trading systems. He has worked with organizations like Apple and JP Morgan. An active researcher with multiple publications, his work spans generative AI in fintech, healthcare AI, IoT analytics, and cybersecurity. He holds certifications in AWS, Java, and Blockchain and is a graduate of the National University of Singapore."
-  }
+  },
+  {
+  "name": "Nitin Talreja",
+  "company": "Optum Services Inc. (United Health Group)",
+  "experience": "18 Years",
+  "email": "writemail2nitin@gmail.com",
+  "conferenceLink": "https://www.dasgri.co.uk/",
+  "titleOfTalk": "From Data Pipelines to Health Equity: Engineering Responsible AI at Scale",
+  "abstract": "This talk explores how robust data pipelines enable responsible AI in healthcare. It highlights governance, interoperability, privacy, and bias reduction as foundations for trustworthy models. Drawing from enterprise-scale healthcare data engineering, the session shows how better data architecture can improve equity, support ethical innovation, and deliver measurable social good.",
+  "profilePic": "invited-speakers/Nitin_Talreja.jpeg",
+  "country": "USA",
+  "city": "",
+  "briefProfile": "Nitin Talreja is a Principal Data Engineer at UnitedHealth Group with deep experience building scalable, reliable healthcare data platforms. He focuses on data quality, governance, privacy, and performance to enable responsible AI and better decision-making. His work helps transform complex data into trusted insights that support health equity and improved outcomes."
+}
 ];
 
   return (
