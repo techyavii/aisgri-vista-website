@@ -94,7 +94,7 @@ const KeynoteSpeakers = () => {
     {
       name: "Suchith Goud Arella",
       designation: "Senior Software Engineer",
-      company: "Anjus LLC, USA",
+      // company: "Anjus LLC, USA",
       profilePic: "keynotes/suchith.jpeg",
     },
     {
