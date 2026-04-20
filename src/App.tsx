@@ -25,6 +25,8 @@ import CallForSpecialSession from './pages/CallForSpecialSession';
 import SpecialSessions from './pages/SpecialSessions';
 import InvitedSpeakers from './pages/InvitedSpeakers';
 import DasgriAwards from './pages/DasgriAwards';
+import BestPaperAwards from './pages/BestPaperAwards';
+import DasgriAwardsResults from './pages/DasgriAwardsResults';
 import KeynoteSpeakers from './components/KeynoteSpeakers';
 import ImportantNotice from "./components/ImportantNotice";
 
@@ -54,6 +56,8 @@ const App: React.FC = () => (
               <Route path="/quality-policies" element={<QualityPolicies />} />
               <Route path="/committee" element={<Committee />} />
               <Route path="/dasgri-awards" element={<DasgriAwards />} />
+              <Route path="/best-paper-awards" element={<BestPaperAwards />} />
+              <Route path="/dasgri-awards-results" element={<DasgriAwardsResults />} />
               <Route path="/registration" element={<Registration />} />
               <Route path="/checkout" element={<CheckoutForm />} />
               <Route path="/publications" element={<Publications />} />

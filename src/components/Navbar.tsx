@@ -62,7 +62,16 @@ const Navbar: React.FC = () => {
       ]
     },
     { name: 'Committee', href: '/committee' },
-    { name: 'Awards', href: '/dasgri-awards' },
+    { 
+      name: 'Awards', 
+      href: '#awards', 
+      hasDropdown: true,
+      dropdownItems: [
+        { name: 'Awards', href: '/dasgri-awards' },
+        { name: 'DASGRI 2026 Awards Results', href: '/dasgri-awards-results' },
+        { name: 'Best Paper Awards', href: '/best-paper-awards' },
+      ]
+    },
     { name: 'Registration', href: '/registration' },
     { name: 'Publications', href: '/publications' },
     { name: 'Invited Speakers', href: '/invitedspeakers' },
