@@ -20,7 +20,7 @@ const BestPaperAwards: React.FC = () => {
     {
       id: 'DASGRI-11',
       title: 'Cybersecure Embedded AI Systems for Remote Healthcare Monitoring in Smart Hospital',
-      authors: 'Shiva Kumar Madishetty, Guru Kakaraparthi, Selvaraj Durairaj'
+      authors: 'Shiva Kumar Madishetty, Guru Charan Kakaraparthi, Selvaraj Durairaj'
     },
     {
       id: '379',

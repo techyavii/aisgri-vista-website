@@ -27,7 +27,6 @@ import InvitedSpeakers from './pages/InvitedSpeakers';
 import DasgriAwards from './pages/DasgriAwards';
 import BestPaperAwards from './pages/BestPaperAwards';
 import DasgriAwardsResults from './pages/DasgriAwardsResults';
-import KeynoteSpeakers from './components/KeynoteSpeakers';
 import ImportantNotice from "./components/ImportantNotice";
 
 
