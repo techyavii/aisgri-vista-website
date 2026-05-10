@@ -201,6 +201,21 @@ const DasgriAwardsResults: React.FC = () => {
       name: 'Sai Krishna Anche',
       category: 'Software & Enterprise Solutions Awards',
       subAward: 'DevOps Transformation Excellence Award'
+    },
+    {
+      name: 'Naren Swamy Jamithireddy',
+      category: 'Fintech and Digital Transformation of Finance',
+      subAward: 'Fintech Digital Transformation Excellence Award'
+    },
+    {
+      name: 'Harsha Vardhan Reddy Kavuluri',
+      category: 'Cloud, Data & Digital Platforms',
+      subAward: 'Cloud Data Protection & Database Reliability Excellence Award'
+    },
+    {
+      name: 'Jaswanth Kumar Mandapatti',
+      category: 'Artificial Intelligence & Advanced Technologies Awards',
+      subAward: 'AI in Healthcare & Life Sciences Excellence Award'
     }
   ];
 
