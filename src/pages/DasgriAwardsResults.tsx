@@ -216,6 +216,11 @@ const DasgriAwardsResults: React.FC = () => {
       name: 'Jaswanth Kumar Mandapatti',
       category: 'Artificial Intelligence & Advanced Technologies Awards',
       subAward: 'AI in Healthcare & Life Sciences Excellence Award'
+    },
+    {
+      name: 'Mohammad Majharul Islam Jabed',
+      category: 'Best Paper Awards',
+      subAward: 'Best Paper Award'
     }
   ];
 
