@@ -23,10 +23,10 @@ const IndexingSection: React.FC = () => {
         {/* Conference Mode Banner */}
         <div className="text-center mb-8">
           <h2 className="text-blue-600 font-bold text-xl md:text-2xl mb-2">
-            DASGRI 2026 will be organised in Hybrid Mode
+            DASGRI 2027 will be organised in Hybrid Mode
           </h2>
           <p className="text-blue-600 font-semibold text-lg">
-            [ 10th April 2026 - Physical Mode || 11th April 2026 - Digital Mode ]
+            [ 9th April 2027 - Physical Mode || 10th April 2027 - Digital Mode ]
           </p>
         </div>
 

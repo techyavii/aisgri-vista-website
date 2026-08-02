@@ -34,11 +34,11 @@ const Committee = () => {
     { name: "Harpreet Singh Arora", affiliation: "Tel-Aviv University, Israel" }
   ];
 
-  const coConveners = [
-    { name: "Sri Lekha Bandla", affiliation: "Dr. Reddy's Laboratories, New Jersey, USA" },
-    { name: "Shally Garg", affiliation: "Nvidia Corporation, USA , Santa Clara" },
-    { name: "Geetha Krishna Sangam", affiliation: "Tata Consultancy Services, USA" }
-  ];
+  // const coConveners = [
+  //   { name: "Sri Lekha Bandla", affiliation: "Dr. Reddy's Laboratories, New Jersey, USA" },
+  //   { name: "Shally Garg", affiliation: "Nvidia Corporation, USA , Santa Clara" },
+  //   { name: "Geetha Krishna Sangam", affiliation: "Tata Consultancy Services, USA" }
+  // ];
 
   const publicityChairs = [
     { name: "Valentina Emilia Balas", affiliation: "Aurel Vlaicu University of Arad, Romania" },
@@ -279,7 +279,7 @@ const Committee = () => {
             <CommitteeSection title="Conference Chair(s)" members={conferenceChairs} />
             <CommitteeSection title="Technical Program Chair(s)" members={technicalProgramChairs} />
             <CommitteeSection title="Convener(s)" members={conveners} />
-            <CommitteeSection title="Co-Convener(s)" members={coConveners} />
+            {/* <CommitteeSection title="Co-Convener(s)" members={coConveners} /> */}
             <CommitteeSection title="Publicity Chair(s)" members={publicityChairs} />
             <CommitteeSection title="Organising Chair(s)" members={organisingChairs} />
             <CommitteeSection title="Publication Chair(s)" members={publicationChairs} />

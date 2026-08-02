@@ -122,7 +122,7 @@ const ConferenceVenue = () => {
               <a href="mailto:dasgri.congress@gmail.com" className="text-blue-600 hover:underline">
                 dasgri.congress@gmail.com
               </a>{' '}
-              to request a visa invitation letter so that you can print and use in obtaining a visa. Obtaining a Visa Support Letter from AISGRI-2026 Conference will not guarantee that your U.K. visa application will be approved. The letter is merely supplementary information that explains a visa applicant's intended purpose of travel to United Kingdom
+              to request a visa invitation letter so that you can print and use in obtaining a visa. Obtaining a Visa Support Letter from DASGRI-2027 Conference will not guarantee that your U.K. visa application will be approved. The letter is merely supplementary information that explains a visa applicant's intended purpose of travel to United Kingdom
             </p>
 
             <div className="mb-6">

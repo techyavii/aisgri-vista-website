@@ -10,7 +10,7 @@ const CallForPapers: React.FC = () => {
           
           <div className="mb-8">
             <p className="font-graphik text-lg mb-4">
-              The aim of DASGRI 2026 is to provide a global platform for researchers, engineers, academicians, technologists, and professionals from academia, industry, and government to present their latest research findings, development activities, and practical experiences across a wide spectrum of Data Science and Artificial Intelligence for Social Good and Responsible Innovation. The conference serves as a catalyst for cross-disciplinary collaboration, aiming to advance high-impact research and real-world applications of Data Science and AI that address urgent societal challenges with ethical foresight, inclusivity, and global relevance.
+              The aim of DASGRI 2027 is to provide a global platform for researchers, engineers, academicians, technologists, and professionals from academia, industry, and government to present their latest research findings, development activities, and practical experiences across a wide spectrum of Data Science and Artificial Intelligence for Social Good and Responsible Innovation. The conference serves as a catalyst for cross-disciplinary collaboration, aiming to advance high-impact research and real-world applications of Data Science and AI that address urgent societal challenges with ethical foresight, inclusivity, and global relevance.
             </p>
             <p className="font-graphik text-lg">
               The conference comprises multiple tracks covering a broad range of topics, detailed below:

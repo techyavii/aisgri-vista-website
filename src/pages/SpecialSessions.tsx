@@ -169,7 +169,7 @@ const SpecialSessions: React.FC = () => {
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Explore curated special sessions organized by leading researchers and
-            industry experts at DASGRI 2026
+            industry experts at DASGRI 2027
           </p>
         </div>
 
@@ -234,7 +234,7 @@ const SpecialSessions: React.FC = () => {
           </h2>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             We invite researchers and industry experts to organize special sessions
-            at DASGRI 2026. Submit your proposal today!
+            at DASGRI 2027. Submit your proposal today!
           </p>
           <a
             href="/call-for-special-session"

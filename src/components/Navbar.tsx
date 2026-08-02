@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
         { name: 'Call for Special Session', href: '/call-for-special-session' },
         { name: 'Paper Submission', href: '/paper-submission' },
         { name: 'Quality Policies', href: '/quality-policies' },
-        { name: 'Special Sessions', href: '/special-sessions' },
+        // { name: 'Special Sessions', href: '/special-sessions' },
       ]
     },
     { name: 'Committee', href: '/committee' },
@@ -68,14 +68,15 @@ const Navbar: React.FC = () => {
       hasDropdown: true,
       dropdownItems: [
         { name: 'Awards', href: '/dasgri-awards' },
-        { name: 'DASGRI 2026 Awards Results', href: '/dasgri-awards-results' },
-        { name: 'Best Paper Awards', href: '/best-paper-awards' },
+        // { name: 'DASGRI 2027 Awards Results', href: '/dasgri-awards-results' },
+        // { name: 'Best Paper Awards', href: '/best-paper-awards' },
       ]
     },
     { name: 'Registration', href: '/registration' },
     { name: 'Publications', href: '/publications' },
     { name: 'Invited Speakers', href: '/invitedspeakers' },
     { name: 'Conference Venue', href: '/conference-venue' },
+    { name: 'Previous Conference', href: '/previous-conference' },
     { name: 'Downloads', href: '/downloads' },
     { name: 'Privacy Policy', href: '/privacy-policy' }
   ];
@@ -88,7 +89,7 @@ const Navbar: React.FC = () => {
       style={{ backgroundColor: '#fff' }}
     >
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
-        <Link to="/" className="text-xl font-bold font-druk text-black">DASGRI 2026</Link>
+        <Link to="/" className="text-xl font-bold font-druk text-black">DASGRI 2027</Link>
         
         <div className="hidden lg:flex space-x-2">
           {navLinks.map((link) => (

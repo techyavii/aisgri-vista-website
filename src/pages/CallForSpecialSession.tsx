@@ -6,7 +6,7 @@ const CallForSpecialSession: React.FC = () => {
   const formatHref = '/Call for Special Session-Template.docx'
 
   const openMail = () => {
-    const subject = encodeURIComponent('Special Session Proposal for DASGRI-2026')
+    const subject = encodeURIComponent('Special Session Proposal for DASGRI-2027')
     window.location.href = `mailto:dasgri.congress@gmail.com?subject=${subject}`
   }
 
@@ -14,11 +14,11 @@ const CallForSpecialSession: React.FC = () => {
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800">
       <header className="bg-gradient-to-r from-sky-50 to-white border border-sky-100 rounded-lg p-8 mb-8">
         <h1 className="text-3xl sm:text-4xl font-semibold text-sky-900 mb-3">
-          Call for Special Sessions — DASGRI 2026
+          Call for Special Sessions — DASGRI 2027
         </h1>
         <p className="text-sm text-gray-600 mb-4">
           Invitation to organise a special session at the International Conference on
-          Data Science and AI for Social Good and Responsible Innovation (DASGRI-2026)
+          Data Science and AI for Social Good and Responsible Innovation (DASGRI-2027)
         </p>
 
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
@@ -62,8 +62,8 @@ const CallForSpecialSession: React.FC = () => {
         <h2 className="text-xl font-semibold text-sky-800 mb-3">Overview</h2>
         <p className="text-gray-700 leading-relaxed">
           DASGRI Conference team invites you to organize special sessions in your
-          research domain for DASGRI-2026, to be held at Goldsmiths, University of
-          London, United Kingdom on 10–11 April 2026. The two-day conference will
+          research domain for DASGRI-2027, to be held at Goldsmiths, University of
+          London, United Kingdom on 9–10 April 2027. The two-day conference will
           include workshops, technical sessions and keynote talks covering cutting
           edge topics in Data Science and AI for social good and responsible
           innovation. Learn more at{' '}
@@ -98,7 +98,7 @@ const CallForSpecialSession: React.FC = () => {
               <strong>Proposal deadline:</strong> 30 November 2026
             </li>
             <li>
-              <strong>Conference dates:</strong> 10–11 April 2026
+              <strong>Conference dates:</strong> 9–10 April 2027
             </li>
           </ul>
         </div>
@@ -114,7 +114,7 @@ const CallForSpecialSession: React.FC = () => {
           <a href="mailto:dasgri.congress@gmail.com" className="text-sky-600 underline">
             dasgri.congress@gmail.com
           </a>{' '}
-          with subject <strong>"Special Session Proposal — DASGRI 2026"</strong>.
+          with subject <strong>"Special Session Proposal — DASGRI 2027"</strong>.
         </p>
 
         <p className="text-gray-700 leading-relaxed">

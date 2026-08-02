@@ -111,7 +111,7 @@ const KeynoteSpeakers = () => {
       <div className="max-w-7xl mx-auto px-4">
          <div className="text-center mb-8">
         <h2 className="font-druk md:text-4xl text-goldsmiths-text border-b-4 border-goldsmiths-blue pb-2 inline-block text-3xl text-center mb-12">
-          Keynote Speakers
+          Previous Keynote Speakers 2026
         </h2>
         </div>
 

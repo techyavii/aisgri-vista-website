@@ -27,7 +27,7 @@ import InvitedSpeakers from './pages/InvitedSpeakers';
 import DasgriAwards from './pages/DasgriAwards';
 import BestPaperAwards from './pages/BestPaperAwards';
 import DasgriAwardsResults from './pages/DasgriAwardsResults';
-import ImportantNotice from "./components/ImportantNotice";
+import PreviousConference from './pages/PreviousConference';
 
 
 const queryClient = new QueryClient();
@@ -41,7 +41,6 @@ const App: React.FC = () => (
         <div className="flex flex-col min-h-screen">
           <ConferenceBanner />
           <Navbar />
-          <ImportantNotice />
           <ImportantDatesModal />
           <div className="flex-grow">
             <Routes>
@@ -49,7 +48,7 @@ const App: React.FC = () => (
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/call-for-papers" element={<CallForPapers />} />
               <Route path="/call-for-special-session" element={<CallForSpecialSession />} />
-              <Route path="/special-sessions" element={<SpecialSessions />} />
+              {/* <Route path="/special-sessions" element={<SpecialSessions />} /> */}
 
               <Route path="/paper-submission" element={<PaperSubmission />} />
               <Route path="/quality-policies" element={<QualityPolicies />} />
@@ -60,6 +59,7 @@ const App: React.FC = () => (
               <Route path="/registration" element={<Registration />} />
               <Route path="/checkout" element={<CheckoutForm />} />
               <Route path="/publications" element={<Publications />} />
+              <Route path="/previous-conference" element={<PreviousConference />} />
               <Route path="/invitedspeakers" element={<InvitedSpeakers />} />
               <Route path="/conference-venue" element={<ConferenceVenue />} />
               <Route path="/downloads" element={<Downloads />} />
