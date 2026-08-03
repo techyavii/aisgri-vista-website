@@ -68,8 +68,8 @@ const Navbar: React.FC = () => {
       hasDropdown: true,
       dropdownItems: [
         { name: 'Awards', href: '/dasgri-awards' },
-        // { name: 'DASGRI 2027 Awards Results', href: '/dasgri-awards-results' },
-        // { name: 'Best Paper Awards', href: '/best-paper-awards' },
+        { name: 'DASGRI 2027 Awards Results', href: '/dasgri-awards-results' },
+        { name: 'Best Paper Awards', href: '/best-paper-awards' },
       ]
     },
     { name: 'Registration', href: '/registration' },
