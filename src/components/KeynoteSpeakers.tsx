@@ -103,6 +103,12 @@ const KeynoteSpeakers = () => {
       company: "Tavant, USA",
       profilePic: "keynotes/sandeep.jpeg",
     },
+    {
+      name: "Dr Bharati Rathore",
+      designation: "University of South Wales",
+      company: "UK",
+      profilePic: "keynotes/bharati.jpeg",
+    },
   ];
 
 
