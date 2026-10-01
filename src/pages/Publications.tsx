@@ -9,7 +9,7 @@ const Publications = () => {
           <h1 className="text-3xl font-bold mb-6 font-publico">Publications</h1>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="mb-6">
-              All the accepted papers will be published in the proceedings of DASGRI 2027 in Springer Lecture Notes in Networks & Systems (LNNS) - <a href="https://link.springer.com/series/15179" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://link.springer.com/series/15179</a>
+              All the accepted papers will be published in the proceedings of DASGRI 2027 in Springer Lecture Notes in Networks & Systems (LNNS) (Proposed) - <a href="https://link.springer.com/series/15179" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://link.springer.com/series/15179</a>
             </p>
             <div className="flex justify-center">
               <img 
