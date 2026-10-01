@@ -304,7 +304,7 @@ const specialRecognitionAwards = [
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-black">31st January 2027</p>
+                <p className="text-2xl font-bold text-black">31st January 2026</p>
               </CardContent>
             </Card>
             <Card className="border border-gray-200 bg-white shadow-sm">
@@ -315,7 +315,7 @@ const specialRecognitionAwards = [
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-black">15th March 2027</p>
+                <p className="text-2xl font-bold text-black">15th March 2026</p>
               </CardContent>
             </Card>
           </div>
@@ -583,7 +583,7 @@ const specialRecognitionAwards = [
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
                 <li>A clear description of the award theme or focus area</li>
-                <li>Rationale for its relevance to DASGRI 2027 themes</li>
+                <li>Rationale for its relevance to DASGRI 2026 themes</li>
                 <li>Evidence of achievement or contribution by the nominee</li>
               </ul>
               <p className="text-gray-700">
@@ -626,7 +626,7 @@ const specialRecognitionAwards = [
       <section className="py-8 bg-amber-50 border-t border-gray-200">
         <div className="container mx-auto px-4 text-center text-gray-600">
           <p>
-            <strong>DASGRI 2027</strong> reaffirms its dedication to advancing innovation and collaboration in research
+            <strong>DASGRI 2026</strong> reaffirms its dedication to advancing innovation and collaboration in research
             and technology.
           </p>
         </div>
