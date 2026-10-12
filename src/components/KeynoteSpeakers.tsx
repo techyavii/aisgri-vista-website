@@ -109,6 +109,12 @@ const KeynoteSpeakers = () => {
       company: "UK",
       profilePic: "keynotes/bharati.jpeg",
     },
+    {
+  name: "Vishi Singh Bhatia",
+  designation: "Consultant",
+  company: "Tata Consultancy Services Limited",
+  profilePic: "keynotes/vishi-singh-bhatia.jpeg",
+},
   ];
 
 
