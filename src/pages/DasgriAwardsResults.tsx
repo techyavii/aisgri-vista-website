@@ -221,6 +221,11 @@ const DasgriAwardsResults: React.FC = () => {
       name: 'Mohammad Majharul Islam Jabed',
       category: 'Best Paper Awards',
       subAward: 'Best Paper Award'
+    },
+    {
+      name: 'Rahul Pandurang Mahajan',
+      category: 'Research, Innovation & Impact Awards',
+      subAward: 'Biomedical Device Research Excellence & Innovation Award'
     }
   ];
 

@@ -1,6 +1,8 @@
-// import KeynoteSpeakerCard from "./KeynoteSpeakerCard";
+// import /keynotespeakerCard from ".//keynotespeakerCard";
 
-// const KeynoteSpeakers = () => {
+import KeynoteSpeakerCard from "./KeynoteSpeakerCard";
+
+// const /keynotespeakers = () => {
 //   const speakers = [
 //     {
 //       name: "Prof. Larisa Soldatova",
@@ -40,7 +42,7 @@
 
 //         <div className="grid gap-10">
 //           {speakers.map((speaker, index) => (
-//             <KeynoteSpeakerCard key={index} {...speaker} />
+//             </keynotespeakerCard key={index} {...speaker} />
 //           ))}
 //         </div>
 //       </div>
@@ -48,82 +50,102 @@
 //   );
 // };
 
-// export default KeynoteSpeakers;
+// export default /keynotespeakers;
 
 
-import KeynoteSpeakerCard from "./KeynoteSpeakerCard";
 
-const KeynoteSpeakers = () => {
-    const speakers = [
+interface KeynoteSpeakersProps {
+  year: 2026 | 2027;
+}
+
+const speakersByYear = {
+  2026: [
     {
       name: "Prof. Larisa Soldatova",
       designation: "Professor in Data Science",
       company: "Goldsmiths, University of London",
-      profilePic: "keynotes/laria.jpeg",
+      profilePic: "/keynotes/laria.jpeg",
     },
     {
       name: "Prof. Ali Kashif Bashir",
       designation: "Professor – Computer Networks and Cybersecurity",
       company: "Manchester Metropolitan University, UK",
-      profilePic: "keynotes/ali.jpeg",
+      profilePic: "/keynotes/ali.jpeg",
     },
     {
       name: "Krishna Gandhi",
       designation: "Automation Lead – Energy Sector",
       company: "Artech LLC",
-      profilePic: "keynotes/krishna.jpeg",
+      profilePic: "/keynotes/krishna.jpeg",
     },
     {
       name: "Bhargava Varma Konduru",
       designation: "Sr. Product Manager, Analytics",
       company: "Amazon, USA",
-      profilePic: "keynotes/bhargava.jpeg",
+      profilePic: "/keynotes/bhargava.jpeg",
     },
     {
       name: "Satish Kumar Malaraju",
       designation: "Technology Architect - DevSecOps",
       company: "VHL Technologies Inc.",
-      profilePic: "keynotes/satish_kumar_malaraju.jpeg",
+      profilePic: "/keynotes/satish_kumar_malaraju.jpeg",
     },
     {
       name: "Vivek Kumar",
       designation: "Independent Peer Reviewer / Subject Matter Expert",
       company: "Independent Professional (AI Governance & Data Privacy, Cyber GRC)",
-      profilePic: "keynotes/vivek_kumar.jpeg",
+      profilePic: "/keynotes/vivek_kumar.jpeg",
     },
     {
       name: "Suchith Goud Arella",
       designation: "Senior Software Engineer",
       // company: "Anjus LLC, USA",
-      profilePic: "keynotes/suchith.jpeg",
+      profilePic: "/keynotes/suchith.jpeg",
     },
     {
       name: "Sandeep Shivam",
       designation: "Associate Director - Product Management",
       company: "Tavant, USA",
-      profilePic: "keynotes/sandeep.jpeg",
+      profilePic: "/keynotes/sandeep.jpeg",
     },
     {
       name: "Dr Bharati Rathore",
       designation: "University of South Wales",
       company: "UK",
-      profilePic: "keynotes/bharati.jpeg",
+      profilePic: "/keynotes/bharati.jpeg",
+    },
+  ],
+  2027: [
+    {
+      name: "Vishi Singh Bhatia",
+      designation: "Consultant",
+      company: "Tata Consultancy Services Limited",
+      profilePic: "/keynotes/vishi-singh-bhatia.jpeg",
     },
     {
-  name: "Vishi Singh Bhatia",
-  designation: "Consultant",
-  company: "Tata Consultancy Services Limited",
-  profilePic: "keynotes/vishi-singh-bhatia.jpeg",
-},
-  ];
+      name: "Abhik Sengupta",
+      designation: "Principal Architect",
+      company: "Hakkoda, an IBM Company",
+      profilePic: "/keynotes/abhik-sengupta.jpeg",
+    },
+    {
+      name: "Navneet Kumar Tyagi",
+      designation: "Senior Software Engineer",
+      company: "Finance of America",
+      profilePic: "/keynotes/navneet-kumar-tyagi.jpeg",
+    },
+  ],
+};
 
+const keynotespeakers: React.FC<KeynoteSpeakersProps> = ({ year }) => {
+  const speakers = speakersByYear[year];
 
   return (
     <section className="py-16 bg-[#f7faff]">
       <div className="max-w-7xl mx-auto px-4">
          <div className="text-center mb-8">
         <h2 className="font-druk md:text-4xl text-goldsmiths-text border-b-4 border-goldsmiths-blue pb-2 inline-block text-3xl text-center mb-12">
-          Previous Keynote Speakers 2026
+           Keynote Speakers {year}
         </h2>
         </div>
 
@@ -137,4 +159,4 @@ const KeynoteSpeakers = () => {
   );
 };
 
-export default KeynoteSpeakers;
+export default keynotespeakers;

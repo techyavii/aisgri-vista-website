@@ -28,6 +28,7 @@ import DasgriAwards from './pages/DasgriAwards';
 import BestPaperAwards from './pages/BestPaperAwards';
 import DasgriAwardsResults from './pages/DasgriAwardsResults';
 import PreviousConference from './pages/PreviousConference';
+import KeynoteSpeakers from './components/KeynoteSpeakers';
 
 
 const queryClient = new QueryClient();
@@ -61,6 +62,8 @@ const App: React.FC = () => (
               <Route path="/publications" element={<Publications />} />
               <Route path="/previous-conference" element={<PreviousConference />} />
               <Route path="/invitedspeakers" element={<InvitedSpeakers />} />
+              <Route path="/keynote-speakers/2026" element={<KeynoteSpeakers year={2026} />} />
+              <Route path="/keynote-speakers/2027" element={<KeynoteSpeakers year={2027} />} />
               <Route path="/conference-venue" element={<ConferenceVenue />} />
               <Route path="/downloads" element={<Downloads />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

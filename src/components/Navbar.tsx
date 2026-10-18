@@ -74,6 +74,15 @@ const Navbar: React.FC = () => {
     },
     { name: 'Registration', href: '/registration' },
     { name: 'Publications', href: '/publications' },
+    {
+      name: 'Keynote Speakers',
+      href: '#keynote-speakers',
+      hasDropdown: true,
+      dropdownItems: [
+        { name: '2026 Keynote Speakers', href: '/keynote-speakers/2026' },
+        { name: '2027 Keynote Speakers', href: '/keynote-speakers/2027' },
+      ]
+    },
     { name: 'Invited Speakers', href: '/invitedspeakers' },
     { name: 'Conference Venue', href: '/conference-venue' },
     { name: 'Previous Conference', href: '/previous-conference' },
@@ -208,25 +217,21 @@ const Navbar: React.FC = () => {
                   </a>
                 )}
                 
-                {link.hasDropdown && link.dropdownItems && (
+                {link.hasDropdown && link.dropdownItems && activeDropdown === link.name && (
                   <div className="pl-4 mt-1 border-l-2 border-gray-200 space-y-2">
-                    {link.dropdownItems.map((item) => {
-                      console.log(item)
-                      return(
+                    {link.dropdownItems.map((item) => (
                       <Link
                         key={item.name}
                         to={item.href}
                         className="block py-1 px-2 text-sm hover:bg-[#333333] hover:text-white rounded"
                         onClick={() => {
-                          console.log("ERror")
-                          setTimeout(() => {
-                            setMobileMenuOpen(false);
-                            setActiveDropdown(null);
-                          }, 100)}}
+                          setMobileMenuOpen(false);
+                          setActiveDropdown(null);
+                        }}
                       >
                         {item.name}
                       </Link>
-                      )})}
+                    ))}
                   </div>
                 )}
               </div>
