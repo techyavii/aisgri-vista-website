@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
     <p className="font-publico mb-2">
     2nd International Conference on Data Science and AI for Social Good and Responsible Innovation
     </p>
-    <p className="font-publico text-sm">9th – 10th April 2027</p>
+    <p className="font-publico text-sm">5-6th March 2027</p>
     <p className="font-publico text-sm">Goldsmiths, University of London, UK</p>
     </div>
 

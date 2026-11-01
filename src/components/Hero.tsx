@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           (DASGRI 2027)
         </h2>
         <p className="font-graphik text-lg md:text-xl mb-8 text-center">
-          9-10th April 2027
+          5-6th March 2027
         </p>
         <p className="font-publico text-base md:text-lg mb-8 text-center">
           Organised by Goldsmiths, University of London, United Kingdom
