@@ -63,7 +63,7 @@ const CallForSpecialSession: React.FC = () => {
         <p className="text-gray-700 leading-relaxed">
           DASGRI Conference team invites you to organize special sessions in your
           research domain for DASGRI-2027, to be held at Goldsmiths, University of
-          London, United Kingdom on 5-6th March 2027. The two-day conference will
+          London, United Kingdom on 9-10 April 2027. The two-day conference will
           include workshops, technical sessions and keynote talks covering cutting
           edge topics in Data Science and AI for social good and responsible
           innovation. Learn more at{' '}
@@ -98,7 +98,7 @@ const CallForSpecialSession: React.FC = () => {
               <strong>Proposal deadline:</strong> 30 November 2026
             </li>
             <li>
-              <strong>Conference dates:</strong> 5-6th March 2027
+              <strong>Conference dates:</strong> 9-10 April 2027
             </li>
           </ul>
         </div>

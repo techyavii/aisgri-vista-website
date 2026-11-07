@@ -39,7 +39,7 @@ const ConferenceBanner = () => {
           </p>
           <div className="flex items-center justify-center text-sm md:text-base mb-2">
             <Calendar className="mr-2" size={16} />
-            <p>5-6th March 2027</p>
+            <p>9-10 April 2027</p>
           </div>
           <p className="text-sm md:text-base font-medium text-yellow-300">
             Springer LNNS Approved Conference

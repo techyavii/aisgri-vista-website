@@ -7,6 +7,7 @@ const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -29,7 +30,11 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      const clickedDesktopDropdown = dropdownRef.current?.contains(target);
+      const clickedMobileMenu = mobileMenuRef.current?.contains(target);
+
+      if (!clickedDesktopDropdown && !clickedMobileMenu) {
         setActiveDropdown(null);
       }
     };
@@ -168,7 +173,7 @@ const Navbar: React.FC = () => {
       
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white text-black border-t border-gray-200">
+        <div ref={mobileMenuRef} className="lg:hidden bg-white text-black border-t border-gray-200">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-2">
             {navLinks.map((link) => (
               <div key={link.name}>
