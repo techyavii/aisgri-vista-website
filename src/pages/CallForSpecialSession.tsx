@@ -3,7 +3,7 @@ import React from 'react'
 const CallForSpecialSession: React.FC = () => {
   // Put your file in the `public` folder (e.g. public/special-session-format.pdf)
   // and update this path if you place it in a subfolder (e.g. /calls/special-session-format.pdf).
-  const formatHref = '/Call for Special Session-Template.docx'
+  const formatHref = '/Special-session-CFP-Template-(DASGRI).docx'
 
   const openMail = () => {
     const subject = encodeURIComponent('Special Session Proposal for DASGRI-2027')
